@@ -1,0 +1,270 @@
+<application>
+    <name>Social Engineering Adventure (SEA)</name>
+
+    <!-- ==================== MAIN MODULES ==================== -->
+    
+    <module>
+        <name>sea</name>
+	    <parameters>--source TODO</parameters>
+        <node>/icubDisplay</node>
+    </module>
+
+    <!-- ======================= MONITORING ======================= -->
+
+    <module>
+        <name>yarpView</name>
+        <parameters>--name /view/leftEye:i --x 0 --y 0 --RefreshTime 50</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>yarpView</name>
+        <parameters>--name /view/shelf:i --x 0 --y 0 --RefreshTime 50</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <!-- ======================= SENSORS ======================= -->
+
+    <module>
+        <name>EyeLinkInterface</name>
+        <parameters></parameters>
+        <node>/icubDisplay</node>
+    </module>
+
+    <module>
+        <name>GSRInterface</name>
+        <parameters></parameters>
+        <node>/icubDisplay</node>
+    </module>
+
+    <module>
+        <name>MouseInterface</name>
+        <parameters></parameters>
+        <node>/icubDisplay</node>
+    </module>
+
+    <!-- ==================== ICUB CONTROL HIGH LEVEL ==================== -->
+
+    <module>
+        <name>robotPuppeteer</name>
+        <parameters>--app SEA</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+     <!-- ==================== ICUB CONTROL LOW LEVEL ==================== -->
+
+    <module>
+        <name>iKinGazeCtrl</name>
+        <parameters>--from iKinGazeCtrl.ini</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part right_arm</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part left_arm</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part torso</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part face</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>iCubBreather</name>
+        <parameters>--part left_arm --rate 1000 --refSpeeds 1.0 --noiseStd 3.0</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>iCubBreather</name>
+        <parameters>--part right_arm --rate 1000 --refSpeeds 1.0 --noiseStd 3.0</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>iCubBreather</name>
+        <parameters>--part torso --rate 5000 --refSpeeds 1.0 --noiseStd 2.0</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <!-- ==================== DUMPERS ==================== -->
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/log:i --dir /dario/sea/dump/logs</parameters>
+      	<node>/icub12</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/annotations:i --dir /dario/sea/dump/annotations</parameters>
+      	<node>/icub12</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/sensor/mouse:i --dir /dario/sea/dump/sensor/mouse</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/sensor/gsr:i --dir /dario/sea/dump/sensor/gsr</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/sensor/heart:i --dir /dario/sea/dump/sensor/heart</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/camera/leftEye:i --dir /dario/sea/dump/camera/leftEye</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/camera/shelf:i --dir /dario/sea/dump/camera/shelf</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/camera/front:i --dir /dario/sea/dump/camera/front</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <!-- ==================== CONNECTIONS - MONITORING ==================== --> 
+
+    <!-- Dumper for the Left Eye Camera-->
+    <connection>
+        <from>/icub/camcalib/left/out</from>
+        <to>/view/leftEye:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- ==================== CONNECTIONS - ROBOT CONTROL ==================== -->  
+
+    <!-- Write port to sent commands to the robot-->
+    <connection>
+        <from>/sea/puppet/async/cmd:o</from>
+        <to>/robotPuppeteer/async/cmd:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Write port to receive ack from the robot-->
+    <connection>
+        <from>/robotPuppeteer/async/ack:o</from>
+        <to>/sea/puppet/async/ack:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+
+     <!-- ==================== CONNECTIONS - SENSORS ==================== -->  
+
+    <!-- RPC port to control the Shimmer3 GSR +-->
+    <connection>
+        <from>/sea/devices/gsr/rpc</from>
+        <to>/gsrInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the Mouse-->
+    <connection>
+        <from>/sea/devices/mouse/rpc</from>
+        <to>/mouseInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the EyeLink-->
+    <connection>
+        <from>/sea/devices/eyelink/rpc</from>
+        <to>/eyelinkInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the Tobii Eyetracker-->
+    <connection>
+        <from>/sea/devices/tobii/rpc</from>
+        <to>/tobii/stream</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+     <!-- ==================== CONNECTIONS - DUMPERS ==================== -->  
+
+    <!-- Dumper for logs-->
+    <connection>
+        <from>/sea/log:o</from>
+        <to>/dumper/log:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for trials-->
+    <connection>
+        <from>/sea/annotations:o</from>
+        <to>/dumper/annotations:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for Shimmer3 GSR+ Skin Conductace-->
+    <connection>
+        <from>/gsrInterface/gsr:o</from>
+        <to>/dumper/sensor/gsr:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for Shimmer3 GSR+ Heart Beat-->
+    <connection>
+        <from>/gsrInterface/heart:o</from>
+        <to>/dumper/sensor/heart:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for the Mouse-->
+    <connection>
+        <from>/mouseInterface/events:o</from>
+        <to>/dumper/sensor/mouse:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for the Left Eye Camera-->
+    <connection>
+        <from>/icub/camcalib/left/out</from>
+        <to>/dumper/camera/leftEye:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for the Shelf Camera-->
+    <connection>
+        <from></from>
+        <to>/dumper/camera/shelf:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+    
+    <!-- Dumper for the front Camera-->
+    <connection>
+        <from></from>
+        <to>/dumper/camera/front:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+    
+</application>
+
+

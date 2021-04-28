@@ -1,0 +1,13 @@
+{
+    "files": [
+    "sea/assets/gui/StoryPane2.qml",
+    "sea/assets/gui/StatsPane2.qml",
+    "sea/assets/gui/main.qml",
+    "main_gui.py",
+    "sea/view/gui/StatsBridge.py",
+    "sea/view/gui/StoryBridge.py",
+    "resources.qrc",
+    "sea/assets/images/sea_text_background.jpg"
+    ]
+
+}

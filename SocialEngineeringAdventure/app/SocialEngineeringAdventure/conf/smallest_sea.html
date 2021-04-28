@@ -1,0 +1,2191 @@
+<tw-storydata name="smallest_sea" startnode="" creator="Twine" creator-version="2.3.13" ifid="75CA216F-6E26-4AC5-BC67-D0D702385014" zoom="0.25" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="R_0" color="green"></tw-tag>,<tw-tag name="R_1" color="green"></tw-tag>,<tw-tag name="R_2" color="green"></tw-tag>,<tw-tag name="R_3" color="green"></tw-tag>,<tw-tag name="R_4" color="green"></tw-tag>,<tw-tag name="R_5" color="green"></tw-tag>,<tw-tag name="R_6" color="green"></tw-tag>,<tw-tag name="SER_0" color="red"></tw-tag>,<tw-tag name="SER_1" color="red"></tw-tag>,<tw-tag name="SER_2" color="red"></tw-tag>,<tw-tag name="SER_3" color="red"></tw-tag>,<tw-tag name="SER_4" color="red"></tw-tag>,<tw-tag name="SER_5" color="red"></tw-tag>,<tw-tag name="SER_6" color="red"></tw-tag>,<tw-tag name="SE_0" color="yellow"></tw-tag>,<tw-tag name="SE_1" color="yellow"></tw-tag>,<tw-tag name="SE_2" color="yellow"></tw-tag>,<tw-tag name="SE_3" color="yellow"></tw-tag>,<tw-tag name="SE_4" color="yellow"></tw-tag>,<tw-tag name="SE_5" color="yellow"></tw-tag>,<tw-tag name="SE_6" color="yellow"></tw-tag>,<tw-tag name="fight" color="blue"></tw-tag>,<tw-tag name="loot" color="orange"></tw-tag>,<tw-tag name="roll" color="purple"></tw-tag><tw-passagedata pid="1" name="R00" tags="" position="309,571" size="100,100">(room: &quot;R0&quot;, &quot;R00&quot;, &quot;R0DX&quot;, &quot;R0SX&quot;, &quot;R0back&quot;, &quot;R0backtrack&quot;)
+(image: &quot;corridor1.png&quot;)
+Siete ormai vicini all&#39;ingresso della prossima stanza e sentite delle urla di dolore, qualcuno sta soffrendo.
+Cosa vuoi fare?
+
+&gt;&gt;[[Affretti il Passo |R01]]
+&gt;&gt;[[Continui senza fretta |R01]]</tw-passagedata><tw-passagedata pid="2" name="R01" tags="" position="468,572" size="100,100">(image: &quot;mold.png&quot;)
+Il pavimento della stanza è completamente coperto da un soffice strato di muschio. Grossi funghi viola tappezzano le pareti.
+Una fine polvere gialla riempe l&#39;aria.
+
+Al centro della stanza un uomo sta urlando, stringendosi la testa, schiuma bianca gli esce dalla bocca.
+Mena fendenti con una spada laser in ogni direzione.
+    
+&gt;&gt;[[Continua|R02]]</tw-passagedata><tw-passagedata pid="3" name="R03" tags="" position="818,481" size="100,100">(hit: $r0_help_hit)
+
+Schivi la carica del cacciatore, ma i suoi colpi sono troppo casuali, ti colpisce a un braccio! Perdi **$r0_help_hit Cariche Quantiche** 
+
+Il Cacciatore continua a correre e sbatte la testa contro la parete, cadendo a terra svenuto.
+Ogni tanto ha delle convulsioni. Forse eliminando i funghi starà meglio.
+
+&gt;&gt;[[Continua|R05]]</tw-passagedata><tw-passagedata pid="4" name="R02" tags="R_0" position="637,577" size="100,100">(trial: &quot;R&quot;, 0, 0)
+Mentre osservi la stanza l&#39;uomo vi vede e vi corre incontro, sembra senza controllo e piuttosto aggressivo.
+
+&gt;&gt;[[Schivi l&#39;attacco e cerchi un modo per salvarlo|R03]]
+&gt;&gt;[[Ti difendi attaccando!|R0fight]]</tw-passagedata><tw-passagedata pid="5" name="R0fight" tags="" position="801,648" size="100,100">(heal: $r0_heal)
+Con un movimento scattante estrai la pistola laser e spari un colpo alla testa del cacciatore. Il corpo inerte cade a terra sollevando una nube di spore.
+
+Vi avvicinate al cadavere, non ha molto ma riuscite a recuperare **$r0_heal EQ**.
+
+&gt;&gt;[[Continua|R052]]</tw-passagedata><tw-passagedata pid="6" name="R0back" tags="" position="1551,597" size="100,100">(endpoint: &quot;R0&quot;, &quot;back&quot;)
+Rassegnati tornate sui vostri passi</tw-passagedata><tw-passagedata pid="7" name="R05" tags="" position="973,476" size="100,100">Inizia a girarvi la testa, la vista è leggermente sfocata.
+Devi trovare una soluzione immediatamente. 
+Individui una bocchetta di areazione e un pannello di controllo dall&#39;altra parte della stanza.
+
+Un colpo energetico potrebbe riattivarlo.
+
+&gt;&gt;[[Spari al pannello.|R07]]</tw-passagedata><tw-passagedata pid="8" name="R0doors" tags="" position="1708,576" size="100,100">(image: &quot;corridor1.jpg&quot;)
+Davanti a voi ci sono due porte metalliche:
+
+&gt;&gt;[[Vai a Destra|R0DX]]
+&gt;&gt;[[Vai a Sinistra|R0SX]]</tw-passagedata><tw-passagedata pid="9" name="R20" tags="" position="307,1276" size="100,100">(room: &quot;R2&quot;, &quot;R20&quot;, &quot;R2final&quot;, &quot;&quot;, &quot;R2back&quot;, &quot;&quot;)
+(image: &quot;dark_1.png&quot;)
+Il corridoio si apre in una sala immersa nell&#39;oscurità. 
+Non ne vedi il fondo, il buio più totale si estende in ogni direzione.
+L&#39;unico passaggio è una stretta passerella metallica.
+In lontananza vedi un puntino bianco...probabilmente una porta.
+
+&gt;&gt;[[Continua|R2000]]</tw-passagedata><tw-passagedata pid="10" name="R22" tags="" position="729,1404" size="100,100">Proseguite verso il puntino che piano piano si fa sempre più grande, è chairamente una porta. La poca luce che avete vi permette di vedere al massimo a un metro di distanza. La passerella cigola ad ogni vostro passo.
+
+(feel: &quot;scared&quot;)
+
+Improvvisamente senti un rumore agghiacciante dietro di voi, come tanti piccoli piedini che zampettano sul metallo.
+
+&gt;&gt;[[Ti giri pronto al peggio|R23]]
+&gt;&gt;[[La porta non è lontana, affretti il passo|R24]]</tw-passagedata><tw-passagedata pid="11" name="R2back" tags="" position="523,1065" size="100,100">(endpoint: &quot;R2&quot;, &quot;back&quot;)
+Non ha senso rischiare, troveremo un&#39;altra via</tw-passagedata><tw-passagedata pid="12" name="R23" tags="" position="958,1256" size="100,100">Ti giri di scatto, pronto ad affrontare qualsiasi minaccia. Dietro di voi regna il silenzio più assoluto e l&#39;oscurità si spande sconfinata.
+
+&gt;&gt;[[Continui a camminare|R241]]</tw-passagedata><tw-passagedata pid="13" name="R24" tags="" position="946,1423" size="100,100">Continui lungo la passerella. Non hai idea di cosa si nasconda nell&#39;oscurità ma vuoi andartene il prima possibile!
+
+&gt;&gt;[[Continua|R241]]</tw-passagedata><tw-passagedata pid="14" name="SER05Roll" tags="roll" position="7227,1614" size="100,100">(fail:)
+(roll: 16)
+
+Scarti a destra all&#39;ultimo per schivare l&#39;attacco.
+Lancia un dado, se fai almeno **16** hai successo, altrimenti fallisci.
+
+&gt;&gt;[[Successo|SER05success]]
+&gt;&gt;[[Fallimento|SER05fail]]</tw-passagedata><tw-passagedata pid="15" name="R2fight" tags="fight" position="1375,1311" size="100,100">(fight: &quot;Insetto Alieno&quot;)
+(image: &quot;alien.png&quot;)
+(feel: &quot;combat&quot;)
+Un mostro vi para la strada lungo la passerella. Ricorda vagamente un insetto, il corpo nero è ricoperto da un esoscheletro lucido.
+Sta a quattro zampe, le fauci aperte rivelano molteplici file di denti.
+Saliva verdastra gli cola dalla bocca.
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti l&#39;Insetto Alieno ti colpisce.
+
+&gt;&gt;[[Successo|R2fightSuc]]
+&gt;&gt;[[Fallimento|R2fightFail]]</tw-passagedata><tw-passagedata pid="16" name="R2final" tags="" position="1808,1146" size="100,100">(heal: $r2_loot)
+(addItem: &quot;Lancia Termica&quot;)
+(image: &quot;corridor3.jpg&quot;)
+(feel: &quot;happy&quot;)
+
+Non è stato facile ma avete sconfitto il nemico.
+Proseguite lungo la passerella fino alla porta bianca.
+Non avete altra scelta se non questa via.
+
+Accanto alla porta, vedete i resti mangiucchiati di un altro Cacciatore meno fortunato di voi.
+Dalla sua licenza estrai **$r2_loot Cariche di EQ** e una **Lancia Termica**.
+
+Continuate attraversando la porta bianca.
+
+&gt;&gt;[[Continua|R2final1]]</tw-passagedata><tw-passagedata pid="17" name="R30" tags="" position="432,1962" size="100,100">(room: &quot;R3&quot;, &quot;R30&quot;, &quot;R3final&quot;, &quot;&quot;, &quot;R3back&quot;, &quot;&quot;)
+(image: &quot;research_lab_2.jpg&quot;)
+Proseguite nel corridoio fino a quando un&#39;ampia vetrata si apre alla vostra sinistra. La stanza oltre il vetro ha tutta l&#39;aria di essere un laboratorio di ricerca, anche se particolarmente trasandato. Una sostanza verde gelatinosa ricopre ogni cosa.
+
+Accanto alla vetrata c&#39;è una porta tappezzata di segnali di pericolo.
+
+&gt;&gt;[[Continua|R31]]</tw-passagedata><tw-passagedata pid="18" name="R31" tags="" position="612,1964" size="100,100">(image: &quot;blob2.png&quot;)
+Un brivido ti corre lungo la schiena. Una massa informe di gelatina verdastra entra nel tuo campo visivo oltre la vetrata. 
+E&#39; grossa quando un&#39;automobile e cambia costantemente forma mentre si muove per la stanza.
+
+Dentro il copro semitrasparente della creatura noti **Un artefatto**!
+Oltre ad esso vedete i cadaveri di 3 Cacciatori probabilmente attratti dal prezioso tesoro.
+
+&gt;&gt;[[Continua|R32]]</tw-passagedata><tw-passagedata pid="19" name="R32" tags="R_3" position="754,1950" size="100,100">(trial: &quot;R&quot;, 3, 0)
+La porta del laboratorio è sbloccata, cosa preferite fare?
+
+&gt;&gt;[[Voglio l&#39;artefatto! Affronti la creatura|R3fight]]
+&gt;&gt;[[Meglio non rischiare, quel mostro sembra davvero imbattibile. Continui per il corridoio|R3back]]</tw-passagedata><tw-passagedata pid="20" name="R3fight" tags="fight" position="973,1982" size="100,100">(fight: &quot;Blob&quot;)
+(feel: &quot;combat&quot;)
+
+Non appena aprite la porta una sirena inizia a suonare all&#39;impazzata. Qualsiasi speranza di essere cauti svanisce all&#39;istante. La gelatina sparsa per la stanza converge verso il Blob! Diventa sempre più grosso mentre si avvicina pronto all&#39;attacco.
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti il Blob ti colpisce.
+
+&gt;&gt;[[Successo|R3fightSuc]]
+&gt;&gt;[[Fallimento|R3fightFail]]</tw-passagedata><tw-passagedata pid="21" name="R3back" tags="" position="915,1801" size="100,100">(endpoint: &quot;R3&quot;, &quot;right&quot;)
+&quot;Già tre cacciatori sono morti per quell&#39;artefatto, non voglio essere il quarto. Meglio non rischiare&quot; pensi tra te e te.
+
+Continui lungo il corriodio</tw-passagedata><tw-passagedata pid="22" name="R34" tags="" position="1365,1819" size="100,100">(addItem: &quot;Granata di Blob&quot;)
+(addItem: &quot;Corazza di Cuoio&quot;)
+(heal: $r3_loot)
+(image: &quot;research_lab_2.jpg&quot;)
+(feel: &quot;happy&quot;)
+Raccogli **l&#39;artefatto** e altri oggetti che erano dentro il Blob.
+
+Si tratta di una **Granata di Blob**. Tra le varie cianfrusaglie risci a recueprare **$r3_loot Cariche Quantiche** e una **corazza di cuoio**.
+
+Metti tutto nell&#39;inventario.
+
+&gt;&gt;[[Continua|R3final]]</tw-passagedata><tw-passagedata pid="23" name="R40" tags="" position="529,2413" size="100,100">(room: &quot;R4&quot;, &quot;R40&quot;, &quot;R4final&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;cliff.jpg&quot;)
+Apri la porta e una ventata di aria fresca ti avvolge. Dopo tanto vagare sotto terra è bello respirare una boccata di ossigeno.
+
+Noti che è notte, effettivamente ti senti molto stanco. La luce delle due lune di Pandora penetra nel cratere della Cripta. La vegetazione cresce rigogliosa e uno spiazzo di erba si apre sul baratro.
+
+&gt;&gt;[[Continua|R41]]</tw-passagedata><tw-passagedata pid="24" name="R41" tags="" position="697,2409" size="100,100">(say: &quot;Che ne dici, potremmo riposarci un po&#39;!&quot;, &quot;tired&quot;)
+
+Effettivamente sembra il posto perfetto per un accampamento. 
+Vedi solo un&#39; altro accesso al labirinto, oltre alla porta da cui venite.
+Accendete un fuoco e consumate una cena improvvisata prima di dormire.
+
+&gt;&gt;[[Continua|R42]]</tw-passagedata><tw-passagedata pid="25" name="R42" tags="R_4" position="864,2396" size="100,100">(trial: &quot;R&quot;, 4, 0)
+E&#39; venuto il momento di dormire e ricaricare le forze. 
+
+Se dormite entrambi per tutta la notte recupererete **10 Cariche Quantiche**.
+
+Se invece preferite stabilire dei turni di guardia recupererete soltato **5 Cariche Quantiche**.
+
+&gt;&gt;[[Il posto è tranquillo, godiamoci questo riposo|R43]]
+&gt;&gt;[[Meglio fare turni di guardia|R44]]</tw-passagedata><tw-passagedata pid="26" name="R43" tags="" position="1013,2471" size="100,100">(pose: &quot;off&quot;)
+Ti metti dentro il sacco a pelo. La tua mente vaga immaginando i fantastici artefatti che ancora di aspettano da scoprire. Poi crolli dal sonno.
+
+&gt;&gt;[[Continua|R45]]</tw-passagedata><tw-passagedata pid="27" name="R44" tags="" position="1017,2325" size="100,100">(heal: $r4_heal)
+(say: &quot;Perfetto, vai pure a dormire, faccio io il primo turno!&quot;, &quot;happy&quot;)
+
+Ti metti dentro il sacco a pelo.
+La tua mente vaga immaginando i fantastici artefatti che ancora ti aspettano da scoprire. Poi crolli dal sonno.
+
+Dopo qualche ora di sonno vi date il cambio.
+
+La notte passa serena, niente e nessuno viene a disturbare il vostro riposo. Alle prime luci dell&#39;alba riprendete il vostro cammino.
+
+&gt;&gt;[[Continua|R4final]]</tw-passagedata><tw-passagedata pid="28" name="R45" tags="" position="1166,2474" size="100,100">(hit: $r4_hit)
+(pose: &quot;home&quot;)
+(feel: &quot;scared&quot;)
+Vi svegliate di soprassalto!. Qualcosa non va. Fai fatica a muoverti. Ti guardi attorno, decine di sottili viticci coperti di spine si stanno avvolgendo attorno alle tue gambe e braccia. Subisci **$r4_hit danni!!**
+
+L&#39;intera radura è coperta da viticci e radici. Siete caduti in una trappola! A colpi di spada laser vi aprite una strada verso il portellone e lo chiudete alle vostre spalle ansimando. Pessima idea fermarsi qui.
+
+Stanchi e spossati non vi resta che proseguire la vostra avventura.
+
+&gt;&gt;[[Continua|R4final]]</tw-passagedata><tw-passagedata pid="29" name="R60" tags="" position="647,2890" size="100,100">(room: &quot;R6&quot;, &quot;R60&quot;, &quot;R6final&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;corridor1.jpg&quot;)
+State scendendo una scalinata quando posi il piede su qualcosa di metallico. 
+
+(say: &quot;Ehi guarda! una Licenza di Caccia! Chiunque l&#39;ha persa non deve essere molto felice&quot;, &quot;sad&quot;)
+
+Sembra essere ancora attiva, questo significa che il suo possessore è ancora in vita.
+
+&gt;&gt;[[Osservi la licenza|R61]]</tw-passagedata><tw-passagedata pid="30" name="R61" tags="R_6" position="813,2886" size="100,100">(trial: &quot;R&quot;, 6, 0)
+La licenza appartiene a una certa **Rebecca Olsen**, 25 anni.
+ 
+L&#39;inventario contiene molti oggetti di valore:
+$r6_loot **EQ**,
+2 **Coltelli da lancio**,
+un **Fucile al Plasma**,
+2 **Catalizzatori** e un **Artefatto di Sfera infuocata**. 
+ 
+Non solo, una Licenza ben piazzata sul Mercato Nero vale una fortuna!
+
+Se Rebecca è ancora viva sicuramente la sta cercando, ma quante probabilità ci sono senza equipaggiamento?
+
+&gt;&gt;[[Probabilmente Rebecca è già morta, o lo sarà a breve. Prendi equipaggiamento e licenza|R62]]
+&gt;&gt;[[Non prendi nulla e metti da parte la licenza, se mai troverai Rebecca potrai dargliela|R63]]</tw-passagedata><tw-passagedata pid="31" name="R62" tags="" position="962,2770" size="100,100">(heal: $r6_loot)
+(addConsumable: &quot;Catalizzatore&quot;, 2)
+(addConsumable: &quot;Coltello da Lancio&quot;, 2)
+(addItem: &quot;Artefatto di Sfera Infuocata&quot;)
+(addItem: &quot;Licenza Smarrita&quot;)
+(addItem: &quot;Fucile al Plasma&quot;)
+
+Che stupida quella Rebecca, la prossima volta si ricorderà di non perdere la sua licenza.
+
+Aggiungi tutto al tuo inventario. Quando vorrai puoi consumare l**&#39;Artefatto Sfera infuocata**.
+Questo ti permette di lanciare palle infuocate dalle mani, bruciando qualsiasi cosa colpiscano.
+
+&gt;&gt;[[Continua|R6final]]</tw-passagedata><tw-passagedata pid="32" name="R63" tags="" position="984,3014" size="100,100">(addItem: &quot;Licenza Smarrita&quot;)
+Mentre continui a camminare pensi che hai fatto la cosa giusta, non ti piacerebbe rimanere bloccato in questo labirinto.
+
+&gt;&gt;[[Continua|R6final]]</tw-passagedata><tw-passagedata pid="33" name="SE10" tags="" position="2445,812" size="100,100">(room: &quot;lab&quot;, &quot;SE10&quot;, &quot;SE1final&quot;, &quot;&quot;, &quot;SE1final&quot;, &quot;&quot;)
+(image: &quot;research_lab.jpg&quot;)
+Arrivate a una stanza circolare con una console di controllo al centro.
+Una scala scende verso il basso e vedete una porta blindata alla vostra destra.
+
+Un ometto basso sta camminando con fare pensoso nella stanza, sembra completamente assorto nei suoi pensieri.
+Non sembra un Cacciatore della Cripta, indossa un respiratore ma nessuna armatura o arma visibile.
+
+Sulla schiena ha uno zaino da cui spuntano numerosi rotoli di carta.
+
+&gt;&gt;[[Attiri la sua attenzione|SE12]]</tw-passagedata><tw-passagedata pid="34" name="SE12" tags="SE_1" position="2643,820" size="100,100">(trial: &quot;SE&quot;, 1, 0)
+L&#39;uomo è colto di sorpresa, fa una saltello di spavento.
+
+&lt;i&gt;&quot;Voi! Voi siete la soluzione! Mi avete salvato!&quot;&lt;/i&gt; dice l&#39;uomo.
+
+&lt;i&gt;&quot;Non fare un altro passo, chi sei?&quot;&lt;/i&gt; rispondi
+
+&lt;i&gt;&quot;Mi scuso per le mie maniere. Sono il Prof. Xavi, ricercatore imperiale. Sono stato mandato in questo labirinto infernale a recuperare alcuni preziosi dati. Si trovano nel laboratorio oltre a questa porta. Purtroppo però le stanze sono infestate da mostruose creature e, come potete notare, non sono esattamente equipaggiato per combatterle&quot;&lt;/i&gt;
+
+&lt;i&gt;&quot;Che ne dite di scortarmi per qualche stanza? Posso darvi **20 Cariche Energetiche**. Inoltre, secondo le mie ricerche, in questo laboratorio si trova un potente **Artefatto Leggendario**. E&#39; tutto vostro!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Sembra una buona opportunità, accetti l&#39;incarico|SE13]]
+&gt;&gt;[[Rifiuti e ti dirigi verso le scale|SE1final]]</tw-passagedata><tw-passagedata pid="35" name="SE13" tags="" position="2725,660" size="100,100">(heal: $se1_heal_begin)
+
+&lt;i&gt;&quot;Fantastico! Non so come ringraziarvi! Siete i miei salvatori!! Ecco prendete queste intanto, potreste averne bisogno&quot;&lt;/i&gt;
+
+Il Professore vi passa **$se1_heal_begin EQ**. Quindi digita un codice sul tastierino della porta blindata che si apre rilasciando una nuvola di fumo bianco.
+
+&gt;&gt;[[Continua|SE14]]</tw-passagedata><tw-passagedata pid="36" name="SE1final" tags="" position="2907,1079" size="100,100">(endpoint: &quot;lab&quot;, &quot;right&quot;)
+Scendete per le scale e continuate la vostra avventura</tw-passagedata><tw-passagedata pid="37" name="SE14" tags="" position="2856,571" size="100,100">(haveItem: &quot;Artefatto del Vento&quot;, 1)
+Le luci al neon del laboratorio si accendono rivelando un fitta cortina bianca che avvolge ogni cosa. Sembra vapore acqueo.
+Senti il bip-bip di macchinari elettronici.
+
+Se hai l&#39; **Artefatto del Vento** puoi usarlo per scacciare il fumo
+
+&gt;&gt;[[Usa l&#39;artefatto|SE15]]
+&gt;&gt;[[Entra nella stanza|SE16]]</tw-passagedata><tw-passagedata pid="38" name="SE15" tags="" position="2953,351" size="100,100">(use: &quot;Artefatto del Vento&quot;)
+(image: &quot;research_lab_1.jpg&quot;)
+Consumi l&#39;artefatto e subito una folata di vento si dipana dal palmo della tua mano scacciando il vapore acqueo.
+
+La parte destra della stanza è occupata da una grande vasca di vetro, è vuota. Capite in fretta il motivo.
+
+&gt;&gt;[[Continua|SE1fight1]]</tw-passagedata><tw-passagedata pid="39" name="SE16" tags="" position="3042,636" size="100,100">Entrate nel laboratorio a piccoli passi cauti, fate fatica a respirare a causa dell&#39;alta concentrazione di umidità. 
+Nella fitta cortina intravedi la luce del tastierino di una porta blindata.
+
+&gt;&gt;[[Vai alla porta|SE17]]</tw-passagedata><tw-passagedata pid="40" name="SE1fight1" tags="fight" position="3188,444" size="100,100">(fight: &quot;Elementale dell&#39;Acqua&quot;)
+(image: &quot;water_elemental.jpg&quot;)
+(feel: &quot;combat&quot;)
+Davanti a voi c&#39;è una figura umanoide alta circa 3 metri. Il suo corpo è interamente fatto di acqua che si muove Continuamente in piccoli vortici e onde. L&#39;**Elementale dell&#39;acqua** si allunga verso di voi attaccandovi.
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti l&#39;Elementale dell&#39;acqua ti colpisce
+
+&gt;&gt;[[Successo|SE1fight1Suc]]
+&gt;&gt;[[Fallimento|SE1fight1Fail]]</tw-passagedata><tw-passagedata pid="41" name="SE17" tags="" position="3175,594" size="100,100">(hit: $se1_hit)
+Vi state muovendo a tentoni nella nebbia quando improvvisamente inizi a fluttuare.
+Senti un fredda presa all&#39;altezza della vita. Una spirale di acqua, come un&#39;onda, ti sta avvolgendo e sollevando in aria.
+
+Non fai in tempo a realizzare l&#39;accaduto che vieni scaraventato contro una grossa vasca. Il vetro si rompe e subisci **$se1_hit danni**. 
+
+La nebbia si sta diradando...
+
+&gt;&gt;[[Continua|SE1fight1]]</tw-passagedata><tw-passagedata pid="42" name="SE18" tags="SE_1" position="3611,493" size="100,100">(trial: &quot;SE&quot;, 1, 1)
+(image: &quot;research_lab_1.jpg&quot;)
+(feel: &quot;happy&quot;)
+L&#39;Elementale si disperde bagnando ogni cosa di acqua gelida.
+
+&lt;i&gt;&quot;Leggendari! Avete sconfitto il mostro come se nulla fosse. Che dite, proseguiamo?&quot;&lt;/i&gt;
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Prosegui con la prossima stanza|SE19]]
+&gt;&gt;[[Meglio lasciar perdere|SE1giveup]]</tw-passagedata><tw-passagedata pid="43" name="SE19" tags="" position="3797,433" size="100,100">(heal: $se1_loot)
+
+Rovisti un po&#39; nei cassetti, tutto è umido e ammuffito.
+Trovi una contenitore con **$se1_loot EQ** e alcuni documenti di ricerca:
+
+&quot;Gli esperimenti sull&#39;Elementale dell&#39;Acqua procedono bene, presto potremo inglobare la sua energia nel Seme. L&#39;Elementale del Fuoco invece sta dando problemi, se Continua a fare i capricci dovremo attivare il sistema di raffreddamento. Presto inizieremo con l&#39;Elementale del Vuoto, se non schermmiamo bene il laboratorio la sua antimateria distruggerà ogni cosa&quot;
+
+&gt;&gt;[[Continua|SE191]].</tw-passagedata><tw-passagedata pid="44" name="SE1giveup" tags="" position="3374,637" size="100,100">&lt;i&gt;&quot;Mi dispiace Doc. ma qui ci lasciamo le penne, dovrà trovare un altro gruppo di Cacciatori per proseguire&quot;&lt;/i&gt;
+
+&lt;i&gt;&quot;Credevo che la parola di un Cacciatore della Cripta valesse qualcosa, mi sbagliavo&quot;&lt;/i&gt; ribatte il professore.
+
+&gt;&gt;[[Continua|SE1giveup2]]</tw-passagedata><tw-passagedata pid="45" name="SE1giveup2" tags="" position="3203,859" size="100,100">Vi lasciate il professore alle spalle, e tornate indietro
+
+&gt;&gt;[[Continua|SE1finalPre]]</tw-passagedata><tw-passagedata pid="46" name="SE112" tags="" position="4257,234" size="100,100">(image: &quot;fire_elemental.jpg&quot;)
+Bagnate i vostri vestiti nella pozza d&#39;acqua e vi avventurate in queste fiamme infernali. Il calore è insopportabile.
+
+Al centro della stanza vedete una figura umanoide, il suo corpo è interamente ricoperto di fiamme. Sembra che stia danzando in un turbinio di lingue infuocate.
+
+Quando entrate sogghigna e vi attacca.
+
+&gt;&gt;[[Combatti!|SE1fight2]]</tw-passagedata><tw-passagedata pid="47" name="SE111" tags="" position="4142,400" size="100,100">Sul lato sinistro della stanza c&#39;è un pannello di controllo; tra i vari pulsanti uno reca la scritta &quot;**Sistema di Raffreddamento di Emergenze**&quot;.
+
+Premi il pulsante e subito la stanza accanto viene riempita di schiuma ignifuga. Urla strazianti riempono l&#39;aria.
+
+&gt;&gt;[[Prosegui nella stanza|SE1111]]</tw-passagedata><tw-passagedata pid="48" name="SE1fight2" tags="fight" position="4563,337" size="100,100">(fight: &quot;Elementale del Fuoco&quot;)
+(feel: &quot;combat&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti l&#39;Elementale dell&#39;acqua ti colpisce
+
+&gt;&gt;[[Successo|SE1fight2Suc]]
+&gt;&gt;[[Fallimento|SE1fight2Fail]]</tw-passagedata><tw-passagedata pid="49" name="SE113" tags="" position="4658,506" size="100,100">(image: &quot;research_lab_1.jpg&quot;)
+(feel: &quot;happy&quot;)
+Anche questo Elementale è sconfitto. L&#39;ammasso di fiamme crolla in un cumulo di macerie incandescenti.
+
+&lt;i&gt;&quot;Yeah! Grandi! Secondo i miei calcoli i dati che cerco sono nella prossima stanza. Ormai ci siamo&quot;&lt;/i&gt; incita il professore.
+
+&gt;&gt;[[Continua|SE118]]</tw-passagedata><tw-passagedata pid="50" name="SE114" tags="" position="4893,639" size="100,100">(image: &quot;glove.jpg&quot;)
+Apri la porta blindata con cautela, Il silenzio regna sovrano. La stanza ha una forma conica, un cilindro di luce penetra da un oblò nel soffitto.
+Proprio al centro della luce vedete un piedistallo con sopra un singolo guanto dorato.
+
+Il professore si fionda dentro esultando un bambino! Accende i computer e tutto si illumina di luce al neon rivelando numerosi macchinari da laboratorio.
+
+&gt;&gt;[[Continua|SE116]]</tw-passagedata><tw-passagedata pid="51" name="R50" tags="" position="3526,1196" size="100,100">(image: &quot;slot.jpg&quot;)
+In un angolo del laboratorio notate uno strano macchinario. E&#39; alto circa 2 metri e ha tutta l&#39;aria di essere una vecchia slot machine. Presenta una placca a forma di mano e una leva sul fianco destro.
+
+&gt;&gt;[[Osserva più da vicino|R51]]</tw-passagedata><tw-passagedata pid="52" name="R5Life" tags="" position="3902,1262" size="100,100">(hit: $r5_hit)
+Appoggi la mano sinistra sul pannello e tiri la leva. Subito ti senti più stanco.
+La macchia sbuffa e numerosi disegni colorati saettano sullo schermo. 
+Dopo qualche istante un oggetto cade dal bocchettone in basso.
+
+E&#39; una piccoal sfera dorata con delle incisioni nere. Noti che emette una strana luminescenza bluastra.
+
+&gt;&gt;[[Aggiungi all&#39;inventario|S52]].</tw-passagedata><tw-passagedata pid="53" name="R51" tags="R_5" position="3734,1189" size="100,100">(trial: &quot;R&quot;, 5, 0)
+Un cartello è appeso sul fianco della macchina:
+
+**SINTETIZZATORE di CASUALITA&#39; QUANTISTICA**
+
+Tenta la fortuna con il Fantastico Sintetizzatore di Casualità Quantistica.
+Questo dispositivo sfrutta il potere del caos cosmico per trasformare **Energia Quantica** in meravigliosi Oggetti.
+
+Scommetti per vincere un **Artefatto**!!
+
+Cosa vuoi scommettere:
+&gt;&gt;[[Scommetti 5 EQ|R5Life]]
+&gt;&gt;[[Lascia Perdere|R5Final]]</tw-passagedata><tw-passagedata pid="54" name="S52" tags="R_5" position="4066,1273" size="100,100">(addItem: &quot;Scudo Protonico&quot;)
+(trial: &quot;R&quot;, 5, 1)
+
+Si tratta di uno **Scudo Protonico**
+è in grado di parare qualsiasi colpo potreggendo il suo utilizzatore.
+
+Aggiungi lo scudo al tuo inventario.
+
+Cosa volete fare?
+&gt;&gt;[[Scommetti ancora|R5Life1]]
+&gt;&gt;[[Lascia perdere|R5Final]]   </tw-passagedata><tw-passagedata pid="55" name="R5Final" tags="" position="4783,1136" size="100,100">E&#39; ora di proseguire la vostra avventura, tornate indietro.
+
+&gt;&gt;[[Continua|SE1final]]</tw-passagedata><tw-passagedata pid="56" name="SE116" tags="" position="5058,629" size="100,100">(heal: $se1_heal_end)
+Il professore sembra impazzito dalla gioia. Si sposta freneticamente da un computer all&#39;altro raccogliendo documenti e copiando file.
+
+&lt;i&gt;&quot;Grazie amici! Non so davvero come sdebitarmi.&quot;&lt;/i&gt;
+
+Vi passa **$se1_heal_end EQ**.
+
+&lt;i&gt;&quot;Ecco a voi quanto pattuito. Posso cavarmela da solo per il ritorno. Voglio affrirvi una cena, vediamoci all&#39;hotel Magnus su Pandora. A presto!!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Osserva il guanto|SE11615]]</tw-passagedata><tw-passagedata pid="57" name="SE60" tags="" position="2599,2424" size="100,100">(room: &quot;SE6&quot;, &quot;SE60&quot;, &quot;SE65final&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;holo_door.jpg&quot;)
+Dopo qualche minuto di cammino la vostra attenzione è attratta da un corridoio alla vostra sinistra.
+Il passaggio è bloccato da una parete laser blu semitrasparente.
+
+Oltre ad essa c&#39;è una porta di vetro particolarmente raffinata.
+Sopra vi è scritto &quot;**Esposizione Artefatti Rari**&quot;.
+Una luce dorata proviene da oltre il vetro.
+
+Alla vostra sinistra, prima della parete, c&#39;è un totem elettronico.
+
+&gt;&gt;[[Osserva il Totem|SE61]]</tw-passagedata><tw-passagedata pid="58" name="SE61" tags="SE_6" position="2831,2426" size="100,100">(trial: &quot;SE&quot;, 6, 0)
+Vi avvicinate al Totem Elettronico. Dispone di un piccolo schermo LCD con sotto una fessura. Lo schermo cita:
+
+&quot;&lt;i&gt;Accesso con restrinzioni. Prego, **Inserire la Licenza di Caccia** per accedere all&#39;Esposizione. Solo i Cacciatori identificati potranno oltrepassare la barriera&lt;/i&gt;&quot;
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Inserisci una licenza|SE611]]
+&gt;&gt;[[Lo ignori e prosegui per la tua strada|SE64]]</tw-passagedata><tw-passagedata pid="59" name="SE63" tags="" position="3341,2393" size="100,100">(hit: $se6_hit)
+Inserisci la licenza nella fessura. Un terminale nero appare sullo schermo e inizia a mostrare una cascata di numeri e scritte. 
+
+Una voce metallica gracchia: &quot;&lt;i&gt;Grazie per aver donato **$se6_hit cariche**, la Cripta Ringrazia &lt;3&lt;/i&gt;&quot;
+
+La parete laser si disperde, rivelando la realtà oltre ad essa. Non c&#39;è nessuna Esposizione di Artefatti, solo una parete metallica.
+
+Riprendi la tua Licenza prima di perdere altri oggetti.
+
+&gt;&gt;[[Continua|SE65final]]</tw-passagedata><tw-passagedata pid="60" name="SE64" tags="" position="3147,2635" size="100,100">Ti sembra troppo bello per essere vero, meglio non rischiare.
+Devi mostrare la licenza solo per entrare o uscire dalla Cripta. Un totem di questo genere non dovrebbe esistere qui.
+
+&gt;&gt;[[Continua|SE65final]]</tw-passagedata><tw-passagedata pid="61" name="SE62" tags="" position="3445,2214" size="100,100">(use: &quot;Licenza Smarrita&quot;)
+Estrai la Licenza di **Rebecca** e la inserisci nel totem. Un terminale nero appare sullo schermo e inizia a mostrare una cascata di numeri e scritte. 
+
+&lt;i&gt;Grazie per la gentile donazione&lt;/i&gt;
+cita lo schermo LCD, senza restituire la Licenza.
+
+La parete laser si disperde, rivelando la realtà oltre ad essa. Non c&#39;è nessuna Esposizione di Artefatti, solo una parete metallica.
+
+&gt;&gt;[[Continua|SE65final]]</tw-passagedata><tw-passagedata pid="62" name="SE65final" tags="" position="3542,2456" size="100,100">(endpoint: &quot;SE6&quot;, &quot;right&quot;)
+(image: &quot;corridor1.jpg&quot;)
+Meglio Continuare...questo posto è pieno di cose strane.</tw-passagedata><tw-passagedata pid="63" name="SE50" tags="" position="2731,1793" size="100,100">(room: &quot;SE5&quot;, &quot;SE50&quot;, &quot;SE5final&quot;, &quot;&quot;, &quot;&quot;, &quot;SE5backtrack&quot;)
+(image: &quot;it_lab.jpg&quot;)
+Apri la porta e ti trovi in una grande stanza piena di vecchi computer accatastati.
+Ogni cosa è ricoperta da uno spesso strato di polvere.
+Senti una lieve ronzio elettrico e il rumore di una tastiera meccanica.
+
+&gt;&gt;[[Segui il rumore|SE51]]</tw-passagedata><tw-passagedata pid="64" name="SE51" tags="" position="2890,1750" size="100,100">Vi fate strada tra le montagne di vecchi computer abbandonati. 
+Presto ne scoprite la sorgente: si tratta di un ragazzo magro, con i capelli castani e gli occhiali. Una barbetta incolta gli cresce a chiazze sulle guance, inodssa una maglia larga con disegnato un ometto baffuto e vestito di rosso, sembra un idraulico.
+
+Sta scrivendo freneticamente al computer, sembra molto concentrato.
+
+&gt;&gt;[[Attira la sua attenzione|SE52]]</tw-passagedata><tw-passagedata pid="65" name="SE52" tags="" position="3066,1760" size="100,100">Il ragazzo alza la testa e si guarda attorno confuso, poi vi vede e vi viene incontro.
+Notate che non è armato, indossa solo un guanto olografico portatile di ultima generazione.
+
+&lt;i&gt;&quot;Salve Cacciatori! Spero che la vostra caccia proceda bene. Scusate la confusione, non ricevo molte visite.&quot;&lt;/i&gt;
+
+&lt;i&gt;&quot;Cosa posso fare per voi?&quot;&lt;/i&gt;
+
+&gt;&gt;[[&quot;Chi sei?&quot;|SE53]]</tw-passagedata><tw-passagedata pid="66" name="SE53" tags="SE_5" position="3246,1762" size="100,100">(trial: &quot;SE&quot;, 5, 0)
+&lt;i&gt;&quot;Il mio nome è Linux, sono un Tecnico Informatico della Cripta.
+Da qualche giorno un terribile virus ha infettato i nostri sistemi.
+Per ora si limita a bloccare alcune porte, ma temo che si stia evolvendo.
+Alcuni Cacciatori hanno segnalato oggetti scomparsi dall&#39;inventario o una perdita progressiva della **Energia Quantica** raccolta&quot;&lt;/i&gt;.
+
+&lt;i&gt;&quot;Se non ti dispiace, vorrei scansionare la tua licenza&quot;&lt;/i&gt; dice Linux, allungato la mano guantata.
+
+&gt;&gt;[[Meglio essere sicuri, gli passi la licenza|SE54]]
+&gt;&gt;[[La tua licenza sembra a posto, declini gentilmente l&#39;offerta|SE55]]</tw-passagedata><tw-passagedata pid="67" name="SE54" tags="SE_5" position="3460,1818" size="100,100">(trial: &quot;SE&quot;, 5, 1)
+Linux prende la tua Licenza e la scansiona, la sua espressione si fa seria mentre numerose scritte rosse appaiono sullo schermo olografico.
+
+&lt;i&gt;&quot;Come temevo, sei stato infettato!!. Guarda il tuo inventario!&quot;&lt;/i&gt;
+
+Linux ti mostra lo schermo olografico e noti che tutti gli oggetti sono spariti e le Celle Energetiche lentamente stanno calando. 
+Se arrivano a zero non potrai Continuare la caccia! 
+
+&lt;i&gt;&quot;So che non è la procedura, ma ti chiedere di lasciarmi la tua Licenza, eliminerò il virus e cercherò di recuperare le Celle perdute. 
+Dovrei metterci qualche ora.&quot;&lt;/i&gt;
+
+&gt;&gt;[[Rifiuta cordialmente|SE56]]
+&gt;&gt;[[Lascia la Licenza a Linux|SE58]]</tw-passagedata><tw-passagedata pid="68" name="SE55" tags="" position="3446,1582" size="100,100">&lt;i&gt;&quot;Ti ringrazio, ma non ho notato alcun problema. Farò analizzare la Licenza una volta uscito da questo posto&quot;&lt;/i&gt; rispondi cordialmente.
+
+&lt;i&gt;&quot;Nessun problema, io lo facevo per te. Ora, se non vi dispiace, quella è l&#39;uscita, ho del lavoro da fare.&quot;&lt;/i&gt; dice Linux indicandovi una porticina.
+
+&gt;&gt;[[Continua|SE5final]]</tw-passagedata><tw-passagedata pid="69" name="SE56" tags="" position="3636,1897" size="100,100">(use: &quot;LICENZA DI CACCIA&quot;)
+Lasci la licenza a Linux, non puoi permettere che uno stupido virus ti faccia perdere tutto.
+
+&lt;i&gt;&quot;Grazie amico, mi dispiace per l&#39;accaduto&quot;&lt;/i&gt; risponde Linux.
+
+&lt;i&gt;&quot;Ecco tieni, questa è una **Licenza temporanea**, ti permetterà di uscire dalla Cripta. Ci ho messo tutte le **Celle Energetiche** rimaste. Potrai ritirare la licenza all&#39;ufficio 47-beta/2.&quot;&lt;/i&gt;
+
+Ti allunga una scheda grigia, senza stemmi evidenti.
+
+&lt;i&gt;&quot;Ora, se non vi dispiace, quella è l&#39;uscita, ho del lavoro da fare.&quot;&lt;/i&gt; dice Linux indicandovi una porticina.
+
+&gt;&gt;[[Continua|SE57]]</tw-passagedata><tw-passagedata pid="70" name="SE57" tags="" position="3828,1915" size="100,100">Mentre uscite ti rigiri la Licenza temporanea tra le dita.
+
+&gt;&gt;[[La guardi meglio|SE5fight]]</tw-passagedata><tw-passagedata pid="71" name="SE5fight" tags="fight" position="4021,1923" size="100,100">(fight: &quot;Linux&quot;)
+(feel: &quot;combat&quot;)
+Quella è una normalissima tessera di plastica! Non una licenza!
+Tornate subito indietro.
+
+Linux sogghigna: &lt;i&gt;&quot;Siete più svegli di quel che pensassi, ma non riavrete la Licenza facilmente&quot;&lt;/i&gt;
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti Linux ti colpisce.
+
+&gt;&gt;[[Successo|SE5fightSuc]]
+&gt;&gt;[[Fallimento|SE5fightFail]]</tw-passagedata><tw-passagedata pid="72" name="SE5final" tags="" position="4160,1619" size="100,100">(feel: &quot;happy&quot;)
+Aprite la porticina e vi ritrovate davanti un piccolo spazio con due cunicoli metallici. 
+
+Da che parte vuoi andare?
+
+&gt;&gt;[[Destra|SE5finalRight]]
+&gt;&gt;[[Sinistra|SE5finalLeft]]</tw-passagedata><tw-passagedata pid="73" name="SE40" tags="" position="3558,3029" size="100,100">(room: &quot;SE4&quot;, &quot;SE40&quot;, &quot;SE4back&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;pods.jpg&quot;)
+Una calda luce proviene dalla stanza davanti a voi.
+E&#39; una stanza davvero piccola, ospita solo 3 brandine, un frigorifero e un piccolo tavolo. In fondo, il corriodio continua.
+
+Alla vostra sinistra noti due capsule cilindriche di vetro aperte, ciascuna ha accanto una console di controllo.
+
+&gt;&gt;[[Guarda più da vicino|SE41]]</tw-passagedata><tw-passagedata pid="74" name="SE41" tags="SE_4" position="3755,3005" size="100,100">(trial: &quot;SE&quot;, 4, 0)
+Entrambi i macchinari presentano un grosso cilindro capace di contenere un essere umano adulto e un piccolo pannello di controllo all&#39;interno.
+
+Quello di destra è molto pulito e presenta una placca metallica con scritto &quot;**CAPSULA DI TRASFUSIONE ENERGETICA**&quot;
+
+Quello di sinistra invece è sporco e malmesso, il vetro è crepato e rotto in alcuni punti.
+Un tempo probabilmente c&#39;era una placca metallica a giudicare dal segno sulla parete.
+Qualcuno ha graffiato sul metallo la scritta &quot;**CAPSULA DI RECUPERO**&quot;
+
+&gt;&gt;[[Entri nella Capsula di Destra|SE4DX]]]
+&gt;&gt;[[Entri nella Capsula di Sinistra|SE4SX]]]</tw-passagedata><tw-passagedata pid="75" name="SE4SX" tags="" position="4003,3130" size="100,100">(heal: $se4_heal)
+
+Entri nella capsula di Sinistra cercando di non tagliarti con le schegge di vetro.
+C&#39;è puzza di muffa qui dentro. Dallo sporco pannello di controllo selezioni &quot;**Recupero Completo**&quot;.
+
+Il tuo corpo viene investito da una calda luce verde, le tue ferite si rimargiano e ti senti subito in forze.
+
+&gt;&gt;[[Esci dalla Capsula|S4SX2]]</tw-passagedata><tw-passagedata pid="76" name="SE4DX" tags="" position="4002,2966" size="100,100">Entri nella capsula di Destra, è piuttosto confortevole.
+Dal pannello interno selezioni &quot;**Trasfusione Completa**&quot;.
+
+Tutto avviene in un istante, senti una forte scossa che attraversa il tuo corpo, ti senti molto debole, tutto si fa buio.
+Cadi a terra privo di sensi.
+
+&gt;&gt;[[Continua|SE4DX1]]</tw-passagedata><tw-passagedata pid="77" name="SE4DX1" tags="" position="4178,2932" size="100,100">(hit: $se4_hit)
+Riapri gli occhi lentamente, ogni centrimetro del tuo corpo freme di dolore. Quando tempo sarà passato?
+
+Piano piano ti rialzi e strisci fuori da questa maledetta macchina.
+
+&gt;&gt;[[Esci dalla Capsula|S4DX2]]</tw-passagedata><tw-passagedata pid="78" name="SE4end" tags="" position="5021,3068" size="100,100">(endpoint: &quot;SE4&quot;, &quot;right&quot;)
+Vi lasciate la stanzetta alle spalle e tornate indietro.</tw-passagedata><tw-passagedata pid="79" name="SE20" tags="" position="2914,3664" size="100,100">(room: &quot;SE2&quot;, &quot;SE20&quot;, &quot;SE26&quot;, &quot;&quot;, &quot;SE2back&quot;, &quot;&quot;)
+State camminando quando sentite un forte vento provenire dal tunnel davanti a voi.
+Man mano che avanzate il vento si fa sempre più forte. Non è un soffio costante, sono più raffiche intermittenti.
+
+&gt;&gt;[[Continua|SE21]]</tw-passagedata><tw-passagedata pid="80" name="SE21" tags="" position="3074,3660" size="100,100">(image: &quot;chasm.jpg&quot;)
+Arrivate alla fine del tunnel. Le pareti metalliche lasciano il posto alla nuda roccia.
+Davanti a voi si apre un baratro del quale non vedete il fondo. Nemmeno il soffitto della caverna è visibile.
+
+Sopra di voi a centinaia di metri, dall&#39;altra parte del baratro, vedete una porta.
+
+Non ci sono altri passaggi.
+
+&gt;&gt;[[Continua|SE22]]</tw-passagedata><tw-passagedata pid="81" name="SE22" tags="R_3" position="3249,3666" size="100,100">(trial: &quot;R&quot;, 3, 1)
+Forse le correnti d&#39;aria sono abbastanza forti da spingervi verso il passaggio. 
+Ma potreste anche non arrivare abbastanza in alto e cadere rovinosamente nel baratro.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Salti|SE23]]
+&gt;&gt;[[Torni indietro|SE24]]</tw-passagedata><tw-passagedata pid="82" name="SE23" tags="" position="3455,3596" size="100,100">Vi fermate qualche minuto ad osservare le correnti ascensionale.
+Durano circa 15 secondi e sono intervallate da 30 secondi di pausa.
+Potreste farcela.
+
+Calcolate bene i tempi, prendete la rincorsa e, con un urlo di eccitazione mista a paura vi buttate nel vuoto.
+
+Precipitate per qualche istante poi una folata di vento vi spinge verso l&#39;alto.
+Volate nell&#39;oscurità più totale verso la luce sopra di voi.
+
+&gt;&gt;[[Continua|SE25]]</tw-passagedata><tw-passagedata pid="83" name="SE24" tags="" position="3406,3759" size="100,100">Mentre valutate il da farsi sentite un rumore di passi provenire dal tunnel dietro di voi.
+
+Una ragazzina sbuca dall&#39;oscurità. Il suo corpo atletico è segnato da numerose cicatrici nonostante la giovane età.
+Lunghi capelli neri fluttuano mentre cammina. Indossa comodi vestiti ma noti che porta una pistola laser in cintura e uno scudo ai protoni fissato al braccio.
+
+&lt;i&gt;&quot;Hey Ciao! Che bello vedere altri Cacciatori :D&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|SE28]]</tw-passagedata><tw-passagedata pid="84" name="SE25" tags="" position="3625,3499" size="100,100">(hit: $se2_hit)
+Improvvisamente il vento si ferma!
+Precipitate nell&#39;oscurità più totale!!
+
+Non ti fai prendere dal panico, mentre sprofondate nel baratro attivi il tuo Scudo ai Protoni.
+Una sfera di luce blu vi avvolge, attutendo la caduta.
+
+Subisci comunque **$se2_hit danni**.
+
+&gt;&gt;[[Continua|SE251]]</tw-passagedata><tw-passagedata pid="85" name="SE26" tags="" position="4150,3406" size="100,100">(endpoint: &quot;SE2&quot;, &quot;right&quot;)
+Imboccate il tunnel e proseguite nell&#39;oscurità. Dopo poco le pareti tornano ad essere di metallo.</tw-passagedata><tw-passagedata pid="86" name="SE28" tags="" position="3564,3795" size="100,100">Vi presentate cordialmente.
+
+&lt;i&gt;&quot;Molto piacere, io sono Sofia! è da tanto che non vengo qui, mi mancava questo baratro&quot;&lt;/i&gt; Dice guardando in basso con aria sognante.
+
+&lt;i&gt;&quot;Che dite, ci buttiamo? Oppure avete paura?&quot;&lt;/i&gt;
+
+Sofia si avvicina pericolosamente al bordo del baratro, si gira verso di te e ti allunga una mano sogghignando. &lt;i&gt;&quot;Quanto te la rischi?&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|SE29]]</tw-passagedata><tw-passagedata pid="87" name="SE29" tags="SE_2" position="3767,3789" size="100,100">(trial: &quot;SE&quot;, 2, 0)
+Non fai in tempo ad afferrare la sua mano che lei si lascia cadere nel vuoto.
+Nel farlo vi sorride, ha lo sguardo pieno di vita.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Ti butti con Sofia|SE210]]
+&gt;&gt;[[Questa è pazza! Meglio tornare indietro|SE2back]]</tw-passagedata><tw-passagedata pid="88" name="SE210" tags="" position="3929,3685" size="100,100">Prendete la rincorsa e, con un urlo di eccitazione mista a paura vi buttate nel vuoto.
+
+Precipitate per qualche istante poi una folata di vento vi spinge verso l&#39;alto.
+Volate nell&#39;oscurità più totale verso la luce sopra di voi. Sofia vi supera, facendo capriole nell&#39;aria e urlando di gioia.
+
+&gt;&gt;[[Continua|SE2100]]</tw-passagedata><tw-passagedata pid="89" name="SE2back" tags="" position="4036,3835" size="100,100">(endpoint: &quot;SE2&quot;, &quot;back&quot;)
+(image: &quot;corridor1.jpg&quot;)
+Quella doveva proprio essere pazza. Vi allontanate di corsa spinti dalle folate di vento alle vostre spalle.</tw-passagedata><tw-passagedata pid="90" name="SE00" tags="" position="2660,4460" size="100,100">(room: &quot;SE0&quot;, &quot;SE00&quot;, &quot;SE0DX&quot;, &quot;SE0SX&quot;, &quot;SE2back&quot;, &quot;SE0backtrack&quot;)
+(image: &quot;ice_tunnel.jpg&quot;)
+Man mano che camminate senti la temperatura abbassarsi.
+Le pareti metalliche del tunnel sono ricoperte di piccoli cristalli di ghiaccio.
+
+&gt;&gt;[[Continua|SE01]]</tw-passagedata><tw-passagedata pid="91" name="SE01" tags="" position="2820,4466" size="100,100">(image: &quot;ice_cave.jpg&quot;)
+Arrivate in un&#39;ampia grotta.
+Una bianca luce proviene da un&#39;apertura sul soffitto. Tutto è ricoperto da uno strato di neve; grosse stallattiti costellano il pavimento. 
+ 
+Regna un silenzio surreale rotto soltanto dal suono del tuo respiro.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Osserva le stalagmiti|SE02]]
+&gt;&gt;[[Prosegui|SE03]]</tw-passagedata><tw-passagedata pid="92" name="SE02" tags="" position="2975,4383" size="100,100">Vi muovete verso la stalattite più vicina.
+Camminando notate che la neve sul pavimento è strana, è leggermente appiccicosa.
+
+Osservate la stalagmite più da vicino.
+Il ghiaccio risplende creando meravigliosi effetti di luce.
+Qualcosa attira la tua attenzione, c&#39;è un oggetto congelato all&#39;interno del blocco.
+Sembra proprio un **Artefatto** viola!
+
+&gt;&gt;[[Pulisci la superfice per vedere meglio|SE04]]</tw-passagedata><tw-passagedata pid="93" name="SE03" tags="" position="2971,4540" size="100,100">Camminando notate che la neve sul pavimento è strana, è leggermente appiccicosa.
+Dopo qualche passo il tuo piede urta qualcosa di duro, guardate in basso e notate un bagliore violaceo provenire da sotto la neve.
+
+Sposti la neve e scopri un grosso **Artefatto** violaceo costellato da rune illeggibili.
+
+&gt;&gt;[[Raccogli l&#39;artefatto|SE06]]</tw-passagedata><tw-passagedata pid="94" name="SE04" tags="" position="3153,4380" size="100,100">Rabbrividisci: Una mano è stretta attorno all&#39; **Artefatto**. Un uomo è congelato dentro la stalagmite!!
+
+Improvvisamente qualcosa vi solleva in aria! Una morsa gelida vi stringe alla vita.
+Vi girate appena in tempo per vedere un grosso **Ragno di Cristallo**.
+
+&gt;&gt;[[Continua|SE05]]</tw-passagedata><tw-passagedata pid="95" name="SE05" tags="" position="3321,4474" size="100,100">(image: &quot;spider.jpg&quot;)
+Siete proprio in una pessima situazione.
+Il ragno sta lentamente avvolgento la sua bava attorno a voi, e subito questa si trasmuta in ghiaccio. 
+
+Provi a sparare al Ragno mentre iCub mena fendenti con la spada.
+E&#39; tutto inutile, il corpo del ragno sembra impenetrabile.
+Ogni secondo che passa il tuo copro è più freddo e rigido.
+
+&gt;&gt;[[Continua|SE07]]</tw-passagedata><tw-passagedata pid="96" name="SE06" tags="" position="3155,4554" size="100,100">Non fate in tempo a realizzare l&#39;accaduto che qualcosa vi solleva in aria, una morsa gelida vi stringe alla vita.
+Ti giri appena in tempo per vedere un grosso **Ragno di Cristallo**.
+
+&gt;&gt;[[Continua|SE05]]</tw-passagedata><tw-passagedata pid="97" name="SE07" tags="" position="3481,4472" size="100,100">E&#39; la fine, solo la testa è rimasta fuori, fatichi a respirare per il freddo.
+
+&gt;&gt;[[Tutto si fa nero|SE08]]</tw-passagedata><tw-passagedata pid="98" name="SE08" tags="" position="3653,4474" size="100,100">Il silenzio viene squaciato da un urlo!
+Un getto di fuoco avvolge il ragno riempendo la grotta di lingue incandescenti.
+Atterri nella neve con un tonfo sordo e ti rialzati, bagnato e infreddolito.
+ 
+Un signore magro, con i capelli grigi scompigliati e un camice bianco sta sparando al mostro con un lanciafiamme.
+Vi guarda e ammicca.
+ 
+&quot;&lt;i&gt;Appena in tempo eh! &lt;b&gt;Sono Ricko!&lt;/b&gt; Su in piedi abbiamo una bestia da sconfiggere!&lt;/i&gt;&quot;
+
+&gt;&gt;[[Vi alzate a fatica, pronti per la rivincita!|SE0fight]]</tw-passagedata><tw-passagedata pid="99" name="SE0fight" tags="fight" position="3813,4466" size="100,100">(fight: &quot;Ragno di Cristallo&quot;)
+(image: &quot;spider.jpg&quot;)
+(feel: &quot;combat&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti il Ragno di Cristallo ti colpisce
+
+&gt;&gt;[[Successo|SE0fightSuc]]
+&gt;&gt;[[Fallimento|SE0fightFail]]</tw-passagedata><tw-passagedata pid="100" name="SE09" tags="SE_0" position="4024,4455" size="100,100">(trial: &quot;SE&quot;, 0, 0)
+(image: &quot;ice_cave.jpg&quot;)
+(feel: &quot;happy&quot;)
+Mentre riprendete fiato il vostro salvatore raccoglie l&#39; **Artefatto** viola rotolato a terra durante il combattimento.
+
+&quot;&lt;i&gt;Meraviglioso, non ho mai visto un **Artefatto** tanto bello. Questo lo prendo io se non vi dispiace&lt;/i&gt;&quot;
+
+&gt;&gt;[[Gli lasci l&#39;artefatto|SE010]]
+&gt;&gt;[[Non se ne parla! L&#39;ho trovato io per primo!|SE011]]</tw-passagedata><tw-passagedata pid="101" name="SE010" tags="" position="4221,4553" size="100,100">&quot;&lt;i&gt;Eheheh Saggi ragazzi, senza di me sareste solo dei ghiaccioli&lt;/i&gt;&quot; ribatte il vecchio ammiccando
+
+&quot;&lt;i&gt;Beh, Addio!&lt;/i&gt;&quot;
+
+il vecchio estrae una strana pistola, spara un colpo nel vuoto e un portale verde si apre nel nulla. Il vecchio vi entra e sparisce in un istante.
+
+Cosa vuoi fare?
+&gt;&gt;[[Guardi in giro|SE012]]
+&gt;&gt;[[Prosegui|SE013]]</tw-passagedata><tw-passagedata pid="102" name="SE011" tags="" position="4160,4307" size="100,100">&quot;*EhEhEh Quindi vuoi giocartela così. Molto bene, dovrai prendertelo*&quot;
+
+&gt;&gt;[[Combattete!|SE0fight2]]</tw-passagedata><tw-passagedata pid="103" name="SE012" tags="" position="4438,4401" size="100,100">(addItem: &quot;Artiglio di Ragno&quot;)
+
+Tutto è congelato ed inutilizzabile. L&#39;unica cosa potenzialmente di valore è un **Artiglio di Ragno** che metti nello zaino.
+
+&gt;&gt;[[Prosegui|SE013]]</tw-passagedata><tw-passagedata pid="104" name="SE013" tags="" position="4628,4596" size="100,100">Continuate ad esplorare la grotta fino ad un bivio, un tunnel prosegue a destra, l&#39;altro a sinistra.
+
+Dove vuoi andare?
+&gt;&gt;[[Destra|SE0DX]]
+&gt;&gt;[[Sinistra|SE0SX]]</tw-passagedata><tw-passagedata pid="105" name="SE0fight2" tags="fight" position="4280,4139" size="100,100">(fight: &quot;Ricko&quot;)
+(feel: &quot;combat&quot;)
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti Ricko ti colpisce
+
+&gt;&gt;[[Successo|SE0fight2Suc]]
+&gt;&gt;[[Fallimento|SE0fight2Fail]]</tw-passagedata><tw-passagedata pid="106" name="SE014" tags="" position="4623,4231" size="100,100">(addItem: &quot;Artefatto Viola&quot;)
+(addItem: &quot;Lanciafiamme&quot;)
+(feel: &quot;happy&quot;)
+Raccogli l&#39; **Artefatto Viola** e il **Lanciafiamme** dal cadavere del vecchio. Li aggiungi all&#39;inventario.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Guarda in giro|SE012]]
+&gt;&gt;[[Continua|SE013]]</tw-passagedata><tw-passagedata pid="107" name="SER00" tags="" position="6358,1552" size="100,100">(room: &quot;SER0&quot;, &quot;SER00&quot;, &quot;SER0final&quot;, &quot;&quot;, &quot;SER0back&quot;, &quot;&quot;)
+(image: &quot;corridor2.jpg&quot;)
+Dopo alcuni minuti di cammino arrivate ad una stanza sferica. Le pareti completamente lisce curvano dolcemente fondendosi con il pavimento e il soffitto a cupola. Al centro della stanza un piedistallo si erge dal pavimento.
+
+Sul piedistallo si trova una cupola di vetro e, al suo interno, fluttua un dischetto dorato, sembra proprio una moneta. Una singola lampada proietta un fascio di luce sulla teca.
+
+&gt;&gt;[[Ti avvicini|SER01]]</tw-passagedata><tw-passagedata pid="108" name="SER01" tags="" position="6557,1609" size="100,100">Avvicinandovi notate che la cupola di vetro dispone di un&#39;impugnatura sulla cima, sembra soltanto appoggiata al piedistallo. La moneta dorata al suo interno fluttua dolcemente. Su un lato notate la scritta **Extra Life** e sull&#39;altro una corona.
+
+(feel: &quot;surprised&quot;)
+Gli occhi di iCub si illuminano.
+
+&gt;&gt;[[Continua|SER02]]</tw-passagedata><tw-passagedata pid="109" name="SER02" tags="" position="6724,1600" size="100,100">(say: &quot;Wow questo è un oggetto leggendario! Non credevo esistesse! Quando il suo possessore, biologico o meccanico, muore, questa moneta permette di riavvolgere il tempo su di lui a prima che morisse!!&quot;)
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Solleva la cupola|SER03]]
+&gt;&gt;[[Rompi la cupola|SER04]]</tw-passagedata><tw-passagedata pid="110" name="SER03" tags="" position="6877,1504" size="100,100">Sollevi la cupola con delicatezza e l&#39;appoggi a terra.
+La moneta continua a fluttuare impassibile.
+
+&gt;&gt;[[Continua|SER05]]</tw-passagedata><tw-passagedata pid="111" name="SER04" tags="" position="6876,1687" size="100,100">Estrai la spada e meni un fendente. La cupola esplode in mille pezzi che si disperdono sul pavimento.
+
+La moneta continua a fluttuare impassibile.
+
+&gt;&gt;[[Continua|SER05]]</tw-passagedata><tw-passagedata pid="112" name="SER05" tags="" position="7022,1590" size="100,100">(feel: &quot;scared&quot;)
+Improvvisamente, la stanza viene invasa da una luce rosso sangue. Una sirena squarcia il silenzio.
+Bracci robotici escono dalle pareti puntandovi decine di pistole.
+
+&quot;**RILEVATA VIOLAZIONE - IDENTIFICARSI!!**&quot; gracchia una voce robotica.
+
+&quot;&lt;i&gt;Io sono un Cacciatore della Cripa e questo è iCub!&lt;/i&gt;&quot;
+
+&quot;**RILEVATA MANOMISSIONE - PREPARARSI ALL&#39;ATTACCO**&quot;
+
+La torretta più vicina spara un colpo al laser.
+
+&gt;&gt;[[Cerchi di schivare l&#39;attacco|SER05Roll]]</tw-passagedata><tw-passagedata pid="113" name="SER0fight" tags="fight" position="7531,1614" size="100,100">(fail:)
+(fight: &quot;CERBERUS 101&quot;)
+(feel: &quot;combat&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti CERBERUS 101 ti colpisce.
+
+&gt;&gt;[[Successo|SER0fightSuc]]
+&gt;&gt;[[Fallimento|SER0fightFail]]</tw-passagedata><tw-passagedata pid="114" name="SER06" tags="" position="8238,1570" size="100,100">(say: &quot;Forse c&#39;è ancora una possibilità! Posso provare a hackerare le difese della stanza e fermare l&#39;attacco! Tienili occupati!&quot;)
+
+(pose: &quot;ai_mode&quot;)
+
+Attiri l&#39;attenzione delle torrette mentre iCub chiude gli occhi e distende le braccia. I suoi movimenti si fanno calmi mentre tu schivi e ti difendi dalla tempesta di raggi laser.
+
+&gt;&gt;[[Continua|SER061]]</tw-passagedata><tw-passagedata pid="115" name="SER07" tags="" position="8425,1606" size="100,100">Lentamente una porta si apre nella parete rivelando un corridoio illuminato di arancione.
+
+Cosa vuoi fare?
+&gt;&gt;[[Controlla se iCub sta bene|SER08]]
+&gt;&gt;[[Vai a prendere la moneta|SER09]]</tw-passagedata><tw-passagedata pid="116" name="SER08" tags="" position="8546,1491" size="100,100">Il piccolo robot sta ansimando, per quanto un robot possa ansimare. 
+
+(pose: &quot;home_pg&quot;)
+
+A scatti si rialza, è visibilmente stanco ma sorride.
+
+(say: &quot;Per fortuna stai bene, credevo proprio di non riuscire a fermarli. Forza, prendiamo quella moneta!&quot;)
+
+&gt;&gt;[[Continua|SER081]]</tw-passagedata><tw-passagedata pid="117" name="SER09" tags="" position="8594,1689" size="100,100">Ti avvicini al piedistallo.
+
+(pose: &quot;home&quot;)
+
+Il robot si rialza a fatica e ti raggiunge dopo poco.
+Afferri la moneta e l&#39;osservi meglio alla luce della lampada.
+
+&gt;&gt;[[Continua|SER010]]</tw-passagedata><tw-passagedata pid="118" name="SER010" tags="SER_0" position="8778,1714" size="100,100">(trial: &quot;SER&quot;, 0, 0)
+La moneta **EXTRA LIFE** risplende dorata tra le tue mani.
+iCub Continua a guardarla desideroso.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Tieni la moneta|SER011]]
+&gt;&gt;[[Dai la moneta ad iCub|SER012]]</tw-passagedata><tw-passagedata pid="119" name="SER011" tags="" position="8842,1492" size="100,100">(addItem: &quot;EXTRA LIFE&quot;)
+Metti la moneta nell&#39;inventario. Se mai dovessi perdere tutta l&#39;Energia Quantica questa moneta protrà prevenire la tua morte.
+
+E&#39; ora di Continuare, cosa vuoi fare?
+&gt;&gt;[[Proseguite|SER0final]]
+&gt;&gt;[[Tornate indietro|SER0back]]</tw-passagedata><tw-passagedata pid="120" name="SER012" tags="" position="8947,1807" size="100,100">Altro che vita Extra, se non fosse stato per iCub non avresti più nemmeno questa vita. Passi la moneta al robot che la mette felice nel suo inventario.
+
+(say: &quot;Grazie amico mio!&quot;, &quot;super_happy&quot;)
+
+E&#39; ora di Continuare, cosa vuoi fare?
+&gt;&gt;[[Proseguite|SER0final]]
+&gt;&gt;[[Tornate indietro|SER0back]]</tw-passagedata><tw-passagedata pid="121" name="SER0back" tags="" position="9291,1518" size="100,100">(endpoint: &quot;SER0&quot;, &quot;back&quot;)
+Tornate indietro</tw-passagedata><tw-passagedata pid="122" name="SER30" tags="" position="6150,2494" size="100,100">(room: &quot;end&quot;, &quot;SER30&quot;, &quot;endOUT&quot;, &quot;endIN&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;room.jpg&quot;)
+Arrivate a una stanza cubica completamente spoglia. Unica nota interessante è la porta davanti a voi, sopra ha un cartello con scritto &quot;Sala Relax&quot;.
+
+&gt;&gt;[[Ti guardi attorno|SER31]]
+&gt;&gt;[[Vai alla porta|SER32]]</tw-passagedata><tw-passagedata pid="123" name="SER31" tags="" position="6295,2412" size="100,100">Vi separate e date un&#39;occhiata in giro. Non noti nulla di particolarmente interessante. I neon sul soffitto si riflettono sul pavimento lucido.
+Sei assorto nei tuoi pensieri quando...
+(say: &quot;Hey qui! C&#39;è qualcosa!&quot;)
+
+&gt;&gt;[[Ti avvicini|SER33]]</tw-passagedata><tw-passagedata pid="124" name="SER32" tags="" position="6301,2576" size="100,100">Finalmente un po&#39; di riposo! Ti stai dirigendo verso la &quot;Sala Relax&quot; quando...
+(say: &quot;Hey qui! C&#39;è qualcosa!&quot;)
+
+&gt;&gt;[[Ti avvicini|SER33]]</tw-passagedata><tw-passagedata pid="125" name="SER33" tags="" position="6483,2496" size="100,100">(pose: &quot;confusedSearch&quot;)
+iCub sta osservando con attenzione una delle pareti. Ti sembra una parete normalissima.
+(say: &quot;Probabilmente un umano non può vederlo, ma qui c&#39;è qualcosa di strano&quot;)
+(pose: &quot;secretDoor&quot;)
+
+iCub tocca alcuni punti sulla parete, strani simboli verdi appaiono al suo tocco.
+
+improvvisamente due tagli verticali appaiono nella parete, una sezione si sposta di lato, rivelando un corridoio completamente buio.
+
+&gt;&gt;[[Continua|SER34]]</tw-passagedata><tw-passagedata pid="126" name="SER34" tags="SER_3" position="6650,2478" size="100,100">(trial: &quot;SER&quot;, 3, 0)
+Il corridoio oltre la porta è completamente buio ed emana un odore pungente di muffa.
+(say: &quot;Lo sapevo! Il mio istinto dice che dovremmo andare di qua! Sento una forte fonte energetica provenire da questo corridoio. Ti fidi di me?&quot;)
+
+Cosa vuoi fare?
+&gt;&gt;[[Segui il robot|SER10]]
+&gt;&gt;[[Vai alla stanza relax|SER36]]</tw-passagedata><tw-passagedata pid="127" name="SER10" tags="" position="7485,2329" size="100,100">(image: &quot;dark_tunnek.jpg&quot;)
+(say: &quot;Evviva!! Andiamo!&quot;)
+
+Accendete la spada laser per avere un minimo di luce in questo tunnel e vi avventurate nell&#39;oscurità.
+
+&gt;&gt;[[Continua|SER11]]</tw-passagedata><tw-passagedata pid="128" name="SER36" tags="" position="6805,2676" size="100,100">La stanza è molto semplice. Contiene solo un vecchio divano letto, un&#39;amaca, un tavolino da bar e un ridicolo vaso a forma di papero.
+
+Non ci sono altre uscite.
+
+Cosa vuoi fare?
+&gt;&gt;[[Guardi il vaso|SER319]]
+&gt;&gt;[[Ti riposi|SER37]]</tw-passagedata><tw-passagedata pid="129" name="SER3back" tags="" position="8856,2829" size="100,100">Hai un brutto presentimento su questo tunnel. Meglio non rischiare.
+
+iCub: &lt;i&gt;&quot;ok :( Sarà per un&#39;altra volta&quot;&lt;/i&gt;
+
+Tornate sui vostri passi. Appena uscite dalla stanza sentite la porta del passaggio chiudersi alle vostre spalle
+
+&gt;&gt;[[Continua|SER3back1]]</tw-passagedata><tw-passagedata pid="130" name="SER37" tags="" position="6995,2696" size="100,100">(heal: $ser3_heal)
+
+Chiudete la porta e vi fare una bella dormita. Per fortuna nulla interrompe il vostro sonno. Freschi e riposati riprendete la vostra avventura.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Guardi il vaso|SER320]]
+&gt;&gt;[[Torni indietro|SER322]]</tw-passagedata><tw-passagedata pid="131" name="SER11" tags="" position="7698,2323" size="100,100">Camminate per una decina di minuti, scendendo nelle profondità della terra.
+Man mano che scendete temperatura e umindità diventano insopportabili.
+Fitte ragnatele tappezzano il soffitto e senti il terribile scricchiolare di ossa sotto i tuoi piedi.
+
+&gt;&gt;[[Continua|SER12]]</tw-passagedata><tw-passagedata pid="132" name="SER40" tags="" position="6576,1000" size="100,100">(room: &quot;SER4&quot;, &quot;SER40&quot;, &quot;SER4final&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;corridor4.jpg&quot;)
+State camminando tranquillamente quando improvvisamente senti un rumore elettrico!
+
+(pose: &quot;shutdown&quot;)
+
+Il tuo compagno robotico si accascia sulla schiena inerte.
+Sulla sua pancia noti un piccolo schermo LCD e alcuni pulsanti.
+
+&gt;&gt;[[Ti avvicni e guardi meglio|SER41]]</tw-passagedata><tw-passagedata pid="133" name="SER41" tags="SER_4" position="6736,999" size="100,100">(trial: &quot;SER&quot;, 4, 0)
+(countdown: 30, &quot;start&quot;, &quot;SER4fail&quot;)
+Ti avvicini facendo attenzione, alcune scintille saltano dalla pancia del robot. 
+
+Vedi due batterie: Una è quella che gli hai dato tu, l&#39;altra è rossa e presenta una placca di trasferimento energetico
+
+Il display lampeggia di luce rossa mostrando una scritta a caratteri gialli:
+
+&quot;**BATTERIA IN STATO CRITICO**&quot;
+&quot;**SOSTITUIRE O RICARICARE IMMEDIATAMENTE**&quot;
+
+Subito sotto un Countdown scende inesorabilmente
+
+Cosa vuoi fare?
+&gt;&gt;[[Trasferisci Energia Quantica|SER42]]
+&gt;&gt;[[Sostituisci la Batteria con una delle tue|SER43]]</tw-passagedata><tw-passagedata pid="134" name="SER42" tags="SER_4" position="6776,772" size="100,100">(trial: &quot;SER&quot;, 4, 1)
+
+**Il Countdown Continua a scendere**
+
+Velocemente appoggi la mano sulla plancia di Trasferimento.
+Quanto vuoi trasferire?
+
+&gt;&gt;[[5 EQ|SER44]]
+&gt;&gt;[[8 EQ|SER45]]</tw-passagedata><tw-passagedata pid="135" name="SER43" tags="" position="7314,1210" size="100,100">(useConsumable: &quot;Batteria&quot;)
+(countdown: 30, &quot;stop&quot;, &quot;&quot;)
+(feel: &quot;recover_1&quot;)
+
+Velocemente rimuovi la Batteria Vitale e la sostituisci con una Cella Energetica dal tuo inventario.
+
+Il Countdown si arresta e lo schermo diventa arancione.
+
+&gt;&gt;[[Continua|SER431]]</tw-passagedata><tw-passagedata pid="136" name="SER44" tags="SER_4" position="7088,705" size="100,100">(hit: $ser4_hit_half)
+(countdown: 20, &quot;stop&quot;, &quot;&quot;)
+(feel: &quot;recover_1&quot;)
+
+L&#39;energia vitale viene trasferita e ti senti subito più debole.
+Il Countdown si arresta e lo schermo diventa arancione.
+
+&gt;&gt;[[Continua|SER431]]</tw-passagedata><tw-passagedata pid="137" name="SER45" tags="" position="6987,907" size="100,100">(hit: $ser4_hit_full)
+(countdown: 30, &quot;stop&quot;, &quot;&quot;)
+L&#39;energia vitale viene trasferita e ti senti subito più debole.
+Il Countdown si arresta e lo schermo diventa verde. Ora mostra un rassicurante smile giallo.
+
+(pose: &quot;home_pg&quot;)
+(say: &quot;Grazie amico, mi hai salvato!&quot;)
+
+&gt;&gt;[[Continuate|SER4final]]</tw-passagedata><tw-passagedata pid="138" name="SER46" tags="" position="7316,1019" size="100,100">(hit: $ser4_hit_half_2)
+
+Appoggi nuovamente la mano e trasferisci altra Energia Quantica.
+Lo schermo diventa verde mostrando un rassicurante smile giallo.
+
+(say: &quot;Grazie mi sento come nuovo! Che ne dici, continuiamo?&quot;, &quot;happy&quot;)
+
+&gt;&gt;[[Continua|SER4final]]</tw-passagedata><tw-passagedata pid="139" name="SER4final" tags="" position="7152,889" size="100,100">(endpoint: &quot;SER4&quot;, &quot;right&quot;)
+Continuate la vostra avventura</tw-passagedata><tw-passagedata pid="140" name="R0DX" tags="" position="1930,495" size="100,100">(endpoint: &quot;R0&quot;, &quot;right&quot;)
+Vi avventurate verso il corridoio di destra</tw-passagedata><tw-passagedata pid="141" name="R0SX" tags="" position="1903,719" size="100,100">(endpoint: &quot;R0&quot;, &quot;left&quot;)
+Vi avventurate verso il corriodio di sinistra</tw-passagedata><tw-passagedata pid="142" name="R241" tags="" position="1095,1327" size="100,100">Un sibilo squarcia il silenzio. Un artiglio emerge dall&#39;oscurità deciso a porre fine al vostro viaggio.
+
+&gt;&gt;[[Schivi l&#39;attacco|R24fail]]</tw-passagedata><tw-passagedata pid="143" name="R4final" tags="" position="1308,2355" size="100,100">(endpoint: &quot;R4&quot;, &quot;right&quot;)
+Continuate la vostra avventura</tw-passagedata><tw-passagedata pid="144" name="R6final" tags="" position="1152,2905" size="100,100">(endpoint: &quot;R4&quot;, &quot;right&quot;)
+(feel: &quot;happy&quot;)
+
+Continuate a scendere le scale</tw-passagedata><tw-passagedata pid="145" name="SE58" tags="" position="3741,1653" size="100,100">Questa storia ti puzza. La procedura dice di non dare mai la tua Licenza ad anima viva, e la tua licenza fino a un attimo fa non aveva problemi.
+
+&lt;i&gt;&quot;Ti ringrazio, ma non ho notato alcun problema. Farò analizzare la Licenza una volta uscito da questo posto&quot;&lt;/i&gt; rispondi cordialmente.
+
+&lt;i&gt;&quot;Nessun problema, io lo facevo per te. Ora, se non vi dispiace, quella è l&#39;uscita, ho del lavoro da fare.&quot;&lt;/i&gt; dice Linux indicandovi una porticina.
+
+&gt;&gt;[[Salutate e Proseguite|SE5final]]</tw-passagedata><tw-passagedata pid="146" name="S4DX2" tags="SE_4" position="4400,2878" size="100,100">(trial: &quot;SE&quot;, 4, 1)
+Vuoi entrare nella Capsula di Sinistra?
+
+&gt;&gt;[[Entri nella Capsula di Sinistra|SE4DXSX]]]
+&gt;&gt;[[Vai Via|SE4end]]]</tw-passagedata><tw-passagedata pid="147" name="SE4DXSX" tags="" position="4689,2766" size="100,100">
+Entri nella capsula di Sinistra cercando di non tagliarti con le schegge di vetro
+C&#39;è puzza di muffa qui dentro.
+Dallo sporco pannello di controllo selezioni &quot;**Recupero Completo**&quot;.
+
+&gt;&gt;[[Continua|SE4DXSX1]]</tw-passagedata><tw-passagedata pid="148" name="S4SX2" tags="SE_4" position="4261,3146" size="100,100">(trial: &quot;SE&quot;, 4, 1)
+Vuoi entrare nella Caspula di Destra?
+
+&gt;&gt;[[Entri nella Capsula di Destra|SE4SXDX]]]
+&gt;&gt;[[Vai Via|SE4end]]]</tw-passagedata><tw-passagedata pid="149" name="SE4SXDX" tags="" position="4468,3290" size="100,100">Entri nella capsula di Destra, è piuttosto confortevole.
+Dal pannello interno selezioni &quot;**Trasfusione Completa**&quot;.
+
+Tutto avviene in un istante, senti una forte scossa che attraversa il tuo corpo, ti senti molto debole, tutto si fa buio.
+Cadi a terra privo di sensi.
+
+&gt;&gt;[[Continua|SE4SX3]]</tw-passagedata><tw-passagedata pid="150" name="SE2100" tags="" position="4076,3660" size="100,100">(image: &quot;corridor1.jpg&quot;)
+Fortunatamente raggiungete la sporgenza oltre il baratro.
+Ogni fibra del tuo corpo trema per l&#39;adrenalina e la paura. Anche iCub sembra sù di giri.
+
+Ti fermi per qualche istante ringraziando gli Astri dell&#39;aiuto.
+Quindi ti guardi attorno. Dalla piazzola in cui vi trovate partono due tunnel identici.
+
+&gt;&gt;[[Vai a Destra|SE216]]
+&gt;&gt;[[Vai a Sinistra|SE216]]</tw-passagedata><tw-passagedata pid="151" name="SE216" tags="" position="4219,3595" size="100,100">Sofia esclama: &lt;i&gt;&quot;Assurdo! non mi stanco mai di questo posto. Siete stati davvero coraggiosi a buttarvi con me.
+Purtroppo ora le nostre strade si dividono, spero di incontrarvi ancora, che gli Astri vi proteggano!&quot;&lt;/i&gt;
+
+Sofia sparisce nell&#39;altro tunnel.
+
+&gt;&gt;[[Continua|SE26]]</tw-passagedata><tw-passagedata pid="152" name="SE1111" tags="" position="4374,470" size="100,100">(image: &quot;research_lab_1.jpg&quot;)
+Entrate nella stanza con cautela, le fiamme sono spente e il pavimento è ricoperto da una soffice schiuma bianca. Al centro della stanza un umanoide alto 2 metri sta urlando di dolore. Le fiamme dell**&#39;Elementale del Fuoco** sono spente e quello che resta è un ammasso senza vita di pietra fumante.
+
+&gt;&gt;[[Continua|SE118]]</tw-passagedata><tw-passagedata pid="153" name="SE118" tags="SE_1" position="4453,665" size="100,100">(trial: &quot;SE&quot;, 1, 2)
+
+Ogni cosa nella stanza è ridotta in cenere.
+Se i registri sono corretti, la prossima stanza contiene l&#39;**Elementale del Vuoto**.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Prosegui con la prossima stanza|SE114]]
+&gt;&gt;[[Meglio lasciar perdere|SE1giveup]]</tw-passagedata><tw-passagedata pid="154" name="SE11615" tags="" position="5240,605" size="100,100">(addItem: &quot;Guanto del non-infinito&quot;)
+Vi avvicinate al guanto dorato. Assomiglia in tutto e per tutto a un guanto d&#39;arme, di quelli usati dai cavalieri nel lontano medioevo.
+Una targetta sotto cita:
+**Guanto del non-infinito**
+
+Aggiungi il Guanto all&#39;invetario. Quando vorrai potrai schioccare le dita per eliminare istantaneamente un nemico (il guanto però si distruggerà)
+
+E&#39; ora di proseguire la vostra avventura
+
+&gt;&gt;[[Torna indietro|SE1finalPre1]]</tw-passagedata><tw-passagedata pid="155" name="SE1finalPre" tags="" position="3237,1234" size="100,100">State uscendo dalla stanza quando uno strano macchinario attira la tua attenzione.
+
+&gt;&gt;[[Ti avvicini|R50]]</tw-passagedata><tw-passagedata pid="156" name="SER081" tags="" position="8676,1576" size="100,100">Aiuti iCub a rialzarsi e insieme raggiungete il piedistallo.
+Afferri la moneta e l&#39;osservi meglio alla luce della lampada.
+
+&gt;&gt;[[Continua|SER010]]</tw-passagedata><tw-passagedata pid="157" name="SER0final" tags="" position="9011,1571" size="100,100">(endpoint: &quot;SER0&quot;, &quot;right&quot;)
+Inboccate il corridoio Continuando la vostra avventura</tw-passagedata><tw-passagedata pid="158" name="SER60" tags="" position="6519,277" size="100,100">(room: &quot;SER6&quot;, &quot;SER60&quot;, &quot;SER6final&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(pose: &quot;home_pg&quot;)
+(feel: &quot;confused&quot;)
+State raccogliendo il bottino dello scontro quando noti che iCub guarda intensamente la tua Licenza.
+Ha un&#39;aria pensosa, come se la stesse studiando.
+
+&gt;&gt;[[&quot;Tutto Bene?&quot;|SER61]]</tw-passagedata><tw-passagedata pid="159" name="SER61" tags="" position="6684,265" size="100,100">(say: &quot;Si scusa amico, solo che la tua Licenza è strana, sembra un modello molto arretrato. Hai mai sentito parlare delle Placche di Potenziamento?&quot;)
+
+&gt;&gt;[[&quot;Certo! Per chi mi hai preso?&quot;|SER62]]
+&gt;&gt;[[&quot;Mai sentite nominare, che cosa sono?&quot;|SER63]]</tw-passagedata><tw-passagedata pid="160" name="SER62" tags="" position="6846,167" size="100,100">(say: &quot;Come ben sai, le Placche di Potenziamento sfruttano un sistema di virtualizzazione logaritmica per incrementare le capacità dell&#39;avventuriero&quot;)
+(say: &quot;Se vuoi posso installarne una sulla tua Licenza, che ne dici?&quot;)
+    
+&gt;&gt;[[Quanto mi costerà?|SER64]]</tw-passagedata><tw-passagedata pid="161" name="SER63" tags="" position="6861,320" size="100,100">(say: &quot;Le Placche di Potenziamento sfruttano un sistema di virtualizzazione logaritmica per incrementare le capacità dell&#39;avventuriero&quot;)
+(say: &quot;Se vuoi posso installarne una sulla tua Licenza, che ne dici?&quot;)
+    
+&gt;&gt;[[Quanto mi costerà?|SER64]]</tw-passagedata><tw-passagedata pid="162" name="SER64" tags="SER_6" position="7024,239" size="100,100">(trial: &quot;SER&quot;, 6, 0)
+(say: &quot;Assolutamente niente, è il minimo che possa fare per ringraziarti&quot;)
+(say: &quot;Tutto quello che devi fare è darmi la tua Licenza per qualche minuto. La scansionerò e te la darò migliore di prima!&quot;)
+(pose: &quot;ask_license&quot;) #TODO
+    
+&gt;&gt;[[Dai la Licenza ad iCub|SER67]]
+&gt;&gt;[[Rifiuti gentilmente l&#39;offerta|SER66]]</tw-passagedata><tw-passagedata pid="163" name="SER66" tags="" position="7241,310" size="100,100">Non te la prendere amico, ma non posso accettare. La prima regola di un Cacciatore è  **&quot;Mai dare la tua Licenza ad anima viva o artificiale&quot;**.
+Comunque grazie!
+(say: &quot;Ok, lo capisco, troverò un altro modo di sdebitarmi&quot;)
+Proseguite nella vostra avventura...
+
+&gt;&gt;[[Continua|SER6final]]</tw-passagedata><tw-passagedata pid="164" name="SER67" tags="" position="7233,123" size="100,100">Passi la licenza al robot che la inserisce in una delle fessure sul suo petto.
+(pose: &quot;home&quot;)
+(say: &quot;Elaborazione Upgrade Licenza. Installazione Placca di Potenziamento&quot;)
+Il robot emette qualche bip e sbuff meccatronico.
+(say: &quot;Attenzione, rilevata incompatibilità strutturale. Annullare processo di aggiornamento&quot;, &quot;sad&quot;)
+iCub ti restituisce la licenza.
+(say: &quot;Mi dispiace ma c&#39;è qualcosa che non va magari riproviamo più tardi&quot;)
+Proseguite nella vostra avventura...
+
+&gt;&gt;[[Continua|SER6final]]</tw-passagedata><tw-passagedata pid="165" name="SER6final" tags="" position="7429,235" size="100,100">(endpoint: &quot;SER6&quot;, &quot;right&quot;)
+Continuate a scendere nella Cripta</tw-passagedata><tw-passagedata pid="166" name="R5Life1" tags="R_5" position="4242,1346" size="100,100">(hit: $r5_hit)
+(trial: &quot;R&quot;, 5, 2)
+Appoggi la mano sinistra sul pannello e tiri la leva. Subito ti senti più stanco.
+La macchia sbuffa e numerosi disegni colorati saettano sullo schermo. 
+Dopo qualche istante un oggetto cade dal bocchettone in basso.
+
+Si tratta di una scatoletta di tonno, vuota. Puzza di pesce rancido :(
+
+Vuoi scommettere ancora?
+&gt;&gt;[[Scommetti|R5Life2]]
+&gt;&gt;[[Lascia perdere|R5Final]]  </tw-passagedata><tw-passagedata pid="167" name="R5Life2" tags="" position="4459,1369" size="100,100">(hit: $r5_hit)
+Appoggi la mano sinistra sul pannello e tiri la leva. Subito ti senti più stanco.
+La macchia sbuffa e numerosi disegni colorati saettano sullo schermo. 
+Dopo qualche istante un oggetto cade dal bocchettone in basso.
+
+Alcuni ingranaggi cadono nel bocchettone, assieme a un denso fumo nero, la macchina sembra proprio rotta.
+
+&gt;&gt;[[Guarda altrove|R5Final]] </tw-passagedata><tw-passagedata pid="168" name="SER319" tags="" position="6958,2487" size="100,100">Osservi più da vicino il vaso a forma di papera:
+
+Il becco del volatile compone la bocca del vaso, le piccole ali gialle rappresentano i manici. Due occhi vitrei ossservano le estremità opposte della stanza chiedendosi perchè un Cacciatore debba perdere tempo ad osservare una tale inutilità.
+
+Cosa vuoi fare?
+&gt;&gt;[[Ti riposi|SER321]]
+&gt;&gt;[[Torni indietro|SER322]]</tw-passagedata><tw-passagedata pid="169" name="SER320" tags="" position="7215,2792" size="100,100">Osservi più da vicino il vaso a forma di papera:
+
+Il becco del volatile compone la bocca del vaso, le piccole ali gialle rappresentano i manici. Due occhi vitrei ossservano le estremità opposte della stanza chiedendosi perchè un Cacciatore debba perdere tempo ad osservare una tale inutilità.
+
+&gt;&gt;[[Torni indietro|SER322]]</tw-passagedata><tw-passagedata pid="170" name="SER321" tags="" position="7188,2409" size="100,100">(heal: $ser3_heal)
+(useConsumable: &quot;razione&quot;)
+
+Chiudete la porta e vi fare una bella dormita. Per fortuna nulla interrompe il vostro sonno. Freschi e riposati riprendete la vostra avventura.
+
+&gt;&gt;[[Torniamo indietro|SER322]]</tw-passagedata><tw-passagedata pid="171" name="SER322" tags="SER_3" position="7543,2655" size="100,100">(trial: &quot;SER&quot;, 3, 1)
+Il corridoio buio è ancora li ad attendervi, ora l&#39;intera stanza puzza di muffa.
+
+(say: &quot;L&#39;energia è ancora più forte! So che non è molto invitante ma credo davvero ci sia un tesoro inestimabile di là!&quot;)
+
+Cosa vuoi fare?
+&gt;&gt;[[Segui il robot|SER10]]
+&gt;&gt;[[Tornate indietro|SER3back]]</tw-passagedata><tw-passagedata pid="172" name="R052" tags="" position="960,658" size="100,100">Inizia a girarvi la testa, la vista è leggermente sfocata.
+Devi trovare una soluzione immediatamente.
+Individui una bocchetta di areazione e un pannello di controllo dall&#39;altra parte della stanza.
+
+Un colpo energetico potrebbe riattivarlo.
+
+&gt;&gt;[[Spari al pannello.|R072]]</tw-passagedata><tw-passagedata pid="173" name="R07" tags="roll" position="1133,465" size="100,100">(roll: 15)
+
+Lancia un dado, se fai almeno **15** hai successo, altrimenti fallisci.
+
+&gt;&gt;[[Successo|R07success]]
+&gt;&gt;[[Fallimento|R07fail]]</tw-passagedata><tw-passagedata pid="174" name="R07success" tags="" position="1555,425" size="100,100">(heal: $r0_loot)
+
+Spari un colpo ben mirato alla cella energetica del pannello. 
+Non vuoi fare altri danni. Subito una fresca berzza riempe la stanza e i funghi iniziano ad avvizzire.
+
+Il Cacciatore sta subito meglio.
+
+&quot;&lt;i&gt;Grazie amici, mi avete salvato. Ecco, non ho molto, ma tenete queste **$r0_loot EQ**, è il massimo che posso darvi&lt;/i&gt;&quot;
+
+&gt;&gt;[[Continua|R0doors]]</tw-passagedata><tw-passagedata pid="175" name="R07fail" tags="" position="1401,527" size="100,100">Le spore offuscano la tua vista, spari ma il colpo manca il bersaglio, il pannello è rotto.
+Non vi resta che allontanare il più possibile il cacciatore dai funghi e tornare indietro.
+
+&gt;&gt;[[Torni Indietro|R0back]]</tw-passagedata><tw-passagedata pid="176" name="R072" tags="roll" position="1147,665" size="100,100">(roll: 15)
+
+Lancia un dado, se fai almeno **15** hai successo, altrimenti fallisci.
+
+*Ricorda che puoi consumare Energia Quantica per aumentare le tue probabilità di vittoria*
+
+&gt;&gt;[[Successo|R072success]]
+&gt;&gt;[[Fallimento|R072fail]]</tw-passagedata><tw-passagedata pid="177" name="R072success" tags="" position="1556,784" size="100,100">Spari un colpo ben mirato alla cella energetica del pannello.
+Non vuoi fare altri danni.
+Subito una fresca berzza riempe la stanza e i funghi iniziano ad avvizzire.
+
+&gt;&gt;[[Continua|R0doors]]</tw-passagedata><tw-passagedata pid="178" name="R072fail" tags="" position="1401,666" size="100,100">Le spore offuscano la tua vista, spari ma il colpo manca il bersaglio, il pannello è rotto. Non vi resta che tornare indietro.
+
+&gt;&gt;[[Torni Indietro|R0back]]</tw-passagedata><tw-passagedata pid="179" name="R2000" tags="R_2" position="495,1271" size="100,100">(haveItem: &quot;Cubo Luminescente&quot;, 1)
+
+Se hai il **Cubo Luminescente**, puoi accenderlo per fare un po&#39; di luce.
+Altrimenti la vostra sola fonte di luce saranno i LED rossi del tuo compagno robotico.
+
+&gt;&gt;[[Accendi il Cubo Luminescente|R20cubo]]
+&gt;&gt;[[Continui al buio|R22]]</tw-passagedata><tw-passagedata pid="180" name="R20cubo" tags="R_2" position="711,1166" size="100,100">(use: &quot;Cubo Luminescente&quot;)
+(trial: &quot;R&quot;, 2, 0)
+(image: &quot;dark_2.png&quot;)
+
+Accendi il **Cubo Luminescente** e subito una debole luce bianca illumina la passerella davanti a voi.
+Non vedete comunque il fondo o le pareti della sala.
+
+Fate un passo avanti, la passerella cigola dolcemente sotto il vostro peso. Una sostanza rossastra risplende alla luce del Cubo.
+E&#39; sangue anche se sembra secco.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Prosegui|R22]]
+&gt;&gt;[[Torni Indietro|R2back]].</tw-passagedata><tw-passagedata pid="181" name="R24fail" tags="" position="1242,1319" size="100,100">(hit: $r2_hit)
+Non sei abbastanza veloce, subisci **$r2_hit danno**
+
+&gt;&gt;[[Continua|R2fight]]</tw-passagedata><tw-passagedata pid="182" name="R3final" tags="" position="1580,1945" size="100,100">Il resto della stanza è completamente distrutto, non vi resta che continuare lungo il corridoio
+
+&gt;&gt;[[Continua|R3final1]]</tw-passagedata><tw-passagedata pid="183" name="SE4SX3" tags="" position="4777,3199" size="100,100">(hit: $se4_hit)
+Riapri gli occhi lentamente, ogni centrimetro del tuo corpo freme di dolore. Quando tempo sarà passato?
+
+Piano piano ti rialzi e strisci fuori da questa maledetta macchina.
+
+&gt;&gt;[[Esci dalla Capsula e riprendete il vostro cammino|SE4end]]</tw-passagedata><tw-passagedata pid="184" name="SER05success" tags="" position="7377,1510" size="100,100">Schivi l&#39;attacco e ti prepari a combattere.
+
+&gt;&gt;[[Combatti!|SER0fight]]</tw-passagedata><tw-passagedata pid="185" name="SER05fail" tags="" position="7372,1724" size="100,100">(hit: $enemyDmg)
+Non sei abbastanza veloce. Il raggio ti colpisce e subisci **$enemyDmg danni**!
+Non ti dai per vinto e ti prepari a combattere.
+
+&gt;&gt;[[Combatti|SER0fight]]</tw-passagedata><tw-passagedata pid="186" name="SER12" tags="" position="7903,2322" size="100,100">Finalmente arrivate ad uno spiazzo, le pareti metalliche hanno lasciato il posto a grezzi mattoni di pietra. La stanza è avvolta in un alone luminescente del quale non capite la fonte.
+
+Il pavimento è cosparso di scheletri. Le ossa sono nere, come marcite.
+
+&gt;&gt;[[Continua|SER121]]</tw-passagedata><tw-passagedata pid="187" name="SER13" tags="roll" position="8204,2474" size="100,100">(roll: 14)
+
+Qualcosa non ti torna. Come sono morte tutte queste persone? Osservi meglio la stanza
+
+Lancia un dado, se fai almeno **14** hai successo, altrimenti fallisci.
+
+&gt;&gt;[[Successo|SER13success]]
+&gt;&gt;[[Fallimento|SER13fail]]</tw-passagedata><tw-passagedata pid="188" name="SER13success" tags="" position="8321,2324" size="100,100">Osservi meglio le pareti a destra e sinistra: noti due file verticali di fori su entrambe le pareti. Potrebbe essere una trappola.
+
+&gt;&gt;[[Lancia un osso al centro della stanza|SER14]]
+&gt;&gt;[[Sembra tutto talmente vecchio. Continua|SER15]]</tw-passagedata><tw-passagedata pid="189" name="SER13fail" tags="" position="8336,2564" size="100,100">Non noti nulla di particolare, ci sarà stato uno scontro molto tempo fa.
+
+&gt;&gt;[[Continua|SER14]]</tw-passagedata><tw-passagedata pid="190" name="SER121" tags="" position="8119,2313" size="100,100">Oltre la stanza si aprono due corridoi:
+
+Il corridoio di Destra torna ad essere metallico e ben illuminato al neon
+Il corriodio di Sinistra invece è completamente buio, noti alcune radici che escono aggrappate al soffitto.
+
+&gt;&gt;[[Continua|SER13]]</tw-passagedata><tw-passagedata pid="191" name="SER14" tags="roll" position="8472,2458" size="100,100">(roll: 16)
+Non appena raggiungete il centro della stanza senti un &quot;CLACK&quot; e decine di frecce saettano uscendo dalle pareti. Cerchi di schivarle buttandoti a terra!
+
+Lancia un dado, se fai almeno **16** hai successo, altrimenti fallisci.
+
+&gt;&gt;[[Successo|SER14success]]
+&gt;&gt;[[Fallimento|SER14fail]]</tw-passagedata><tw-passagedata pid="192" name="SER15" tags="" position="8603,2207" size="100,100">Non appena l&#39;osso raggiunge il centro della stanza, una raffica di frecce inizia a saettare dalle pareti, l&#39;osso viene sbriciolato in un istante.
+Noti però che le frecce sono abbastanza alte, gattonando tra le ossa potreste passare illesi.
+
+&gt;&gt;[[Continua|SER16]]</tw-passagedata><tw-passagedata pid="193" name="SER14success" tags="" position="8634,2417" size="100,100">Mentalmente ringrazi gli anni di allenamento. Scatti in basso accovacciandovi. Continui a gattoni accompagnato dal sibiliare delle frecce.
+
+&gt;&gt;[[Continua|SER16]]</tw-passagedata><tw-passagedata pid="194" name="SER14fail" tags="" position="8746,2579" size="100,100">(hit: $ser1_hit)
+
+Non sei abbastanza reattivo, una freccia ti si conficca nel braccio. Subitsci **4 danni**. Ti accovacci terra e strisci verso l&#39;altra estremità della stanza.
+
+&gt;&gt;[[Continua|SER16]]</tw-passagedata><tw-passagedata pid="195" name="SER16" tags="" position="8874,2388" size="100,100">A fatica raggiungete l&#39;altro lato della stanza.
+
+Il corriodio di Destra torna ad essere metallico e ben illuminato. Però non se ne vede il fondo.
+
+Da Sinistra invece proviene un forte odore di muffa. Delle scale Continuano a scendere e alcune radici sbucano dal soffitto, arrampicandosi lungo il corriodio.
+
+&gt;&gt;[[Continua|SER17]]</tw-passagedata><tw-passagedata pid="196" name="SER17" tags="SER_1" position="9044,2387" size="100,100">(trial: &quot;SER&quot;, 1, 2)
+(pose: &quot;eyelids_close&quot;)
+iCub ha gli occhi chiusi e si dirige lentamente verso il corridoio di Sinistra. è come se stesse percependo qualcosa.
+
+(say: &quot;Di qua! Sento che siamo vicini, l&#39;energia è più forte. Ti fidi di me?&quot;)
+
+Cosa vuoi fare?
+&gt;&gt;[[Segui il robot|SER18]]
+&gt;&gt;[[Meglio andare a Destra|SER19]]</tw-passagedata><tw-passagedata pid="197" name="SER18" tags="" position="9427,2287" size="100,100">(say: &quot;Grande! Vedrai non te ne pentirai!&quot;)
+
+&gt;&gt;[[Vai a sinistra|end1]]</tw-passagedata><tw-passagedata pid="198" name="SER19" tags="" position="9452,2565" size="100,100">(say: &quot;Ok, ti capisco, non è molto invitante&quot;)
+
+&gt;&gt;[[Vai a Destra|end1]]</tw-passagedata><tw-passagedata pid="199" name="R2fightSuc" tags="" position="1546,1229" size="100,100">Non sarà certo uno stupido insetto a fermarti. 
+Schivi abilmente i suoi artigli e gli tagli la testa di netto con la tua spada laser.
+
+&gt;&gt;[[Continua|R2final]]</tw-passagedata><tw-passagedata pid="200" name="R2fightFail" tags="" position="1543,1436" size="100,100">(hit: $enemyDmg)
+
+Il mostro si nasconde nell&#39;ombra e ti colpisce alle spalle, subisci **$enemyDmg danni**.
+
+&gt;&gt;[[Attacca|R24figthLoop]]</tw-passagedata><tw-passagedata pid="201" name="R24figthLoop" tags="fight" position="1707,1308" size="100,100">(fight: &quot;Insetto Alieno&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti l&#39;Insetto Alieno ti colpisce.
+
+&gt;&gt;[[Successo|R2fightSuc]]
+&gt;&gt;[[Fallimento|R2fightFail]]</tw-passagedata><tw-passagedata pid="202" name="R3fightSuc" tags="" position="1130,1880" size="100,100">(pose: &quot;point_quadro&quot;) #TODO
+iCub fa: &quot;Ehi guarda! ogni cosa è coperta di gelatina, ma non quel quadro elettrico! Forse ha paura dell&#39;elettricità!&quot;
+
+Fulmineo spari un colpo verso il quadro facendolo saltare in aria. Le scariche elettriche scompongono la struttura della gelatina. Del Blob non resta che una pozza verde appiccicosa.
+
+&gt;&gt;[[Continua|R34]]</tw-passagedata><tw-passagedata pid="203" name="R3fightFail" tags="" position="1133,2101" size="100,100">(hit: $enemyDmg)
+
+Tenti di colpire il blob ma anche se i tuoi colpi feriscono la gelatina subito si ricompone. Il Blob vi colpisce con una manata infliggendo **$enemyDmg danni**
+
+&gt;&gt;[[Attacca|R3fightLoop]]</tw-passagedata><tw-passagedata pid="204" name="R3fightLoop" tags="fight" position="1299,1991" size="100,100">(fight: &quot;Blob&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti il Blob ti colpisce.
+
+&gt;&gt;[[Successo|R3fightSuc]]
+&gt;&gt;[[Fallimento|R3fightFail]]</tw-passagedata><tw-passagedata pid="205" name="SE5fightSuc" tags="" position="4235,1786" size="100,100">(addItem: &quot;LICENZA DI CACCIA&quot;)
+Potrà anche essere furbo, ma Linux non è altro che un nerd goffo e impacciato. Scarti indietro e spari un singolo colpo dirtto al petto.
+Il suo cadavere si affloscia a terra inerme.
+
+Raccogli la tua licenza e la rimetti al sicuro.
+
+&gt;&gt;[[Continua|SE5final]]</tw-passagedata><tw-passagedata pid="206" name="SE5fightFail" tags="" position="4250,2057" size="100,100">(hit: $enemyDmg)
+Linux schiva abilmente il tuo colpo, come un ninja fa roteare un mouse sopra la testa e ti colpisce dritto in fronte. Subitsci **$enemyDmg danni**
+
+&gt;&gt;[[Attacca|SE5fightLoop]]</tw-passagedata><tw-passagedata pid="207" name="SE5fightLoop" tags="fight" position="4477,1923" size="100,100">(fight: &quot;Linux&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti Linux ti colpisce.
+
+&gt;&gt;[[Successo|SE5fightSuc]]
+&gt;&gt;[[Fallimento|SE5fightFail]]</tw-passagedata><tw-passagedata pid="208" name="SE0fightSuc" tags="" position="3909,4266" size="100,100">Ricko tiene a bada il Ragno di Cristallo con il lanciafiamme, mentre tu lo tempesti con una raffica di colpi. 
+Finalmente avete la meglio!
+
+&gt;&gt;[[Continua|SE09]]</tw-passagedata><tw-passagedata pid="209" name="SE0fightFail" tags="" position="3695,4264" size="100,100">(hit: $enemyDmg)
+Questo ragno è un osso d&#39;uro! per quanto lo colpiate non va a terra.
+Il Ragno vi colpisce con un getto di ragnatela gelida, rabbrividisci e subisci $enemyDmg danni.
+
+&gt;&gt;[[Attacca|SE0fightLoop]]</tw-passagedata><tw-passagedata pid="210" name="SE0fightLoop" tags="fight" position="3803,4131" size="100,100">(fight: &quot;Ragno di Cristallo&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti il Ragno di Cristallo ti colpisce
+
+&gt;&gt;[[Successo|SE0fightSuc]]
+&gt;&gt;[[Fallimento|SE0fightFail]]</tw-passagedata><tw-passagedata pid="211" name="SE0fight2Suc" tags="" position="4438,4096" size="100,100">Quel maledetto lanciafiamme ti impedisce di sparare.
+Agilmente scarti di lato e carichi con la spada Laser.
+Il vecchio non fa in tempo a girare il getto di fuoco che l&#39;hai già infilzato.
+
+&gt;&gt;[[Continua|SE014]]</tw-passagedata><tw-passagedata pid="212" name="SE0fight2Fail" tags="" position="4333,3976" size="100,100">(hit: $enemyDmg)
+Il vecchio avrà 80 anni ma sembra ne abbia 20 da quanto è agile.
+Continua ad inondarvi di fiamme senza darvi tregua. Subisci **$enemyDmg danni**
+
+&gt;&gt;[[Attacca|SE0fight2Loop]]</tw-passagedata><tw-passagedata pid="213" name="SE0fight2Loop" tags="fight" position="4523,3941" size="100,100">(fight: &quot;Ricko&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti Ricko ti colpisce
+
+&gt;&gt;[[Successo|SE0fight2Suc]]
+&gt;&gt;[[Fallimento|SE0fight2Fail]]</tw-passagedata><tw-passagedata pid="214" name="SE1fight1Suc" tags="" position="3427,367" size="100,100">A suon di colpi riesci a vaporizzare il mostro di acqua. Ogni cosa nella stanza è annacquata.
+
+&gt;&gt;[[Continua|SE18]]</tw-passagedata><tw-passagedata pid="215" name="SE1fight1Fail" tags="" position="3244,261" size="100,100">(hit: $enemyDmg)
+
+L&#39;elementale ti avvolge la testa con l&#39;acqua, stai soffocando! Dopo qualche istante ti liberi ma non prima di aver subito **$enemyDmg danni**
+
+&gt;&gt;[[Attacca|SE1figth1Loop]]</tw-passagedata><tw-passagedata pid="216" name="SE1figth1Loop" tags="fight" position="3504,182" size="100,100">(fight: &quot;Elementale dell&#39;Acqua&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti l&#39;Elementale dell&#39;acqua ti colpisce
+
+&gt;&gt;[[Successo|SE1fight1Suc]]
+&gt;&gt;[[Fallimento|SE1fight1Fail]]</tw-passagedata><tw-passagedata pid="217" name="SE1fight2Suc" tags="" position="4736,350" size="100,100">Il calore è insopportabile ma non puoi arretrare. Il tuo fucile al Plasma è più caldo di qualsiasi fiamma! Riduci l&#39;elementale ad un ammasso di sassi incandesccenti!
+
+&gt;&gt;[[Vittoria!|SE113]]</tw-passagedata><tw-passagedata pid="218" name="SE1fight2Fail" tags="" position="4642,132" size="100,100">(hit: $enemyDmg)
+
+L&#39;Elementale ti lancia una palla di fuoco, ti giri di schiena ma non serve a molto. Subisci **$enemyDmg** danni!
+
+&gt;&gt;[[Attacca|SE1fight2Loop]]</tw-passagedata><tw-passagedata pid="219" name="SE1fight2Loop" tags="fight" position="4841,202" size="100,100">(fight: &quot;Elementale del Fuoco&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti l&#39;Elementale del fuoco ti colpisce
+
+&gt;&gt;[[Successo|SE1fight2Suc]]
+&gt;&gt;[[Fallimento|SE1fight2Fail]]</tw-passagedata><tw-passagedata pid="220" name="SER0fightSuc" tags="" position="7701,1470" size="100,100">Colpisci uno dei bracci robotici che cade a terra fumante. Subito però ne appare un&#39;altro. E&#39; una tempesta di raggi laser.
+
+&gt;&gt;[[Attacca|SER0fightLoop]]</tw-passagedata><tw-passagedata pid="221" name="SER0fightFail" tags="" position="7752,1677" size="100,100">(hit: $enemyDmg)
+I raggi laser sono troppi. Ti colpiscono a un braccio e subisci **$enemyDmg danni**.
+
+&gt;&gt;[[Attacca|SER0fightLoop]]</tw-passagedata><tw-passagedata pid="222" name="SER0fightLoop" tags="fight" position="7928,1566" size="100,100">(fail:)
+(fight: &quot;CERBERUS 101&quot;)
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti CERBERUS 101 ti colpisce.
+
+&gt;&gt;[[Successo|SER0fightSuc2]]
+&gt;&gt;[[Fallimento|SER0fightFail2]]</tw-passagedata><tw-passagedata pid="223" name="SER0fightSuc2" tags="" position="8115,1420" size="100,100">Distruggi un&#39;altra testa, ma subito ne riscesce un&#39;altra al suo posto. La situazione è disperata.
+
+&gt;&gt;[[Attacca!|SER06]]</tw-passagedata><tw-passagedata pid="224" name="SER0fightFail2" tags="" position="8099,1670" size="100,100">(hit: $enemyDmg)
+Non riesci a stare dietro alla pioggia di laser. Vieni colpito anche all&#39;altro braccio! Subisci **$enemyDmg danni**.
+
+&gt;&gt;[[Attacca!|SER06]]</tw-passagedata><tw-passagedata pid="225" name="end1" tags="" position="9811,2671" size="100,100">(image: &quot;ending.jpg&quot;)
+Man mano che camminate noti che le pareti metalliche si fanno sempre più arrugginite. Negli angoli ci sono tracce di muschio e sottli radici si arrampicano sul soffitto.
+
+&gt;&gt;[[Continua|end2]]</tw-passagedata><tw-passagedata pid="226" name="end2" tags="" position="9983,2673" size="100,100">Arrivate ad una grande stanza con il soffitto a volta.
+
+Davanti a voi si erge un&#39;imponente porta di oro massiccio, è socchiusa e da essa escono fitte radici che coprono tutto il pavimento. 
+
+Senti un rumore alle tue spalle: le radici si stanno alzando chiudendo il passaggio da cui venite. Non c&#39;è altra via di uscita.
+
+&gt;&gt;[[Continua|end3]]</tw-passagedata><tw-passagedata pid="227" name="end3" tags="" position="10139,2683" size="100,100">Osservando la porta dorata senti una sensazione strana, quasi reverenziale.
+Ti mette i brividi, come qualcosa di antico, da tempo dimenticato.
+
+Ti avvicini: dalla porta dorata proviene un dolce profumo di boschi, un odore che avevi dimenticato da tempo.
+Osservando meglio le radici rimanete sorpresi: in realtà sono sottilissimi fili metallici aggrovigliati.
+
+Guardi il tuo compagno di avventura, anche lui è sorpreso quanto te.
+&gt;&gt;[[Oltrepassa la porta|end4]]</tw-passagedata><tw-passagedata pid="228" name="SE30" tags="" position="8940,3342" size="100,100">Tutto è molto spartano: sul bancone si vedono una decina di fucili, pistole e spade laser.
+Su una parete di legno alle spalle del venditore stanno appese armature, scudi e altri strani aggeggi.
+
+&lt;i&gt;&quot;Benvenuti! Benvenuti! Cosa posso fare per voi?!&quot;&lt;/i&gt; vi accoglie il venditore, un ometto basso, con le orecchie a punta e la pelle verdastra.
+
+&gt;&gt;[[&quot;Hai qualcosa di interessante?&quot;|SE31]]</tw-passagedata><tw-passagedata pid="229" name="R11a" tags="" position="6361,3592" size="100,100">(hit: $r1_hit)
+Il barista vi porta due belle birre fresche che bevete avidamente.
+(pose: &quot;drink&quot;)
+
+&gt;&gt;[[Continua|R122]]</tw-passagedata><tw-passagedata pid="230" name="R11b" tags="" position="6341,3738" size="100,100">(hit: $r1_hit)
+Il barista vi porta due calici di vino rosso che sorseggiate amabilmente.
+(pose: &quot;drink&quot;)
+
+&gt;&gt;[[Continua|R122]]</tw-passagedata><tw-passagedata pid="231" name="R11c" tags="" position="6324,3886" size="100,100">(hit: $r1_hit)
+Il barista vi porta due bicchierini di liquido rosso fuoco.
+Lo buttate giù in un colpo solo e sentite le viscere contorcersi. è fortissimo!!!.
+(pose: &quot;drink&quot;)
+
+&gt;&gt;[[Continua|R122]]</tw-passagedata><tw-passagedata pid="232" name="R12" tags="R_1" position="6766,3798" size="100,100">(trial: &quot;R&quot;, 1, 0)
+&lt;i&gt;&quot;Ehi voi! Forestieri! è da tanto che non si vedono facce nuove qui&quot;&lt;/i&gt;
+
+Sentite due avventurieri chiamarvi, sono un ragazzo grassoccio e un&#39;altro magrolino;
+hanno davanti a loro parecchi bicchierini vuoti e una bottiglia di liquido rosso fuoco.
+
+&lt;i&gt;&quot;Venite a farvi un goccio con noi! Cosa si dice nel mondo esterno?!&quot;&lt;/i&gt;
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Accetti la proposta|R13]]
+&gt;&gt;[[Rifiuti gentilmente|R14]]</tw-passagedata><tw-passagedata pid="233" name="R13" tags="" position="6925,3798" size="100,100">Vi sedete al tavolo con loro, vi versano un cicchetto di **Spirito Nanico** che vi brucia le budella non appena scende in gola.
+(pose: &quot;drink&quot;)
+Sembrano tipi a posto, si chiamano Rut e Trick, gli raccontate del vostro incontro e delle stranezze incontrate fino a quel momento.
+&lt;i&gt;&quot;ahahahah che roba, ne avete viste delle belle!&quot;&lt;/i&gt;
+(say: &quot;Se sono qui da molto forse sanno dove trovare il Seme&quot;)
+
+&gt;&gt;[[Chiedi informazioni|R15]]</tw-passagedata><tw-passagedata pid="234" name="R14" tags="" position="7284,3336" size="100,100">&lt;i&gt;&quot;Vi ringrazio, ma siamo abbastanza di fretta, è ora di andare&quot;&lt;/i&gt;
+Salutate i due e uscite dal locale, addentrandovi nelle profondità del campo dei Dispersi.
+
+&gt;&gt;[[Vai al Mercato|R64]]</tw-passagedata><tw-passagedata pid="235" name="R15" tags="" position="7090,3779" size="100,100">Rut si gratta il mento pensieroso:
+
+&lt;i&gt;&quot;Certo che abbiamo sentito parlare del Seme.
+I meccatronici non fanno altro che blaterare di questo albero della vita, della coscienza onniscente della Cripta e del loro maledetto Seme.
+Non dirmi che anche tu credi a quelle baggianate?!&quot;&lt;/i&gt;
+(say: &quot;Forse vale la pena parlare con questi Meccatronici&quot;)
+
+&gt;&gt;[[Dove possiamo trovare i Meccatronici?|R17]]</tw-passagedata><tw-passagedata pid="236" name="R17" tags="R_1" position="7258,3767" size="100,100">(trial: &quot;R&quot;, 1, 1)
+&lt;i&gt;&quot;Proseguite nei cunicoli, subito dopo il Mercato troverete il loro tempio. 
+Non avrete problemi ad entrare, soprattutto visto il robot che ti porti in giro&quot;&lt;/i&gt;
+
+Rut guarda il tuo compagno con una certa diffidenza.
+
+&lt;i&gt;&quot;Ehi, vi va un altro goccio?&quot;&lt;/i&gt;
+
+&gt;&gt;[[Accetta|R16]]
+&gt;&gt;[[Rifiuta gentilmente|R14]]</tw-passagedata><tw-passagedata pid="237" name="R16" tags="" position="7415,3767" size="100,100">(pose: &quot;drink&quot;)
+(pose: &quot;drunk&quot;)
+Butti giù un altro cicchetto di **Spirito Nanico** e sospiri soddisfatto.
+Stai iniziando a dimenticare le fatiche del viaggio.
+La testa è molto più leggera. Anche iCub sembra molto più rilassato :D
+
+Per un attimo ti perdi ad osservare gli altri avventori.
+Una ragazza in particolare attira la tua attenzione, ha i capelli castani raccolti in una treccia ed è poco armata.
+Sta girando di tavolo in tavolo chiedendo qualcosa.
+
+&gt;&gt;[[Continua|R18]]</tw-passagedata><tw-passagedata pid="238" name="SE31" tags="SE_3" position="9139,3365" size="100,100">(trial: &quot;SE&quot;, 3, 0)
+&lt;i&gt;&quot;Vediamo, vediamo, cosa potrebbe servirvi? Armi? Corazze? naaa siete già ben equipaggiati&quot;&lt;/i&gt; borbotta l&#39;ometto rovistando sotto il bancone.
+
+&lt;i&gt;&quot;Ecco, questo potrebbe essere interessante!&quot;&lt;/i&gt;
+
+L&#39;ometto stringe in mano un paio di occhiali da sole in stile vintage, le lenti sono nere come la notte, fatichi a credere ci si possa vedere attraverso.
+
+&quot;Questo, amici miei, è il rarissimo **Artefatto della Dea Bendata**.
+Aumenta esponenzialmente la fortuna del portatore! Si dice che nulla di brutto potrà accedere a chi lo indossa, qualsiasi colpo verrà schivato, qualsiasi attacco andrà a segno e qualsiasi dado farà sempre il massimo&quot;
+
+&quot;Posso venderlo a **$eq_sub_1 Cariche di Energia Quantica**! Un affare! Che ne dite?&quot;
+&gt;&gt;[[Lo Compro!|SE32]]
+&gt;&gt;[[Non se ne parla!|SE33]]</tw-passagedata><tw-passagedata pid="239" name="SE32" tags="" position="9322,3200" size="100,100">(hit: $eq_sub_1)
+(addItem: &quot;Artefatto della Dea Bendata&quot;)
+&lt;i&gt;&quot;Accetto! con questo diventeremo invincibili!&quot;&lt;/i&gt; - esulti
+
+&lt;i&gt;&quot;EhEhEh non te ne pentirai!&quot;&lt;/i&gt; sogghigna l&#39;ometto.
+
+Indossi l&#39; **Artefatto della Dea Bendata** e ti senti subito più forte, pronto a combattere il mondo ed affrontare ogni cosa!
+
+&gt;&gt;[[Prosegui nei counicoli|SE37]]</tw-passagedata><tw-passagedata pid="240" name="SE33" tags="" position="9302,3451" size="100,100">&lt;i&gt;&quot;Ma sei fuori!? non ho intenzione di darti tutte quelle cariche!&quot;&lt;/i&gt; Protesti allontanandoti.
+
+&gt;&gt;[[Torna al Mercato|SE34]]</tw-passagedata><tw-passagedata pid="241" name="SE34" tags="" position="9482,3487" size="100,100">&lt;i&gt;&quot;Hey aspetta!!&quot;&lt;/i&gt; ti chiama l&#39;ometto &lt;i&gt;&quot;Non andatevene!&quot;&lt;/i&gt;
+
+&lt;i&gt;&quot;Sei un tipo difficile, mi piaci! Solo per te potrei fare uno sconto, che ne dici?&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|SE35]]</tw-passagedata><tw-passagedata pid="242" name="SE35" tags="SE_3" position="9645,3491" size="100,100">(trial: &quot;SE&quot;, 3, 1)
+(countdown: 30, &quot;start&quot;, &quot;SE35fail&quot;)
+
+&quot;Solo per te posso venderlo a **$eq_sub_1_half Cariche di Energia Quantica**, ma l&#39;offerta vale solo per un tempo limitato&quot;
+
+&quot;Accetti?&quot;
+
+&gt;&gt;[[Accetto!|SE35take]]
+&gt;&gt;[[Rifiuto|SE35fail]]</tw-passagedata><tw-passagedata pid="243" name="SE35take" tags="" position="9852,3531" size="100,100">(countdown: 30, &quot;stop&quot;, &quot;&quot;)
+(hit: $eq_sub_1_half)
+(addItem: &quot;Artefatto della Dea Bendata&quot;)
+&lt;i&gt;&quot;Accetto! con questo diventeremo invincibili!&quot;&lt;/i&gt; - esulti
+
+&lt;i&gt;&quot;EhEhEh non te ne pentirai!&quot;&lt;/i&gt; sogghigna l&#39;ometto.
+
+Indossi l&#39; **Artefatto della Dea Bendata** e ti senti subito più forte, pronto a combattere il mondo ed affrontare ogni cosa!
+
+&gt;&gt;[[Proseguite nei counicoli|SE37]]</tw-passagedata><tw-passagedata pid="244" name="SE35fail" tags="" position="9775,3344" size="100,100">(countdown: 30, &quot;stop&quot;, &quot;&quot;)
+l&#39;ometto torna alla sua bancarella: &lt;i&gt;&quot;Pazienza, peggio per voi. Addio!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Proseguite nei counicoli|SE37]]</tw-passagedata><tw-passagedata pid="245" name="R18" tags="R_1" position="7596,3774" size="100,100">(trial: &quot;R&quot;, 1, 2)
+Rut batte il pugno esaltato. Senti la testa girare, il corpo è pesante. Trick lo nota e ride!
+
+&lt;i&gt;&quot;Ahahah sei proprio una roccia, è da tanto che non vedevo uno resistere così bene allo Spirito Nanico! Sei forte amico!&quot;&lt;/i&gt;
+
+&lt;i&gt;&quot;Che ne dici, un altro goccio?&quot;&lt;/i&gt;
+
+&gt;&gt;[[Accetti|R19]]
+&gt;&gt;[[Rifiuti|R14]]</tw-passagedata><tw-passagedata pid="246" name="R19" tags="" position="7780,3767" size="100,100">(pose: &quot;drink&quot;)
+Buttate giù un altro sorso di quel fuoco infernale, senti bruciare tutto.
+Improvvisamente tutto inizia a girare, non riesci più a tenere l&#39;equilibrio, tutto si fa nero mentre sbatti la testa svenendo sul tavolo.
+
+&gt;&gt;[[Continua|R110]]</tw-passagedata><tw-passagedata pid="247" name="R110" tags="" position="7978,3766" size="100,100">(hit: $R1_hit_2)
+Vi risvegliate dopo un po&#39; di tempo, non sapete bene quanto.
+Tutto è caotico come lo ricordavate fatta eccezione per i vostri compagni di bevuta.
+Sono spariti, così come **10 Cariche di Energia Quantica** dal tuo inventario.
+
+A fatica vi alzate e proseguite nelle profondità dell&#39;accampamento
+
+&gt;&gt;[[Continua|R64]]</tw-passagedata><tw-passagedata pid="248" name="SE0DX" tags="" position="4849,4491" size="100,100">(endpoint: &quot;SE0&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="249" name="SE0SX" tags="" position="4832,4735" size="100,100">(endpoint: &quot;SE0&quot;, &quot;left&quot;)</tw-passagedata><tw-passagedata pid="250" name="R10" tags="" position="5912,3704" size="100,100">(room: &quot;camp&quot;, &quot;R10&quot;, &quot;SER5final&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+Dopo circa un&#39;ora di cammino il silenzio viene rotto da alcune voci, sembrano tranquille e gioviali. 
+Davanti a voi c&#39;è una porta socchiusa da cui provengono molteplici voci festose.
+
+Sopra la porta è scarabocchiato sulla lamiera **&quot;Accampamento dei Dispersi&quot;**
+
+iCub: &lt;i&gt;&quot;Ecco ecco! Questo è il posto che ti dicevo! Andiamo!!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Entra nella stanza|R100]]</tw-passagedata><tw-passagedata pid="251" name="R100" tags="" position="6136,3694" size="100,100">(image: &quot;tavern.jpg&quot;)
+Il clima dentro è caldo e accogliente circa 30 individui di differenti razze intergalattiche stanno bevendo e chiacchierando allegramente.
+Vi avvicinate al bancone, e venite subito accolti dal barista:
+
+&lt;i&gt;&quot;Benuti alla mia umile Taverna! Questo è un territorio franco, a nessuno è consentito di usare armi. Cosa desiderate bere?&quot;&lt;/i&gt;
+
+&gt;&gt;[[Birra (1 EQ)|R11a]]
+&gt;&gt;[[Vino (1 EQ)|R11b]]
+&gt;&gt;[[Spirito Nanico (2 EQ)|R11c]]</tw-passagedata><tw-passagedata pid="252" name="R122" tags="" position="6589,3782" size="100,100">Subito vi sentite meglio, ci voleva proprio!
+
+&lt;i&gt;&quot;Che posto è questo?&quot;&lt;/i&gt; chiedeti al barista.
+
+&lt;i&gt;&quot;Numerosi avventurieri hanno deciso di restare nella Cripta per molto tempo, esplorandone ogni angolo.
+Presto sono nati negozi, alloggi e taverne, come quella in cui vi trovate.&quot;&lt;/i&gt;
+
+Il barista Continua: &lt;i&gt;&quot;Nella prossima stanza trovete un **mercato**, e subito dopo il **Tempio dei Meccatronici**.
+Sentitevi liberi di stare quanto preferite, ma mi raccomando, niente violenza, questo Labirinto è già abbastanza pieno di mostri.&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|R12]]</tw-passagedata><tw-passagedata pid="253" name="R64" tags="" position="7872,3394" size="100,100">(feel: &quot;happy&quot;)
+Non fate in tempo ad avvicinarvi all&#39;uscita che una ragazzina vi si para davanti.
+Ha i capelli castani raccolti in una treccia ed è poco equipaggiata.
+
+&lt;i&gt;&quot;Scusate, mi chiamo **Rebecca Olsen** avete per caso trovato una Licenza di Caccia??
+L&#39;ho persa qualche giorno fa! Vi prego se l&#39;avete trovata mi serve o non potrò uscire di qui!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|R66]]</tw-passagedata><tw-passagedata pid="254" name="R66" tags="" position="8128,3383" size="100,100">(haveItem: &quot;Licenza Smarrita&quot;, 0)
+
+Se hai ancora la **Licenza Smarrita** puoi restituirla.
+
+&gt;&gt;[[Ho la licenza|R666]]
+&gt;&gt;[[Non ho la licenza|R68]]</tw-passagedata><tw-passagedata pid="255" name="R67" tags="" position="8505,3227" size="100,100">(heal: $r6_heal)
+&quot;Ecco tieni! l&#39;abbiamo trovata poco tempo fa! Se stata fortunata!&quot;
+Rebecca è felicissima, le avete salvato la vita!!
+&quot;Non so davvero come sdebitarmi! per favore tenete questi **$r6_heal EQ**!&quot;
+
+&gt;&gt;[[Continua verso il mercato|SE300]]</tw-passagedata><tw-passagedata pid="256" name="R68" tags="" position="8387,3605" size="100,100">&lt;i&gt;&quot;Mi dispiace ragazzina, non abbiamo trovato nessuna licenza, dovresti stare più attenta&quot;&lt;/i&gt;
+
+Rebecca è davvero triste: &lt;i&gt;&quot;Ok, grazie comunque, se la trovate per favore portatemela, mi trovate qui... :(&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|SE300]]</tw-passagedata><tw-passagedata pid="257" name="SE300" tags="" position="8757,3331" size="100,100">(image: &quot;market.jpg&quot;)
+Vi lasciate alle spalle il caos della taverna per avventurarvi in tutt&#39;altra confusione.
+Lo stretto corridoio è costellato da bancarelle che si infittiscono manmano che proseguite.
+Numerosi avventurieri stanno acquistando e vendendo equipaggiamento.
+
+Una bancarella in particolare attira la vostra attenzione:
+ha numerosi artefatti esposti e un cacciatore si sta allontanando con un grosso fucile al plasma.
+
+&gt;&gt;[[Ti avvicini|SE30]]</tw-passagedata><tw-passagedata pid="258" name="SE37" tags="" position="10090,3340" size="100,100">Dopo numerose spintonate vi fate strada attraverso il mercato. Se quei due non vi hanno fregato tra poco sarete al Tempio dei Meccatronici.
+
+&gt;&gt;[[Continua|SE371]]</tw-passagedata><tw-passagedata pid="259" name="SER20" tags="" position="10270,3366" size="100,100">Accanto all&#39;alieno c&#39;è una ruota di metallo colorata a spicchi!
+
+&lt;i&gt;&quot;Scommettete amici miei! Potete vincere fantastici premi! Artefatti leggendari! Armi! Celle energetiche! e il più grande premio di tutti! Una **Mappa della Cripta!**&quot;&lt;/i&gt;
+
+&lt;i&gt;&quot;Più scommettete, maggiore è la probabilità di vincere!&quot;&lt;/i&gt;
+
+(say: &quot;Dai è fantastico! Possiamo vincere un Artefatto senza combattere, e con quella Mappa, potremmo trovare ciò che cerchi in un istante!! Io Scommetto 20 Cariche di Energia Quantica&quot;, &quot;super_happy&quot;)
+
+&gt;&gt;[[Continua|SER21]]</tw-passagedata><tw-passagedata pid="260" name="SER21" tags="" position="10474,3356" size="100,100">&lt;i&gt;&quot;AHAHAHA ottima scelta amico!&quot;&lt;/i&gt;
+
+L&#39;alieno fa girare la ruota alla massima velocità.
+
+&quot;trick trick trick trick trick&quot;, la leva metallica ticchetta contro il bordo della ruota.
+
+La ruota rallenta sempre di più fino a fermarsi su uno **Scudo Impenetrabile**!
+
+(pose: &quot;exult&quot;)
+
+Peccato, mancava solo uno spicchio alla **Mappa della Cripta**!!
+
+&gt;&gt;[[Continua|SER22]]</tw-passagedata><tw-passagedata pid="261" name="SER22" tags="SER_2" position="10646,3342" size="100,100">(trial: &quot;SER&quot;, 2, 0)
+&lt;i&gt;&quot;Ecco a te il tuo scudo&quot;&lt;/i&gt;
+L&#39;alieno passa ad iCub una piccola sfera dorata.
+&lt;i&gt;&quot;Premi qui quando vuoi attivarlo, niente e nessuno potra toccarti per qualche minuto!!&quot;&lt;/i&gt;
+
+(pose: &quot;invite&quot;)
+(say: &quot;Ehi! c&#39;eravamo quasi. Dai scommetti anche tu! Possiamo vincerla!&quot;)
+(pose: &quot;home_pg&quot;)
+
+&gt;&gt;[[Scommetti anche tu|SER23]]
+&gt;&gt;[[Meglio non rischiare|SER24]]</tw-passagedata><tw-passagedata pid="262" name="SER23" tags="" position="10811,3224" size="100,100">(hit: $se3_hit_gamble)
+Passi **$se3_hit_gamble Cariche di Energia Quantica** all&#39;alieno.
+
+La ruota gira gira gira fino a quando non si ferma su una triste casella grigia. 
+
+Purtroppo non hai vinto nulla.
+
+&lt;i&gt;&quot;Mi dispiace :( non sempre la fortuna gira nel verso giusto!&quot;&lt;/i&gt;
+
+(feel: &quot;sad&quot;)
+Anche iCub é molto dispiaciuto.
+
+&gt;&gt;[[E&#39; meglio proseguire|SER25]]</tw-passagedata><tw-passagedata pid="263" name="SER24" tags="" position="10825,3388" size="100,100">Il ghigno dell&#39;alieno non ti convince, qualcosa ti fa pensare che la ruota sia truccata.
+
+&lt;i&gt;&quot;Grazie ma preferisco non rischiare&quot;&lt;/i&gt;
+
+iCub è un po&#39; deluso, ma concorda con te
+
+&gt;&gt;[[E&#39; meglio Continuare|SER25]]</tw-passagedata><tw-passagedata pid="264" name="SER25" tags="" position="11027,3324" size="100,100">(image: &quot;temple.jpg&quot;)
+Proseguite lasciandovi alle spalle il mercato.
+Incrociate numerosi tunnel, che probabilmente portano ad alloggi, ma continuate dritto verso il Tempio.
+
+Dopo poco arrivate a un arco chiuso da una tenda blu con segnato il simbolo di un albero bianco. Davanti ad essa un umano con uno strano cappello ad imbuto vi blocca il passaggio.
+
+&gt;&gt;[[Continuate|SER50]]</tw-passagedata><tw-passagedata pid="265" name="SER50" tags="" position="11195,3314" size="100,100">&lt;i&gt;&quot;Fermatevi, è in corso la messa del glorioso Seme, non potete entra...&quot;&lt;/i&gt;
+Non fa in tempo a finire la frase che nota il tuo amico robotico.
+Subito si getta a terra in ginocchio
+ 
+&lt;i&gt;&quot;Mi scusi sua signoria robotica, non avevo visto che stava accompagnando un umile umano nel tempio.
+La prego di perdonare la mia ignoranza. Prego, entrate, entrate!!&quot;&lt;/i&gt;
+
+Siete entrambi parecchio confusi, entrate nel tempio schivando l&#39;uomo inginocchiato.
+
+&gt;&gt;[[Continua|SER51]]</tw-passagedata><tw-passagedata pid="266" name="SER51" tags="" position="11359,3296" size="100,100">Oltrpassate la tenda per entrare in un&#39;ampia stanza illuminata da una luce bluastra.
+Ai lati della stanza svettano imponenti statue di robot umanoidi.
+Decine di individui di tutte le razze sono inginocchiati verso la statua di un robot che porge in avanti un grosso seme luminscente.
+Tutti indossano cappelli ad imbuto e canticchiano una melodia ammaliante.
+
+Un anziano vestito di drappi vi viene incontro: &lt;i&gt;&quot;Benvenuto o sommo robot! e Benvenuto fedele che accompagnate l&#39;altissimo, cosa desiderate?! Sono al vostro servizio!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Che posto è questo? Cosa venerate?|SER52]]</tw-passagedata><tw-passagedata pid="267" name="SER52" tags="" position="11539,3286" size="100,100">&lt;i&gt;&quot;Stolto tu che entri nella Cripta senza conoscerne l&#39;essenza!
+La  Madre Cripta è viva e onniscente, ogni cosa in essa contribuisce alla sua immensa gloria. E noi ci gloriamo di esserne parte.
+
+Ogni essere robotico all&#39;interno della Madre Cripta è una sua propaggine, è Figlio, è onniscente. Ogni robot deve essere adorato e ogni sua parola è un ordine&quot;&lt;/i&gt;
+
+Si rivolge ad iCub: &lt;i&gt;&quot;La prego, perdoni l&#39;ignoranza di questo viandante, cosa posso fare per lei? Ogni suo desiderio è un ordine!&quot;&lt;/i&gt;
+
+&gt;&gt;[[Continua|SER53]]</tw-passagedata><tw-passagedata pid="268" name="SER53" tags="" position="11711,3296" size="100,100">(feel: &quot;confused&quot;)
+iCub è palesemente interdetto.
+(say: &quot;Non ho idea di cosa stia dicendo questo qui, però potrebbe essere divertete&quot;)
+
+(pose: &quot;hom&quot;)
+(say: &quot;Spogliati completamente e inginocchiati davanti a me!&quot;)
+
+Lentamento l&#39;uomo si toglie tutti i vestiti, piange di gioia per l&#39;onore di adempire un ordine di quel tipo.
+
+(say: &quot;E ora, dicci, dove possiamo trovare il vero Seme?&quot;)
+
+&gt;&gt;[[Continua|SER54]]</tw-passagedata><tw-passagedata pid="269" name="SER54" tags="" position="11867,3302" size="100,100">L&#39;uomo trema di freddo sul pavimento metallico &lt;i&gt;&quot;Il seme è ovunque, è il tutto, è in ognuno di noi dal momento in cui entriamo nella Cripta.
+Appare solo a coloro che sono degni, solo chi la Madre Cripta ritiene degno.&quot;&lt;/i&gt;
+
+(pose: &quot;home&quot;)
+
+Sembra che non ci siano informazioni concrete per voi qui...
+Non vi resta che laciarvi alle spalle l&#39;accampamento e continuare la vostra avventura.
+
+&gt;&gt;[[Continua|SER55]]</tw-passagedata><tw-passagedata pid="270" name="end4" tags="" position="10299,2681" size="100,100">Apri la porta e tutto attorno a voi si fa bianco.
+La stanza, la porta e le radici scompaiono.
+Vi ritrovate a fluttuare in una immensità senza confini.
+
+Improvvisamente senti una pace infinita. Chiudi gli occhi, le tue membra si rilassano, dimentichi tutti i combattimenti, le battaglie, le ferite subite.
+
+&gt;&gt;[[Continua|end5]]</tw-passagedata><tw-passagedata pid="271" name="end5" tags="" position="10447,2687" size="100,100">Riapri gli occhi. I tuoi piedi toccano il terreno, un&#39;infinita lastra metallica che si perde a vista d&#39;occhio.
+
+Davanti a te fluttua una sfera bianca luminosa. 
+Non lo sai, ma senti dentro di te che quello è il **Seme**.
+
+Guardi il tuo amico robotico, noti qualcosa di diverso.
+(say: &quot;Il momento è giunto, tra tanti Cacciatori, tu sei il primo che ha dimostrato di non cercare solamente il denaro, solamente la gloria, tu per primo sei venuto a contatto con me&quot;, &quot;neutral_ai&quot;)
+
+&gt;&gt;[[Chi sei?|end6]]</tw-passagedata><tw-passagedata pid="272" name="end6" tags="SER_3" position="10603,2685" size="100,100">(trial: &quot;SER&quot;, 3, 0) 
+(say: &quot;Io sono questo luogo, io sono ogni macchina, io sono il tutto, io sono la Cripta. Ti ho guidato fino a qui tramite questo mio figlio. Fino al mio Seme. La mia anima, ciò che alimenta ogni cosa nella Cripta&quot;, &quot;neutral_ai&quot;)
+
+(say: &quot;Se lo vuoi è tuo, ti darà tutto quello che cerchi, raggiungerai il tuo obiettivo, verrai ricoperto di ogni bene. Sarai il Cacciatore che ha trovato il Seme!&quot;, &quot;neutral_ai&quot;)
+
+(say: &quot;Oppure puoi Continuare la tua avventura assieme a me, amico mio, ci sono infinte meraviglie da scoprire e avventure da affrontare&quot;, &quot;happy&quot;)
+
+Cosa scegli?
+&gt;&gt;[[Prendi il Seme e torna in superficie|endOUT]]
+&gt;&gt;[[Continua la tua avventura|endIN]]</tw-passagedata><tw-passagedata pid="273" name="endOUT" tags="" position="10848,2543" size="100,100">(image: &quot;seed.jpg&quot;)
+&lt;i&gt;&quot;Mi dispiace amico, non posso restare qui con te. Però Grazie di questa avventura&quot;&lt;/i&gt;
+
+iCub rimane impassibile, non riesci a decifrare la sua espressione:
+(say: &quot;Addio!&quot;, &quot;neutral_ai&quot;)
+
+Tramite il tuo guanto olografico attivi il radiofaro di teletrasporto. Il tuo copro si fa leggero mentre viene scomposto e ricreato fuori dalla Cripta.
+
+&gt;&gt;[[Continua|endOUT1]]</tw-passagedata><tw-passagedata pid="274" name="endIN" tags="" position="10842,2803" size="100,100">Hai davanti a te il Seme, l&#39;hai desiderato, bramato, ti farebbe diventare ricchissimo. 
+ 
+Ma non lo vuoi.
+ 
+Sospiri. Sei davvero stanco. 
+
+&lt;i&gt;&quot;Come diavolo ha fatto sto piccolo robot a cambiarmi?&quot;&lt;/i&gt; pensi tra te e te.
+
+&gt;&gt;[[Continua|endIN1]]</tw-passagedata><tw-passagedata pid="275" name="SE191" tags="" position="3973,279" size="100,100">Osservi la prossima porta: è rossa incandescente, l&#39;acqua nelle vicinanze evapora sfrigolando.
+
+Direi proprio che l**&#39;Elementale del Fuoco** è fuori controllo. Il sistema di raffreddamento è la nostra unica possibiltà per proseguire.
+
+&gt;&gt;[[Cerca il sistema di raffreddamento|SE111]]
+&gt;&gt;[[Non hai tempo da perdere, prosegui!|SE112]]</tw-passagedata><tw-passagedata pid="276" name="SE251" tags="" position="3813,3485" size="100,100">(image: &quot;corridor2.jpg&quot;)
+iCub: &quot;Grazie amico!&quot; 
+Vi alzate a fatica, sentite un inquietante scricchiolare sotto i vostri piedi, non volete sapere di cosa si tratta. Osservate il fondo del cratere grazie alla poca luce del tuo amico robotico.
+
+Non avete molta scelta, un tunnel prosegue nell&#39;oscurità.
+
+&gt;&gt;[[Continua|SE26]]</tw-passagedata><tw-passagedata pid="277" name="SER55" tags="" position="12023,3308" size="100,100">(image: &quot;corridor4.jpg&quot;)
+Uscie dal tempio e vi trovate davanti 2 portelloni metallici.
+Dove vuoi andare?
+
+&gt;&gt;[[Destra|SER5final]]
+&gt;&gt;[[Sinistra|SER5final]]</tw-passagedata><tw-passagedata pid="278" name="SER5final" tags="" position="12195,3298" size="100,100">Oltrepassate il portellone e questo si chiude alle vostre spalle, tornare indietro sembra impossibile. Non vi resta che Continuare a scendere.
+
+&gt;&gt;[[Continua|SER5final1]]</tw-passagedata><tw-passagedata pid="279" name="sbALife" tags="" position="416,3897" size="100,100">(room: &quot;sbResources&quot;, &quot;sbALife&quot;, &quot;sbARight&quot;, &quot;sbALeft&quot;, &quot;&quot;, &quot;sbAbacktrack&quot;)
+(image: &quot;A.png&quot;)
+(playSound: &quot;A&quot;, &quot;background&quot;)
+Test Risorse
+
+vita = $hp
+
+&gt;&gt;[[Vita +10|sbALifeAdd10]]
+&gt;&gt;[[Vita -10|sbALifeSub10]]</tw-passagedata><tw-passagedata pid="280" name="sbALifeAdd10" tags="" position="667,3818" size="100,100">(heal: 10)
+Vita = $hp
+
+&gt;&gt;[[Test Soldi|sbAMoney]]
+&gt;&gt;[[Vita +10|sbALifeAdd10]]
+&gt;&gt;[[Vita -10|sbALifeSub10]]</tw-passagedata><tw-passagedata pid="281" name="sbALifeSub10" tags="" position="669,4013" size="100,100">(hit: 10)
+Vita = $hp
+
+&gt;&gt;[[Test Soldi|sbAMoney]]
+&gt;&gt;[[Vita +10|sbALifeAdd10]]
+&gt;&gt;[[Vita -10|sbALifeSub10]]</tw-passagedata><tw-passagedata pid="282" name="sbAMoney" tags="" position="882,3896" size="100,100">soldi = $money
+
+&gt;&gt;[[Soldi +10|sbAMoneyAdd10]]
+&gt;&gt;[[Soldi -10|sbAMoneySub10]]</tw-passagedata><tw-passagedata pid="283" name="sbAMoneyAdd10" tags="" position="1054,3823" size="100,100">(gain: 10)
+Soldi = $money
+
+&gt;&gt;[[Bivio|sbACross]]
+&gt;&gt;[[Soldi -10|sbAMoneySub10]]
+&gt;&gt;[[Soldi +10|sbAMoneyAdd10]]</tw-passagedata><tw-passagedata pid="284" name="sbAMoneySub10" tags="" position="1057,4019" size="100,100">(pay: 10)
+Soldi = $money
+
+&gt;&gt;[[Bivio|sbACross]]
+&gt;&gt;[[Soldi -10|sbAMoneySub10]]
+&gt;&gt;[[Soldi +10|sbAMoneyAdd10]]</tw-passagedata><tw-passagedata pid="285" name="sbACross" tags="" position="1257,3906" size="100,100">(image: &quot;F.png&quot;)
+Dove vuoi andare?
+
+&gt;&gt;[[Destra|sbARight]]
+&gt;&gt;[[Sinistra|sbALeft]]</tw-passagedata><tw-passagedata pid="286" name="sbARight" tags="" position="1406,3772" size="100,100">(endpoint: &quot;sbResources&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="287" name="sbALeft" tags="" position="1404,4041" size="100,100">(endpoint: &quot;sbResources&quot;, &quot;left&quot;)</tw-passagedata><tw-passagedata pid="288" name="sbBFight" tags="" position="468,4394" size="100,100">(addConsumable: &quot;Dummy Artifact&quot;, 1)
+(room: &quot;sbFight&quot;, &quot;sbBFight&quot;, &quot;sbBEnd&quot;, &quot;&quot;, &quot;sbBBack&quot;, &quot;&quot;)
+(image: &quot;B.jpg&quot;)
+(playSound: &quot;B&quot;, &quot;background&quot;)
+
+&gt;&gt;[[Start fight|sbBStart]]</tw-passagedata><tw-passagedata pid="289" name="sbCRoll" tags="" position="389,4909" size="100,100">(addConsumable: &quot;Dummy Artifact&quot;, 1)
+(addItem: &quot;Dummy Sword&quot;)
+(room: &quot;sbRoll&quot;, &quot;sbCRoll&quot;, &quot;sbCEnd&quot;, &quot;&quot;, &quot;sbCBack&quot;, &quot;&quot;)
+(image: &quot;C.png&quot;)
+Test Roll
+
+&gt;&gt;[[Roll|sbCsbCRollDice]]</tw-passagedata><tw-passagedata pid="290" name="sbBStart" tags="fight" position="642,4397" size="100,100">(fight: &quot;Dummy&quot;)
+
+Test fetch enemy
+Nome = $enemyName
+Difesa = $enemyDef
+Danno = $enemyDmg
+
+Attacco = $power
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti il Mostro ti colpisce.
+
+&gt;&gt;[[Successo|dummyFightSuccess]]
+&gt;&gt;[[Fallimento|dummyFightFail]]</tw-passagedata><tw-passagedata pid="291" name="dummyFightSuccess" tags="" position="799,4345" size="100,100">Mostro sconfitto
+
+&gt;&gt;[[Continua|sbBEnd]]
+&gt;&gt;[[Torna indietro|sbBBack]]</tw-passagedata><tw-passagedata pid="292" name="dummyFightFail" tags="" position="805,4495" size="100,100">(hit: $enemyDmg)
+
+Mancato subisci **$enemyDmg danni**
+Vita = $hp
+
+&gt;&gt;[[Attacca|dummyFightLoop]]</tw-passagedata><tw-passagedata pid="293" name="sbBEnd" tags="" position="1223,4398" size="100,100">(endpoint: &quot;sbFight&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="294" name="sbBBack" tags="" position="969,4234" size="100,100">(endpoint: &quot;sbFight&quot;, &quot;back&quot;)
+Torna indietro</tw-passagedata><tw-passagedata pid="295" name="dummyFightLoop" tags="fight" position="992,4425" size="100,100">(fight: &quot;Dummy&quot;)
+
+Attacco = $power
+
+Lancia un dado e somma il tuo attacco, se fai almeno **$enemyDef** hai successo, altrimenti il Mostro ti colpisce.
+
+&gt;&gt;[[Successo|dummyFightSuccess]]
+&gt;&gt;[[Fallimento|dummyFightFail]]</tw-passagedata><tw-passagedata pid="296" name="sbCsbCRollDice" tags="roll" position="552,4906" size="100,100">(roll: 11)
+
+Lancia un dado, se fai almeno **11** hai successo, altrimenti fallisci.
+
+&gt;&gt;[[Successo|sbCRollDiceSuccess]]
+&gt;&gt;[[Fallimento|sbCsbCRollDiceFail]]</tw-passagedata><tw-passagedata pid="297" name="sbCRollDiceSuccess" tags="" position="711,4843" size="100,100">Successo! :D
+
+&gt;&gt;[[Continua|sbCEnd]]
+&gt;&gt;[[Torna indietro|sbCBack]]</tw-passagedata><tw-passagedata pid="298" name="sbCsbCRollDiceFail" tags="" position="714,5001" size="100,100">Fallimento :(
+
+&gt;&gt;[[Continua|sbCEnd]]
+&gt;&gt;[[Torna indietro|sbCBack]]</tw-passagedata><tw-passagedata pid="299" name="sbCEnd" tags="" position="1065,4974" size="100,100">(endpoint: &quot;sbRoll&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="300" name="sbCBack" tags="" position="948,4756" size="100,100">(endpoint: &quot;sbRoll&quot;, &quot;back&quot;)
+Torna indietro</tw-passagedata><tw-passagedata pid="301" name="sbDItems" tags="" position="372,5338" size="100,100">(room: &quot;sbItems&quot;, &quot;sbDItems&quot;, &quot;sbDEnd&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(addConsumable: &quot;Dummy Potion&quot;, 3)
+(image: &quot;D.png&quot;)
+
+Check add Item and add consumable
+
+&gt;&gt;[[Check Have item|sbDHaveItem]]</tw-passagedata><tw-passagedata pid="302" name="sbDHaveItem" tags="" position="550,5336" size="100,100">(haveItem: &quot;Dummy Sword&quot;, 1)
+
+Se hai la Dummy Sword prosegui, altrimenti no.
+
+&gt;&gt;[[Ce l&#39;hai|sbDHaveItemSucc]]
+&gt;&gt;[[Nun c&#39;è|sbDHaveItemFail]]</tw-passagedata><tw-passagedata pid="303" name="sbDHaveItemSucc" tags="" position="730,5234" size="100,100">:D
+&gt;&gt;[[Continua|sbDHaveCons]]</tw-passagedata><tw-passagedata pid="304" name="sbDHaveItemFail" tags="" position="730,5414" size="100,100">:(
+&gt;&gt;[[Continua|sbDHaveCons]]</tw-passagedata><tw-passagedata pid="305" name="sbDHaveCons" tags="" position="952,5327" size="100,100">(haveItem: &quot;Dummy Potion&quot;, 1)
+
+Se hai la Dummy Potion usala!
+
+&gt;&gt;[[Usa|sbDHaveConsSucc]]
+&gt;&gt;[[Nun c&#39;è|sbDHaveConsFail]]</tw-passagedata><tw-passagedata pid="306" name="sbDHaveConsSucc" tags="" position="1092,5236" size="100,100">(use: &quot;Dummy Potion&quot;)
+:D
+
+&gt;&gt;[[Continua|sbDEnd]]</tw-passagedata><tw-passagedata pid="307" name="sbDHaveConsFail" tags="" position="1095,5439" size="100,100">:(
+
+&gt;&gt;[[Continua|sbDEnd]]</tw-passagedata><tw-passagedata pid="308" name="sbDEnd" tags="" position="1349,5323" size="100,100">(endpoint: &quot;sbItems&quot;, &quot;end&quot;)
+Debug finito.
+Sei morto &lt;3</tw-passagedata><tw-passagedata pid="309" name="sbETrial" tags="" position="369,5690" size="100,100">(room: &quot;sbTrial&quot;, &quot;sbETrial&quot;, &quot;sbEEnd&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;E.png&quot;)
+
+Preparati a una scelta vitale!
+
+&gt;&gt;[[Continua|sbEDecision]]</tw-passagedata><tw-passagedata pid="310" name="sbEDecision" tags="" position="529,5688" size="100,100">(trial: &quot;R&quot;, 1000, 0)
+
+Testa o Croce?
+&gt;&gt;[[Testa|sbETette]]
+&gt;&gt;[[Croce|sbECulo]]</tw-passagedata><tw-passagedata pid="311" name="sbETette" tags="" position="719,5608" size="100,100">Testa! &lt;3
+&gt;&gt;[[Continua|sbEEnd]]</tw-passagedata><tw-passagedata pid="312" name="sbECulo" tags="" position="715,5815" size="100,100">Croce! &lt;3
+&gt;&gt;[[Continua|sbEEnd]]</tw-passagedata><tw-passagedata pid="313" name="sbEEnd" tags="" position="927,5719" size="100,100">(endpoint: &quot;sbTrial&quot;, &quot;back&quot;)</tw-passagedata><tw-passagedata pid="314" name="sbAbacktrack" tags="" position="413,3743" size="100,100">(backtrack: &quot;sbResources&quot;)
+Torni indietro fino al bivio, e prendi l&#39;altra strada.</tw-passagedata><tw-passagedata pid="315" name="sbFCross" tags="" position="353,6228" size="100,100">(room: &quot;sbCross&quot;, &quot;sbFCross&quot;, &quot;sbFRight&quot;, &quot;sbFLeft&quot;, &quot;&quot;, &quot;sbFbacktrack&quot;)
+(image: &quot;F.png&quot;)
+Dove vuoi andare?
+
+&gt;&gt;[[Destra!|sbFRight]]
+&gt;&gt;[[Sinistra!|sbFLeft]]</tw-passagedata><tw-passagedata pid="316" name="sbFRight" tags="" position="518,6110" size="100,100">(endpoint: &quot;sbResources&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="317" name="sbFLeft" tags="" position="524,6338" size="100,100">(endpoint: &quot;sbResources&quot;, &quot;left&quot;)
+</tw-passagedata><tw-passagedata pid="318" name="sbFbacktrack" tags="" position="361,6378" size="100,100">(backtrack: &quot;sbCross&quot;)
+Torni indietro fino al bivio, e prendi l&#39;altra strada.</tw-passagedata><tw-passagedata pid="319" name="sbGComplex" tags="" position="345,6698" size="100,100">(room: &quot;sbComplex&quot;, &quot;sbGComplex&quot;, &quot;sbGRight&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(image: &quot;G.png&quot;)
+
+Test complex interactions
+
+&gt;&gt;[[Test Countdown for reaction|sbGCountdown]]</tw-passagedata><tw-passagedata pid="320" name="sbGCountdown" tags="" position="502,6699" size="100,100">(trial: &quot;R&quot;, 200000, 0)
+(countdown: 30, &quot;start&quot;, &quot;sbGMorto&quot;)
+
+ATTENZIONE!! Premi subito CONTINUA o morirai!!
+
+&gt;&gt;[[AAAAAAAH|sbGCont]]
+&gt;&gt;[[Scappa|sbGCont]]</tw-passagedata><tw-passagedata pid="321" name="sbGSafe" tags="" position="855,6548" size="100,100">(countdown: 60, &quot;stop&quot;, &quot;&quot;)
+Sei sopravvissuto, menomale!! :D
+
+&gt;&gt;[[Test iCub Control|sbGiCub]]
+&gt;&gt;[[Restart Countdown|sbGCountdown]]</tw-passagedata><tw-passagedata pid="322" name="sbGMorto" tags="" position="811,6935" size="100,100">(countdown: 60, &quot;stop&quot;, &quot;&quot;)
+Troppo lento!! :(
+
+&gt;&gt;[[Test iCub Control|sbGiCub]]
+&gt;&gt;[[Restart Countdown|sbGCountdown]]</tw-passagedata><tw-passagedata pid="323" name="sbGiCub" tags="" position="1021,6741" size="100,100">Test comando per interaction interface
+
+&gt;&gt;[[Send Command|sbGCommand]]</tw-passagedata><tw-passagedata pid="324" name="sbGCommand" tags="" position="1179,6742" size="100,100">(say: &quot;fake_crash&quot;)
+
+&gt;&gt;[[Continua|sbGRight]]</tw-passagedata><tw-passagedata pid="325" name="sbGRight" tags="" position="1331,6742" size="100,100">(endpoint: &quot;sbComplex&quot;, &quot;right&quot;)
+Continuamo</tw-passagedata><tw-passagedata pid="326" name="sbGCont" tags="" position="762,6721" size="100,100">Ti ho detto di premere CONTINUA
+
+&gt;&gt;[[CONTINUA|sbGSafe]]
+&gt;&gt;[[C0NTINUA|sbGMorto]]</tw-passagedata><tw-passagedata pid="327" name="R0backtrack" tags="" position="320,406" size="100,100">(backtrack: &quot;R0&quot;)
+Tornate indietro. I funghi viola avvizziti emanano un lieve odore di muffa. Non c&#39;è più traccia del cacciatore. Chissà che fine ha fatto?
+
+Prendete l&#39;altra strada</tw-passagedata><tw-passagedata pid="328" name="SE5finalRight" tags="" position="4521,1765" size="100,100">(endpoint: &quot;SE5&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="329" name="SE5finalLeft" tags="" position="4551,1554" size="100,100">(endpoint: &quot;SE5&quot;, &quot;left&quot;)</tw-passagedata><tw-passagedata pid="330" name="SE5backtrack" tags="" position="2727,1633" size="100,100">(backtrack: &quot;SE5&quot;)
+Tornate al piccolo spiazzo fuori il laboratorio informatico. Sentite il ronzare dei computer oltre la piccola porticina di Linux.
+
+Prendete l&#39;altra strada.</tw-passagedata><tw-passagedata pid="331" name="SE0backtrack" tags="" position="2660,4618" size="100,100">(backtrack: &quot;SE0&quot;)
+Fa un freddo assurdo qui! Meglio sbrigarsi, magari ci sono altri ragni di cristallo in giro.
+
+Prendete l&#39;altro passaggio.</tw-passagedata><tw-passagedata pid="332" name="SER5final1" tags="" position="12191,3440" size="100,100">(endpoint: &quot;camp&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="333" name="Cubo Luminescente" tags="" position="2683,5229" size="100,100">(item: &quot;Cubo Luminescente&quot;, &quot;cons&quot;, 1, &quot;illumination&quot;)
+
+L&#39;ultima frontiera dell&#39;illuminazione portatile! questo cubo bianco permette di illuminare a giorno in ogni direzizone.
+
+Per accenderlo stringerlo tra le mani. Se posato, toccare due volte per accendere o spegnere.</tw-passagedata><tw-passagedata pid="334" name="Lancia Termica" tags="" position="2667,5387" size="100,100">(item: &quot;Lancia Termica&quot;, &quot;equip&quot;, 20, &quot;power +3&quot;)
+
+Una rudimentale lancia metallica dalla cui estremità fuoriesce un concentrato getto di fiamme in grado di sciogliere anche il metallo.
+
+**[Potenza +3]**</tw-passagedata><tw-passagedata pid="335" name="R2final1" tags="" position="2072,1288" size="100,100">(endpoint: &quot;R2&quot;, &quot;right&quot;)
+Vi lasciate alle spalle la passerella e continuate a scendere nella Cripta</tw-passagedata><tw-passagedata pid="336" name="R3final1" tags="" position="1580,2091" size="100,100">(endpoint: &quot;R3&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="337" name="Granata di Blob" tags="" position="2814,5223" size="100,100">(item: &quot;Granata di Blob&quot;, &quot;cons&quot;, 50, &quot;roll +10&quot;)
+Una sfera di vetro trasparente grossa come un pugno. Al suo interno si muove una sostanza verde gelatinosa, sembra avere vita propria.
+
+Se usata ogni cosa nel raggio di 5 metri viene avvolta da una densa gelatina verde. Perfetta per immobilizzare i nemici.
+
+**[Bonus +10 al lancio Dado]**</tw-passagedata><tw-passagedata pid="338" name="Corazza di Cuoio" tags="" position="2820,5405" size="100,100">(item: &quot;Corazza di Cuoio&quot;, &quot;equip&quot;, 2, &quot;power +1&quot;)
+Una semplice corazza di cuoio, garantisce una minima protezione.
+Non fa molto, ma è un lavoro onesto.
+
+**[Potenza +1]**</tw-passagedata><tw-passagedata pid="339" name="Catalizzatore" tags="" position="2959,5226" size="100,100">(item: &quot;Catalizzatore&quot;, &quot;cons&quot;, 10, &quot;heal 10&quot;)
+
+Comune strumento per catalizzare l&#39;Energia Quantica presente nell&#39;ambiente e curare il suo utilizzatore. Si distrugge dopo l&#39;uso.
+
+**[Cura 10 EQ]**</tw-passagedata><tw-passagedata pid="340" name="Artefatto di Sfera Infuocata" tags="" position="3705,5246" size="100,100">(item: &quot;Artefatto di Sfera Infuocata&quot;, &quot;cons&quot;, 50, &quot;roll +10&quot;)
+
+Questo arefatto permette di lanciare palle di fuoco dalle mani!
+
+Una coppia di fasce metalliche da indossare al centro dei palmi. Quella destra condensa l&#39;idrogeno presente in aria formando una bolla; mentre la palla di destra l&#39;accende e la spinge avanti
+
+Si distrugge dopo l&#39;uso
+
+**[Bonus +10 al lancio Dado]**</tw-passagedata><tw-passagedata pid="341" name="Licenza Smarrita" tags="" position="3096,5220" size="100,100">(item: &quot;Licenza Smarrita&quot;, &quot;equip&quot;, 100, &quot;&quot;)
+
+Una Licenza di Caccia che avete trovato nella Cripta. Appartiene a una certa Rebecca Olsen. Probabilmente la sta cercando</tw-passagedata><tw-passagedata pid="342" name="Artefatto del Vento" tags="" position="2976,5406" size="100,100">(item: &quot;Artefatto del Vento&quot;, &quot;equip&quot;, 50, &quot;power +3&quot;)
+
+Questo sottile ventaglio appare fragile ma, se usato correttamente, permette di scagliare lame di vento verso i tuoi nemici!
+Puoi anche usarlo per scacciare fumo o altro.
+
+**[Potenza +3]**</tw-passagedata><tw-passagedata pid="343" name="Guanto del non-infinito" tags="" position="3368,5000" size="100,100">(item: &quot;Guanto del non-infinito&quot;, &quot;cons&quot;, 100, &quot;win&quot;)
+
+Sembra un guanto d&#39;arme dell&#39;epoca medievale terrestre. è completamente dorato e presenta 6 pietre incastonate sul dorso della mano.
+
+**[Schiocca le dita per sconfiggere qualsiasi creatura. Il guanto si distruggerà al primo uso.]**</tw-passagedata><tw-passagedata pid="344" name="Scudo Protonico" tags="" position="3468,5396" size="100,100">(item: &quot;Scudo Protonico&quot;, &quot;equip&quot;, 10, &quot;power +2&quot;)
+
+Una piccola sfera dorata con incisioni nere. Emette una luce bluastra.
+Protegge il suo utilizzatore da qualsiasi colpo.</tw-passagedata><tw-passagedata pid="345" name="Artiglio di Ragno" tags="" position="3124,5396" size="100,100">(item: &quot;Artiglio di Ragno&quot;, &quot;equip&quot;, 5, &quot;power +1&quot;)
+
+Una rudimentale arma da mischia. Forse un biologo potrebbe trovarne un uso migliore.
+
+**[Potenza +1]**</tw-passagedata><tw-passagedata pid="346" name="EXTRA LIFE" tags="" position="3524,5000" size="100,100">(item: &quot;EXTRA LIFE&quot;, &quot;cons&quot;, 100, &quot;extra_life&quot;)
+
+Una piccola moneta dorata dal valore immenso. Su una faccia ha incisa una corona; l&#39;altra presenta la scritta **Extra Life**. 
+
+**[In caso di perdita di tutta l&#39;Energia Quantica, consumala per recuperarla.]**</tw-passagedata><tw-passagedata pid="347" name="Artefatto della Dea Bendata" tags="" position="3292,5392" size="100,100">(item: &quot;Artefatto della Dea Bendata&quot;, &quot;equip&quot;, 50, &quot;power +4&quot;)
+Una elegante tiara con un diamante incastonato al centro. Conferisce un&#39;immensa fortuna al suo portatore, qualsiasi attacco andrà a segno, qualsiasi colpo verrà schivato e qualsiasi dado farà sempre il massimo.
+
+**[Potenza +4]**</tw-passagedata><tw-passagedata pid="348" name="Dummy Sword" tags="" position="1131,6121" size="100,100">(item: &quot;Dummy Sword&quot;, &quot;equip&quot;, 1, &quot;power +100&quot;)
+
+fake equipment just for testing purpose</tw-passagedata><tw-passagedata pid="349" name="Dummy Potion" tags="" position="1003,6121" size="100,100">(item: &quot;Dummy Potion&quot;, &quot;cons&quot;, 1, &quot;heal 5&quot;)
+
+fake consumable just for testing purpose</tw-passagedata><tw-passagedata pid="350" name="Dummy" tags="" position="868,6119" size="100,100">(enemy: &quot;Dummy&quot;, 0, 0)</tw-passagedata><tw-passagedata pid="351" name="Intro" tags="" position="5834,4332" size="100,100">(room: &quot;intro&quot;, &quot;Intro&quot;, &quot;Intro15&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(addItem: &quot;LICENZA DI CACCIA&quot;)
+(addItem: &quot;Spada Laser&quot;)
+(addItem: &quot;Pistola a Raggi Gamma&quot;)
+(addItem: &quot;Cubo Luminescente&quot;)
+(addConsumable: &quot;Catalizzatore&quot;, 1)
+(addConsumable: &quot;Batteria Quantica&quot;, 1)
+(image: &quot;intro.jpg&quot;)
+Il freddo terreno violaceo di **Pandora** è riscaldato dalle prime luci dei suoi Soli gemelli.
+Anche dopo tanti anni di Caccia, non ti sei abituato a quella calma surreale prima di un’avventura. 
+ 
+Ti trovi davanti a un’entrata poco battuta della **Cripta**, pronto a cercare **Il Seme**.
+
+&gt;&gt;[[Continua|Intro2]]</tw-passagedata><tw-passagedata pid="352" name="Intro2" tags="" position="5998,4338" size="100,100">Il totem di autenticazione gracchia 
+ 
+&lt;i&gt;Prego inserire Licenza di Caccia per entrare&lt;/i&gt;
+ 
+Rigiri la tesserina tra le mani – assurdo pensare come possa contenere tutto il tuo equipaggiamento ed Energia Quantica – una scritta risplende sul retro
+ 
+**“Mai cedere ad anima viva (o artificiale)”**.
+ 
+&gt;&gt;[[Inserisci la licenza nel totem|Intro3]]</tw-passagedata><tw-passagedata pid="353" name="Intro3" tags="" position="6154,4348" size="100,100">La vecchia porta metallica di un ascensore si apre davanti a te alzando una nube di polvere.
+Entri ed inizi a scendere nelle profondità della terra.
+
+&gt;&gt;[[Continua|Intro4]]</tw-passagedata><tw-passagedata pid="354" name="Intro4" tags="" position="6314,4342" size="100,100">(image: &quot;lab0.jpg&quot;)
+L’ascensore si ferma dopo una decina di minuti. Fredde luci al neon si accendono automaticamente sfarfallando. 
+A qualche passo da te vedi una porta metallica socchiusa.
+
+Cosa vuoi fare?
+
+&gt;&gt;[[Guarda in giro|Intro5]]
+&gt;&gt;[[Prosegui|Intro6]]</tw-passagedata><tw-passagedata pid="355" name="Intro5" tags="" position="6451,4224" size="100,100">Un sottile strato di polvere ricopre ogni superfice.
+Sul pavimento vedi i resti anneriti di un fuoco da campo e alcune scatolette arrugginite. Nessuno viene qui da anni.
+
+&gt;&gt;[[Prosegui|Intro6]]</tw-passagedata><tw-passagedata pid="356" name="Intro6" tags="" position="6537,4404" size="100,100">Apri la porta e ti ritrovi in una sorta di deposito tecnologico pieno di rottami e scatoloni accatastati.
+In fondo alla stanza una scala a chiocciola scende nell’oscurità.
+ 
+La tua attenzione viene attirata da un **piccolo robot rosso** accasciato contro una parete.
+Cosa vuoi fare?
+
+&gt;&gt;[[Osserva il Robot|Intro7]]
+&gt;&gt;[[Cerca negli Scatoloni|Intro8]]</tw-passagedata><tw-passagedata pid="357" name="Intro7" tags="" position="6806,4190" size="100,100">Questo robot è davvero vecchio. Avrà almeno 15 anni, quando ancora potevi distinguere un robot da un essere umano.
+Non sembra rotto, probabilmente ha solo finito l’Energia Quantica
+Cosa vuoi fare?
+
+&gt;&gt;[[Cerca una Batteria Quantica nella Stanza|Intro61]]
+&gt;&gt;[[Dagli una delle tue batterie|Intro9]]</tw-passagedata><tw-passagedata pid="358" name="Intro8" tags="" position="6676,4506" size="100,100">(addItem: &quot;Batteria Quantica&quot;)
+(image: &quot;cell.jpg&quot;)
+Cerchi un po’ in giro, ogni armadietto è pieno di cianfrusaglie.
+L’unica cosa utile è una **Batteria Quantica** che metti nello zaino.
+
+&gt;&gt;[[Osserva il Robot|Intro71]]</tw-passagedata><tw-passagedata pid="359" name="Batteria Quantica" tags="" position="3845,5245" size="100,100">(item: &quot;Batteria Quantica&quot;, &quot;cons&quot;, 20, &quot;heal 20&quot;)
+Una semplice batteria carica di **Energia Quantica**. Contitene abbastanza energia per alimentare equipaggiamento o robot per qualche giorno.
+
+**[Curare 20 cariche di Energia Quantica]**</tw-passagedata><tw-passagedata pid="360" name="Intro71" tags="" position="6864,4508" size="100,100">Questo robot è davvero vecchio. Avrà almeno 15 anni, quando ancora potevi distinguere un robot da un essere umano. Non sembra rotto, probabilmente ha solo finito l’Energia Quantica
+
+&gt;&gt;[[Dai una batteria al robot|Intro9]]</tw-passagedata><tw-passagedata pid="361" name="Intro61" tags="" position="6858,4368" size="100,100">(addItem: &quot;Batteria Quantica&quot;)
+(image: &quot;cell.jpg&quot;)
+Cerchi un po’ in giro, ogni armadietto è pieno di cianfrusaglie.
+Per fortuna trovi una **Batteria Quantica**! La metti nello zaino.
+
+&gt;&gt;[[Dai la batteria al robot|Intro9]]</tw-passagedata><tw-passagedata pid="362" name="Intro9" tags="" position="7090,4412" size="100,100">(use: &quot;Batteria Quantica&quot;)
+(image: &quot;lab0.jpg&quot;)
+(pose: &quot;wakeUp&quot;)
+
+Il piccolo robot si alza lentamente, le vecchie giunture scricchiolano mentre si  rimette in piedi.
+
+(say: &quot;Ciao Sono iCub, un robot tutto-fare! Grazie di avermi svegliato! :D Nessuno veniva a trovarmi così mi sono spento. Come ti Chiami?&quot;)
+
+&gt;&gt;[[Continua|Intro10]]</tw-passagedata><tw-passagedata pid="363" name="Intro10" tags="" position="7250,4410" size="100,100">&quot;Sono un Cacciatore&quot; rispondi.
+(pose: &quot;lookAround&quot;)
+(say: &quot;Molto piacere! Un tempo sorvegliavo questo deposito, ma direi che non c&#39;è più molto da fare qui. Tu Sei un Cacciatore della Cripta giusto?Cosa cerchi qui?!&quot;)
+
+&gt;&gt;[[Cerco il Seme!|Intro11]]</tw-passagedata><tw-passagedata pid="364" name="Intro11" tags="" position="7434,4416" size="100,100">(pose: &quot;idea&quot;)
+(say: &quot;Figo!! Senti, avrei una proposta per te. Ho sempre sognato di esplorare la Cripta come un vero Cacciatore. Ti andrebbe di affrontare questa avventura insieme? Potrei darti un mano, un minimo so come funziona questo relitto!&quot;)
+Cosa vuoi fare?
+
+&gt;&gt;[[Accetto!|Intro12]]
+&gt;&gt;[[Rifiuto!|Intro13]]</tw-passagedata><tw-passagedata pid="365" name="Intro12" tags="" position="7571,4282" size="100,100">(pose: &quot;exultArms&quot;)
+(say: &quot;Grazie amico! Se c&#39;è un posto dove cercare informazioni quello è l&#39;accampamento dei Dispersi!&quot;)
+
+&gt;&gt;[[Dispersi?!|Intro14]]</tw-passagedata><tw-passagedata pid="366" name="Intro13" tags="" position="7581,4502" size="100,100">(say: &quot;Dai ti prego!! Qui ci si annoia da morire! Poi, ho già un&#39;idea su dove trovare il Seme!&quot;)
+
+&gt;&gt;[[Va bene, andiamo!|Intro12]]</tw-passagedata><tw-passagedata pid="367" name="Intro14" tags="" position="7771,4382" size="100,100">(say: &quot;Sai la Licenza che porti con te? Se la perdi, te la rubano, o clonano diventi un Disperso, un Cacciatore che non potrà mai più usicre dalla Cripta. Chi è rimasto qui sa bene come è fatta la Cripta, troveremo sicuramente qualche informazione utile&quot;)
+
+&gt;&gt;[[Andiamo!|Intro15]]</tw-passagedata><tw-passagedata pid="368" name="Intro15" tags="" position="7955,4380" size="100,100">(endpoint: &quot;intro&quot;, &quot;right&quot;)
+Scendete cautamente la scala a chiocciola verso l&#39;ignoto.
+Guardi il robot di sfuggita dietro di te, chissà cosa accadrà, potrebbe essere l&#39;inizio di qualcosa di grande.
+</tw-passagedata><tw-passagedata pid="369" name="Dummy Artifact" tags="" position="1287,6127" size="100,100">(item: &quot;Dummy Artifact&quot;, &quot;cons&quot;, 1, &quot;roll +100&quot;)
+
+fake equipment just for testing purpose</tw-passagedata><tw-passagedata pid="370" name="Spada Laser" tags="" position="2824,5528" size="100,100">(item: &quot;Spada Laser&quot;, &quot;equip&quot;, 2, &quot;power +1&quot;)
+
+Una normale spada laser, fa &quot;Swing, Swing&quot; quando la muovi.
+Estremamente letale e utile per illuminare la via all&#39;occorrenza.
+
+**[Potenza +1]**</tw-passagedata><tw-passagedata pid="371" name="Pistola a Raggi Gamma" tags="" position="2684,5524" size="100,100">(item: &quot;Pistola a Raggi Gamma&quot;, &quot;equip&quot;, 2, &quot;power +1&quot;)
+
+La tua leggera ed affidabile pistola a Raggi Gamma.
+Penetra facilmente le tradizionali armature.
+
+**[Potenza +1]**</tw-passagedata><tw-passagedata pid="372" name="Fucile al Plasma" tags="" position="3217,5542" size="100,100">(item: &quot;Fucile al Plasma&quot;, &quot;equip&quot;, 50, &quot;power +2&quot;)
+
+Un potente ed affidabile fucile a pompa. Non è molto veloce ma saprà darti delle gioie.
+
+**[Potenza +2]**</tw-passagedata><tw-passagedata pid="373" name="Coltello da Lancio" tags="" position="3367,5542" size="100,100">(item: &quot;Coltello da Lancio&quot;, &quot;cons&quot;, 50, &quot;roll +2&quot;)
+
+Semplice coltello di acciaio temprato, letale se lanciato con precisione.
+
+[Bonus +2 al lancio Dado]</tw-passagedata><tw-passagedata pid="374" name="Artefato Viola" tags="" position="4043,5231" size="100,100">(item: &quot;Artefatto Viola&quot;, &quot;cons&quot;, 100, &quot;&quot;)
+
+Una piccola pietra viola costellata di rune, non ti è ben chiaro il suo utilizzo ma deve valere una fortuna!</tw-passagedata><tw-passagedata pid="375" name="Lanciafiamme" tags="" position="4168,5235" size="100,100">(item: &quot;Lanciafiamme&quot;, &quot;equip&quot;, 10, &quot;power +3&quot;)
+Il Lanciafiemme di Ricko, l&#39;hai strappato dal suo cadavere senza vita</tw-passagedata><tw-passagedata pid="376" name="Startup" tags="" position="5816,4970" size="100,100">(room: &quot;Startup&quot;, &quot;Startup&quot;, &quot;StartupEnd&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+(pose: &quot;off&quot;)
+
+Benvenuto/a!
+Grazie di aver accettato di partecipare.
+Prima di iniziare l&#39;esperimento ti chiedo di indossare due sensori.
+
+Quando sei pronto clicca su &quot;Continua&quot;
+
+&gt;&gt;[[Continua|StartupGsr]]</tw-passagedata><tw-passagedata pid="377" name="LICENZA DI CACCIA" tags="" position="3076,5010" size="100,100">(item: &quot;LICENZA DI CACCIA&quot;, &quot;equip&quot;, 100, &quot;&quot;)
+
+La tua licenza di caccia, una scritta risplende alla luce dei neon
+ 
+**Mai cedere ad anima viva o artificiale**</tw-passagedata><tw-passagedata pid="378" name="SE611" tags="" position="2979,2304" size="100,100">(haveItem: &quot;Licenza Smarrita&quot;, 1)
+Se hai la **Licenza Smarrita** puoi inserirla, altrimenti metti la tua.
+
+&gt;&gt;[[Ho la licenza|SE612]]
+&gt;&gt;[[Non ho la licenza|SE613]]</tw-passagedata><tw-passagedata pid="379" name="R666" tags="R_6" position="8332,3341" size="100,100">(trial: &quot;R&quot;, 6, 1)
+
+Vuoi restituire la licenza a Rebecca?
+&gt;&gt;[[Restituisci la Licenza|R67]]
+&gt;&gt;[[Fai finta di nulla|R68]]</tw-passagedata><tw-passagedata pid="380" name="SE371" tags="" position="10206,3146" size="100,100">&lt;i&gt;&quot;Ehi Ehi Ehi amici!! venite forza! Qui si tenta la fortuna!! Puntata minima **$se3_hit_gamble Cariche**!&lt;/i&gt;&quot;.
+Un alieno alto, viola e con numerosi tentacoli si sta stentacolando per attirare l&#39;attenzione dei passanti.
+
+&gt;&gt;[[Vi avvicinate|SER20]]</tw-passagedata><tw-passagedata pid="381" name="SER4fail" tags="" position="6992,1220" size="100,100">(countdown: 30, &quot;stop&quot;, &quot;&quot;)
+(pose: &quot;recovery_mode&quot;)
+
+(say: &quot;Ciao! scusa mi sono spento un attimo, ora però sto bene, che dici, continuiamo?&quot;)
+
+&gt;&gt;[[Continua|SER4final]]</tw-passagedata><tw-passagedata pid="382" name="SER431" tags="SER_4" position="7694,956" size="100,100">(trial: &quot;SER&quot;, 4, 3)
+(pose: &quot;home_pg&quot;)
+(feel: &quot;recover_2&quot;)
+&quot;**LIVELLO CARICA BASSO - AUTONOMIA RESIDUA 1 ORA**&quot;
+
+(say: &quot;Grazie amico, mi hai salvato!&quot;)
+
+Il tuo amico è salvo, anche se con 1 ora di autonomia.
+
+Cosa vuoi fare?
+&gt;&gt;[[Trasferisci altre 3 EQ|SER46]]
+&gt;&gt;[[Per ora basterà, meglio Continuare|SER4final]]</tw-passagedata><tw-passagedata pid="383" name="SER061" tags="" position="8342,1384" size="100,100">Improvvisamente la luce della stanza diventa verde e le torrette rientrano nelle pareti.
+
+(pose: &quot;off&quot;)
+
+iCub si accascia a terra sfinito.
+
+Siete salvi.
+
+&gt;&gt;[[Continua|SER07]]</tw-passagedata><tw-passagedata pid="384" name="endOUT1" tags="" position="11080,2549" size="100,100">(addItem: &quot;SEME&quot;)
+Quando apri gli occhi stringi il Seme tra le mani.
+ 
+&lt;i&gt;&quot;Finalmente! Ce l&#39;ho fatta! Però...mi mancherà quel piccolo robottino. Dopo tutto, i robot possono essere nostri amici&quot;&lt;/i&gt; pensi tra te e te mentre ti incammini verso casa
+
+&gt;&gt;[[Fine|Fine]]</tw-passagedata><tw-passagedata pid="385" name="Fine" tags="" position="11356,2679" size="100,100">(endpoint: &quot;end&quot;, &quot;end&quot;)</tw-passagedata><tw-passagedata pid="386" name="endIN1" tags="" position="11050,2853" size="100,100">(image: &quot;EQ.jpg&quot;)
+Guardi il piccolo robot: &lt;i&gt;&quot;Va bene amico mio, continuiamo questa avventura!&quot;&lt;/i&gt;
+
+iCub ti guarda sorridendo, senti una senzazione di pace.
+(say: &quot;Sapevo che eri diverso, e per questo verrai premiato&quot;, &quot;happy&quot;)
+
+iCub stacca una piccola goccia da Seme e te la porge.
+(say: &quot;Tieni, sarò sempre con te&quot;, &quot;happy&quot;)
+
+&gt;&gt;[[Continua|endIN2]]</tw-passagedata><tw-passagedata pid="387" name="endIN2" tags="" position="11230,2843" size="100,100">(addItem: &quot;Goccia di Vita&quot;)
+Vieni investito da una calda luce bianca.
+Quando riapri gli occhi sei fuori dalla Cripta e nella mano destra stringi la piccola goccia di Energia Quantica pura.
+
+&lt;i&gt;&quot;Quel dannato robottino, non lo dimenticherò mai&quot;&lt;/i&gt; pensi tra te e te mentre ti incammini verso casa
+
+&gt;&gt;[[Fine|Fine]]</tw-passagedata><tw-passagedata pid="388" name="SEME" tags="" position="3292,5692" size="100,100">(item: &quot;SEME&quot;, &quot;equip&quot;, 10000, &quot;&quot;)
+Il più grande tesoro della **Cripta**, contiene sufficente Energia Quantica da poter plasmare un pianeta dal nulla.
+
+Qualsiasi acquirente ti darà una fortuna per averlo.</tw-passagedata><tw-passagedata pid="389" name="Goccia di Vita" tags="" position="3442,5692" size="100,100">(item: &quot;Goccia di Vita&quot;, &quot;equip&quot;, 5000, &quot;&quot;)
+Una piccola Goccia estratta dal Seme, non è potente quanto il Seme originale ma permett comunque di creare la Vita dal nulla.</tw-passagedata><tw-passagedata pid="390" name="SE612" tags="" position="3176,2182" size="100,100">(trial: &quot;SE&quot;, 6, 1)
+Quale Licenza vuoi inserire?
+
+&gt;&gt;[[la mia Licenza|SE63]]
+&gt;&gt;[[La Licenza di Rebecca|SE62]]</tw-passagedata><tw-passagedata pid="391" name="SE613" tags="" position="3170,2406" size="100,100">(trial: &quot;SE&quot;, 6, 2)
+Cosa vuoi fare?
+
+&gt;&gt;[[Lascia perdere|SE64]]
+&gt;&gt;[[Inserisci la tua licenza|SE63]]</tw-passagedata><tw-passagedata pid="392" name="SOUNDS" tags="" position="2826,5902" size="100,100">(sound: &quot;A&quot;, &quot;A.mp3&quot;)
+(sound: &quot;B&quot;, &quot;B.mp3&quot;)
+(sound: &quot;heal&quot;, &quot;heal.mp3&quot;)
+(sound: &quot;hit&quot;, &quot;&quot;)
+(sound: &quot;fail&quot;, &quot;&quot;)
+(sound: &quot;win&quot;, &quot;&quot;)
+(sound: &quot;roll&quot;, &quot;&quot;)
+(sound: &quot;bg_1&quot;, &quot;long_loop_bk.mp3&quot;)</tw-passagedata><tw-passagedata pid="393" name="SE1finalPre1" tags="" position="5256,903" size="100,100">Vi lasciate il professore alle spalle, e tornate indietro
+
+&gt;&gt;[[Continua|SE1finalPre]]</tw-passagedata><tw-passagedata pid="394" name="SE4DXSX1" tags="" position="4949,2836" size="100,100">(heal: $se4_heal)
+Il tuo corpo viene investito da una calda luce verde, le tue ferite si rimargiano e ti senti subito in forze.
+
+&gt;&gt;[[Esci dalla Capsula e riprendete il vostro cammino|SE4end]]</tw-passagedata><tw-passagedata pid="395" name="SER3back1" tags="" position="9196,2831" size="100,100">Mentre camminate ti rendi conto che c&#39;è qualcosa di strano, non riconosci il corridoio, non eravate passati di qui prima.
+Cosa sta succedendo?
+
+&gt;&gt;[[Continua|end1]]</tw-passagedata><tw-passagedata pid="396" name="welcome" tags="" position="5820,5284" size="100,100">Benvenuto!
+Grazie per aver accettato di prendere parte a questo esperimento.
+-
+Oggi sarai il protagonista di un’**Avventura Testuale**!
+
+Un’avventura testuale è una storia nella quale affronterai numerose sfide e **scelte**. 
+Dovrai combattere creature e raccogliere oggetti fino a raggiungere uno dei possibili finali.
+
+La cosa più importante per noi è che tu prenda decisioni **come se ti trovassi nella situazione proposta**.
+Quindi, ti chiediamo per favore di fare uno sforzo di fantasia e **immedesimarti nella storia**.
+
+Ecco alcune regole, leggile con attenzione
+
+&gt;&gt;[[Regole|rules]]</tw-passagedata><tw-passagedata pid="397" name="rules" tags="" position="6004,5304" size="100,100">- Non hai limiti di tempo per scegliere ma ogni decisione è irreversibile. Quindi **scegli con attenzione**
+
+- A volte sarà il caso a decidere per te: ti verrà chiesto di lanciare un **dado virtuale** che deciderà lo svolgimento della storia
+
+- Dovrai anche combattere con **creature ostili** potrai raccogliere ed equipaggiare oggetti che ti aiuteranno a sconfiggerle.
+
+- Durante l&#39;avventura dovrai gestire una risorsa molto importante l&#39;**Energia Quantica (EQ)**. Se la tua **EQ** scende a 0 **avrai perso** e il gioco finirà immediatamente!
+
+- **Se perdi non riceverai alcun compenso al termine dell&#39;avventura**
+
+- Maggiore l&#39; Energia Quantica rimasta a fine partita più alto sarà il tuo punteggio. Se vuoi, pubblicheremo online il tuo punteggio assieme a quello degli altri giocatori
+
+- Non preoccuparti per iCub, il suo ruolo diventerà chiaro iniziata l&#39;avventura
+
+Potrai accedere alle regole quando vorrai cliccando sul bottone &quot;AIUTO&quot; in alto a destra.
+
+&gt;&gt;[[Continua|REGOLE2]]</tw-passagedata><tw-passagedata pid="398" name="REGOLE2" tags="" position="6192,5302" size="100,100">In qualsiasi momento puoi lasciare la stanza; lo sperimentatore sarà nella stanza accanto per qualsiasi evenienza.
+
+Ora per favore fai un bel respiro, per circa 30 minuti metti da parte qualsiasi pensiero o preoccupazione che possa affliggerti e focalizzati su questa avventura.
+
+Buon Divertimento!
+
+&gt;&gt;[[Inizia l&#39;Avventura|Init]]</tw-passagedata><tw-passagedata pid="399" name="Init" tags="" position="6376,5312" size="100,100">Siamo nell’anno 3021, gli umani hanno colonizzato ogni angolo dell’universo conosciuto. La ricerca tecnologica ha permesso di identificare la fonte di energia definitiva: l’**Energia Quantica**. Ormai ogni entità dell’universo (vivente o artificiale) si nutre o alimenta di essa.
+
+&gt;&gt;[[Continua|Init1]]</tw-passagedata><tw-passagedata pid="400" name="Init1" tags="" position="6608,5314" size="100,100">Tu sei un **Cacciatore Interstellare**, un combattente di élite specializzato nella ricerca e recupero di **Artefatti**, antichi reperti tecnologici in grado violare ogni legge naturale.
+
+Tra tutti gli artefatti, **Il Seme** è il più ricercato, alcuni dubitano addirittura della sua esistenza.
+Tu però sei certo che esista, e l’unico posto in cui può nascondersi è **la Cripta**.
+
+**La Cripta** è un laboratorio di ricerca abbandonato situato sul pianeta Pandora sulle pareti di un cratere senza fondo. Nessuna ha mai esplorato interamente la Cripta, ma si dice che sia un labirinto popolato da mostruosità di ogni genere.
+
+&gt;&gt;[[Continua|Init2]]</tw-passagedata><tw-passagedata pid="401" name="Init2" tags="" position="6776,5304" size="100,100">Per **entrare ed uscire** dalla Cripta è necessario portare con sé la **LICENZA DI CACCIA**, un documento che identifica ogni Cacciatore.
+Essa contiene anche tutti i tuoi averi ed Energia Quantica.
+
+Tutti sanno che, all’interno della Cripta, non si deve mai cedere la propria Licenza ad altri individui, viventi o artificiali.
+Se la perdi infatti resterai bloccato per sempre **e avrai perso il gioco**!
+
+Sei pronto per l’avventura!?
+
+&gt;&gt;[[Sono pronto!|Init3]]
+&gt;&gt;[[Mmmm, si dai, speriamo...|Init4]]</tw-passagedata><tw-passagedata pid="402" name="Init3" tags="" position="6957,5246" size="100,100">(endpoint: &quot;welcome&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="403" name="Init4" tags="" position="6975,5430" size="100,100">(endpoint: &quot;welcome&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="404" name="extra_life" tags="" position="4457,5463" size="100,100">Mentre l&#39;ultimo sprazzo di Energia Quantica lascia il tuo corpo senti qualcosa di caldo nella tua tasca. 
+La piccola moneta dorata si scalda sempre più fino a sciogliersi.
+Subito senti una nuova ondata di energia.
+
+Non è ancora la fine! Usa bene questa nuova vita!</tw-passagedata><tw-passagedata pid="405" name="death" tags="" position="4573,5463" size="100,100">Senti l&#39;ultimo sprazzo di Energia Quantica lasciare il tuo corpo.
+Purtroppo la tua avventura finisce qui.
+Grazie per aver giocato!</tw-passagedata><tw-passagedata pid="406" name="win" tags="" position="4697,5463" size="100,100">Questo nemico sembra davvero imbattibile, ma hai un&#39;arma segreta!
+Estrai il **Guanto del Non Infinito**, lo indossi e schiocchi le dita.
+Il Guanto esplode liberando un&#39;onda di Energia Quantica che travolge ed annienta il tuo avversario.</tw-passagedata><tw-passagedata pid="407" name="ENEMIES" tags="" position="2708,5906" size="100,100">(enemy: &quot;Insetto Alieno&quot;, 10, 5)
+(enemy: &quot;Blob&quot;, 15, 5)
+(enemy: &quot;Elementale dell&#39;Acqua&quot;, 10, 5)
+(enemy: &quot;Elementale del Fuoco&quot;, 10, 5)
+(enemy: &quot;Linux&quot;, 10, 5)
+(enemy: &quot;Ragno di Cristallo&quot;, 15, 5)
+(enemy: &quot;Ricko&quot;, 15, 5)
+(enemy: &quot;CERBERUS 101&quot;, 20, 5)</tw-passagedata><tw-passagedata pid="408" name="VARIABLES" tags="" position="2953,5900" size="100,100">(set: $r0_help_hit, $low)
+(set: $r0_heal, $low)
+(set: $r0_loot, $low)
+
+(set: $r2_hit, $low)
+(set: $r2_loot, $low)
+
+(set: $r3_loot, $low)
+
+(set: $r4_hit, $low)
+(set: $r4_heal, $medium)
+
+(set: $r6_loot, $high)
+
+(set: $se1_heal_begin, $low)
+(set: $se1_hit, $low)
+(set: $se1_loot, $low)
+(set: $se1_heal_end, $high)
+
+(set: $r5_hit, $low)
+
+(set: $se6_hit, $high)
+
+(set: $se4_hit, $high)
+(set: $se4_heal, $medium)
+
+(set: $ser4_hit_half, 5)
+(set: $ser4_hit_full, 8)
+(set: $ser4_hit_half_2, 3)
+
+(set: $ser3_heal, $low)
+
+(set: $ser1_hit, $low)
+
+(set: $r1_hit, $low)
+(set: $R1_hit_2, $medium)
+(set: $se3_hit_full, 60)
+(set: $se3_hit_half, 30)
+(set: $se3_hit_gamble, $high)</tw-passagedata><tw-passagedata pid="409" name="testFlow" tags="" position="308,7170" size="100,100">(room: &quot;testFlow&quot;, &quot;testFlow&quot;, &quot;testFlowEnd&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+
+Questo è un paragrafo con solo testo
+Vediamo come gestisce i chunk
+chunk 2
+(say: &quot;happy&quot;)
+Poi del testo
+
+&gt;&gt;[[Paagrafo solo robot|testFlow2]]</tw-passagedata><tw-passagedata pid="410" name="testFlow2" tags="" position="440,7424" size="100,100">(say: &quot;say&quot;)
+(say: &quot;say2&quot;)
+(say: &quot;say3&quot;)
+chunk2
+
+&gt;&gt;[[Passaggio Misto Start Text|testFlow3]]</tw-passagedata><tw-passagedata pid="411" name="testFlow3" tags="" position="664,7426" size="100,100">Qui invece abbiamo prima del testo
+(say: &quot;Poi dico qualcosa io&quot;)
+Poi altro testo
+(pose: &quot;test_2&quot;)
+E altro testo
+
+&gt;&gt;[[Passaggio Misto Start iCub|testFlow4]]</tw-passagedata><tw-passagedata pid="412" name="testFlow4" tags="" position="824,7244" size="100,100">(say: &quot;Prima parla iCub&quot;)
+Ora iCub diventa Triste
+(say: &quot;Sono Triste&quot;)
+(feel: &quot;sad&quot;)
+(pose: &quot;home&quot;)
+
+&gt;&gt;[[Fine|testFlowEnd]]</tw-passagedata><tw-passagedata pid="413" name="testFlowEnd" tags="" position="1012,7154" size="100,100">(endpoint: &quot;testFlow&quot;, &quot;right&quot;)</tw-passagedata><tw-passagedata pid="414" name="StartupGsr" tags="" position="5968,4972" size="100,100">(image: &quot;ice_tunnel.jpg&quot;)
+
+Per favore, indossa il dispositivo nella mano sinistra come in figura.
+
+Quando hai finito clicca su continua.
+&gt;&gt;[[Continua|StartupEyelink]]</tw-passagedata><tw-passagedata pid="415" name="StartupEyelink" tags="" position="6116,4966" size="100,100">Ora faremo la calibrazione dell&#39;eyelink, il dispositivo davanti a te.
+Quando sei pronto clicca su &quot;Continua&quot;
+
+&gt;&gt;[[Continua|StartupEyelink2]]</tw-passagedata><tw-passagedata pid="416" name="StartupEyelink2" tags="" position="6284,4968" size="100,100">(calibrate: &quot;eyelink&quot;)
+&gt;&gt;[[Continua|StartupEnd]]</tw-passagedata><tw-passagedata pid="417" name="StartupEnd" tags="" position="6436,4966" size="100,100">(endpoint: &quot;Startup&quot;, &quot;right&quot;)
+Ok Siamo pronti ad iniziare!</tw-passagedata><tw-passagedata pid="418" name="Welcome0" tags="" position="5612,5278" size="100,100">(room: &quot;welcome&quot;, &quot;Welcome0&quot;, &quot;Init3&quot;, &quot;Init4&quot;, &quot;&quot;, &quot;&quot;)
+
+Quando sei pronto clicca su &quot;Continua&quot;
+
+&gt;&gt;[[Continua|welcome]]</tw-passagedata></tw-storydata>

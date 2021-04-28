@@ -1,0 +1,59 @@
+cmake_minimum_required(VERSION 3.6)
+set(KEYWORD sea)
+set(NAME_VENV ${KEYWORD}_venv)
+project($KEYWORD)
+
+set(PROGRAM_PERMISSIONS_DEFAULT
+    OWNER_WRITE OWNER_READ OWNER_EXECUTE
+    GROUP_READ GROUP_EXECUTE
+    WORLD_READ WORLD_EXECUTE)
+
+# Find Python and Virtualenv.
+find_program(VIRTUALENV virtualenv)
+
+if(NOT VIRTUALENV)
+    message(FATAL_ERROR "Could not find `virtualenv` in PATH")
+endif()
+
+set(VIRTUALENV ${VIRTUALENV})
+
+# Find Yarp and iCubCONTRIB packages
+find_package(YARP  REQUIRED)
+list(APPEND CMAKE_MODULE_PATH ${ICUBCONTRIB_MODULE_PATH})
+
+set(ICUB_APPLICATIONS_PREFIX "$ENV{ICUB_ROOT}" CACHE PATH "Application path prefix")
+
+
+# Generate the virtualenv and ensure it's up to date.
+add_custom_command(
+    OUTPUT ${NAME_VENV}
+    COMMAND ${VIRTUALENV} --python=/usr/bin/python ${NAME_VENV}
+)
+add_custom_command(
+    OUTPUT requirements
+    DEPENDS ${NAME_VENV}
+    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/requirements.txt requirements.txt
+    COMMAND ./${NAME_VENV}/bin/pip install -r requirements.txt
+)
+
+# Generate the binary using pyinstaller and put the binary in the bin folder
+add_custom_command(
+    OUTPUT binary
+    DEPENDS ${NAME_VENV} requirements
+    COMMAND ./${NAME_VENV}/bin/pyinstaller  ${CMAKE_CURRENT_SOURCE_DIR}/${KEYWORD}.spec --distpath bin -F
+
+)
+
+
+# Custom targets for CMake
+# Create a virutal-env and install all requirements
+add_custom_target(build  ALL
+    DEPENDS binary
+    SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/requirements.txt
+)
+
+
+
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/bin/${KEYWORD} PERMISSIONS ${PROGRAM_PERMISSIONS_DEFAULT} DESTINATION bin)
+
+#add_subdirectory(app)

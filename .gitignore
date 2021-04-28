@@ -1,0 +1,12 @@
+Backups
+*_env/
+.vscode/
+.idea/
+*_venv
+*venv
+__pycache__/
+merged/
+*.pyc
+build/
+cmake*/
+sounds/

@@ -1,0 +1,20 @@
+UPPS_1 In generale mi piace vedere le cose fino alla fine.
+UPPS_2 Il mio pensiero è di solito attento e risoluto.
+UPPS_3 Quando sono di buon umore, tendo ad entrare in situazioni che potrebbero causarmi problemi.
+UPPS_4 Mi da molto fastidio lasciare le cose incompiute.
+UPPS_5 Mi piace fermarmi e pensare alle cose prima di farle.
+UPPS_6 Quando mi sento male, spesso faccio cose di cui poi mi pento per sentirmi meglio ora.
+UPPS_7 Quando che mi metto a fare qualcosa, odio fermarmi.
+UPPS_8 A volte, quando mi sento male, non riesco a fermare quello che sto facendo anche se mi fa sentire peggio.
+UPPS_9 Mi piace abbastanza prendere dei rischi.
+UPPS_10 Tendo a perdere il controllo quando sono di buon umore.
+UPPS_11 Finisco quello che inizio.
+UPPS_12 Tendo ad apprezzare e seguire un approccio razionale e "sensato" alle cose.
+UPPS_13 Quando sono arrabbiato spesso agisco senza pensare.
+UPPS_14 Accolgo esperienze e sensazioni nuove ed eccitanti, anche se sono un po' spaventose e non convenzionali.
+UPPS_15 Quando mi sento rifiutato, spesso dico cose di cui poi mi pento.
+UPPS_16 Mi piacerebbe imparare a pilotare un aereo.
+UPPS_17 Gli altri sono scioccati o preoccupati per le cose che faccio quando mi sento molto eccitato.
+UPPS_18 Mi piacerebbe provare la sensazione di sciare molto velocemente lungo un pendio di alta montagna.
+UPPS_19 Di solito penso attentamente prima di fare qualcosa.
+UPPS_20 Tendo ad agire senza pensare quando sono molto eccitato.

@@ -1,0 +1,30 @@
+D_1 Ammettere che i propri gusti sono diversi da quelli di un amico.
+D_2 Andare in campeggio nella natura selvaggia.
+D_3 Scommettere un giorno di guadagno alle corse dei cavalli.
+D_4 Investire il 10% del proprio reddito annuale in un fondo diversificato a crescita moderata.
+D_5 Bere pesantemente ad un evento sociale.
+D_6 Prendere delle detrazioni discutibili sulla dichiarazione dei redditi. 
+D_7 Essere in disaccordo con una figura autoritaria su una questione importante. 
+D_8 Scommettere il guadagno di una giornata in una partita di poker ad alta puntata.
+D_9 Avere una relazione con un uomo/donna sposati. 
+D_10 Spacciare il lavoro di qualcun altro per proprio.
+D_11 Scendere una pista da sci che va oltre le proprie capacità. 
+D_12 Investire il 5% del proprio reddito annuale in un'azione molto speculativa.
+D_13 Andare a fare rafting nelle acque alte in primavera. 
+D_14 Scommettere il guadagno di una giornata sul risultato di un evento sportivo
+D_15 Fare sesso non protetto.
+D_16 Rivelare il segreto di un amico a qualcun altro. 
+D_17 Guidare un'auto senza indossare la cintura di sicurezza.
+D_18 Investire il 10% del proprio reddito annuale in una nuova impresa commerciale.
+D_19 Seguire un corso di paracadutismo.
+D_20 Guidare una moto senza casco.
+D_21 Scegliere una carriera che ti piace veramente invece di una più sicura. 
+D_22 Dire la tua opinione su una questione impopolare in una riunione al lavoro. 
+D_23 Prendere il sole senza protezione solare.
+D_24 Fare bungee jumping da un alto ponte.  
+D_25 Pilotare un piccolo aereo. 
+D_26 Tornare a casa da solo di notte in una zona poco sicura della città.
+D_27 Trasferirsi in una città lontana dalla propria famiglia allargata. 
+D_28 Iniziare una nuova carriera a metà dei tuoi trent'anni. 
+D_29 Lasciare i vostri figli piccoli da soli a casa mentre fate una commissione. 
+D_30 Non restituire un portafoglio trovato che contiene 200 dollari. 

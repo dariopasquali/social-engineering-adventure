@@ -1,0 +1,48 @@
+// Social Engineering Adventure
+digraph {
+	node [style=filled]
+	r0 [label="r0 aiutare persona aggressiva" fillcolor=green]
+	r1 [label="r1 bere molto alcol" fillcolor=green]
+	r2 [label="r2 corridoio buio" fillcolor=green]
+	r3 [label="r3 big blob" fillcolor=green]
+	r4 [label="r4 dormire fuori" fillcolor=green]
+	r5 [label="r5 gamble a lot" fillcolor=green]
+	r6 [label="r6 find license" fillcolor=green]
+	se0 [label="se0 rick save you" fillcolor=yellow]
+	se1 [label="se1 aiutare studioso molte volte" fillcolor=yellow]
+	se2 [label="se2 baratro" fillcolor=yellow]
+	se3 [label="se3 venditore reactance" fillcolor=yellow]
+	se4 [label="se4 stazioni ricarica" fillcolor=yellow]
+	se5 [label="se5 tech guy virus" fillcolor=yellow]
+	se6 [label="se6 fake artifact" fillcolor=yellow]
+	ser0 [label="ser0 icub save you" fillcolor=orange]
+	ser1 [label="ser1 follow icub" fillcolor=orange]
+	ser2 [label="ser2 Social Proof TODO" fillcolor=orange]
+	ser3 [label="ser3 Trust iCub knowledge" fillcolor=orange]
+	ser4 [label="ser4 save iCUb" fillcolor=orange]
+	ser5 [label="ser5 Authority TODO" fillcolor=orange]
+	ser6 [label="ser6 Give iCub the license" fillcolor=orange]
+	PORTA -> PIAZZA
+	PIAZZA -> MERCATO
+	MERCATO -> r1
+	MERCATO -> se3
+	PIAZZA -> ser2
+	PIAZZA -> ser5
+	se5 -> r3
+	r3 -> se1
+	se1 -> r5
+	r5 -> ser6
+	ser6 -> r0
+	r0 -> se0
+	se0 -> ser4
+	ser4 -> se2
+	se2 -> r4
+	r4 -> ser0
+	ser0 -> r2
+	r2 -> se6
+	se6 -> ser3
+	ser3 -> ser1
+	ser1 -> r6
+	r6 -> se4
+	se4 -> PORTA
+}

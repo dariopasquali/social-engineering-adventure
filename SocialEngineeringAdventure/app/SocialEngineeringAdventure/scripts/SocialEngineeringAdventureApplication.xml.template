@@ -1,0 +1,194 @@
+<application>
+    <name>Social Engineering Adventure (SEA)</name>
+
+    <!-- ==================== MAIN MODULES ==================== -->
+    
+    <module>
+        <name>sea</name>
+	    <parameters></parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>robotPuppeteer</name>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>interactionInterface</name>
+        <parameters>--config sea_experiment.sh --context SEA<parameters/>
+        <node>/icubsrv</node>
+    </module>
+
+    <!-- ======================= DEVICES ======================= -->
+
+    <module>
+        <name>TobiiPupilStreamer</name>
+        <parameters>--connection dhcp --ip 192.168.10.101</parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>EyeLinkInterface</name>
+        <parameters></parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>GSRInterface</name>
+        <parameters></parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <module>
+        <name>MouseInterface</name>
+        <parameters></parameters>
+        <node>/icubsrv</node>
+    </module>
+
+    <!-- ==================== ICUB CONTROL ==================== -->
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part head</parameters>
+        <node>/icub15</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part right_arm</parameters>
+        <node>/icub15</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part left_arm</parameters>
+        <node>/icub15</node>
+    </module>
+
+    <module>
+        <name>ctpService</name>
+        <parameters>--robot icub --part torso</parameters>
+        <node>/icub15</node>
+    </module>
+
+    <!-- ==================== DUMPERS ==================== -->
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/log:i --dir /dario/sea/dump/logs</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/trials:i --dir /dario/sea/dump/trials</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/mouse:i --dir /dario/sea/dump/mouse</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/gsr:i --dir /dario/sea/dump/gsr</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/heart:i --dir /dario/sea/dump/heart</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <module>
+      	<name>yarpdatadumper</name>
+		<parameters>--name /dumper/heart:i --dir /dario/sea/dump/heart</parameters>
+      	<node>/icub13</node>                
+    </module>
+
+    <!-- ==================== CONNECTIONS ==================== -->  
+
+    <!-- RPC port to control the robot with IDLE sates-->
+    <connection>
+        <from>/sea/exec/rpc</from>
+        <to>/robot/puppet/rpc/in</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the robot with the interaction Interface-->
+    <connection>
+        <from>/robot/puppet/rpc/out</from>
+        <to>/interactionInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the Shimmer3 GSR +-->
+    <connection>
+        <from>/sea/devices/gsr/rpc</from>
+        <to>/gsrInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the Mouse-->
+    <connection>
+        <from>/sea/devices/mouse/rpc</from>
+        <to>/mouseInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the EyeLink-->
+    <connection>
+        <from>/sea/devices/eyelink/rpc</from>
+        <to>/eyelinkInterface</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- RPC port to control the Tobii Eyetracker-->
+    <connection>
+        <from>/sea/devices/tobii/rpc</from>
+        <to>/tobii/stream</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for logs-->
+    <connection>
+        <from>/sea/log:o</from>
+        <to>/dumper/log:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for trials-->
+    <connection>
+        <from>/sea/trials:o</from>
+        <to>/dumper/trials:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for Shimmer3 GSR+ Skin Conductace-->
+    <connection>
+        <from>/gsrInterface/gsr:o</from>
+        <to>/dumper/gsr:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for Shimmer3 GSR+ Heart Beat-->
+    <connection>
+        <from>/gsrInterface/heart:o</from>
+        <to>/dumper/heart:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+    <!-- Dumper for the Mouse-->
+    <connection>
+        <from>/mouseInterface/events:o</from>
+        <to>/dumper/mouse:i</to>
+        <protocol>tcp</protocol>
+    </connection>
+    
+</application>
+
+
