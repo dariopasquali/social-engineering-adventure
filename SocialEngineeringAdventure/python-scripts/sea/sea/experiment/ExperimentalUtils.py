@@ -83,6 +83,7 @@ class ExperimentalUtils:
         # Blocking
         for device in self.devices:
             self.log("Wait for the connections of {}".format(device.device_name))
+            print("Wait for the connections of {}".format(device.device_name))
             device.wait_for_connections()
 
     def calibrate(self):

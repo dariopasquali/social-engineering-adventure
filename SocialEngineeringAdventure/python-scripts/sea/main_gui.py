@@ -17,37 +17,37 @@ class SeaParams:
 
         self.room_order = 1
         self.order_1 = [
-            #'welcome', # Rules and Lore
+            'welcome', # Rules and Lore
             'intro',  # Meet with iCub
             #'R6',  # licenza smarrita
-            #'SE0',  # ragno ghiaccio
+            'SE0',  # ragno ghiaccio
             #'SER6',  # Dare la licenza ad iCub
-            #'R2',  # Corridoio Buio
-            #'SE6',  # Esposizione artefatti
-            #'camp',  # Accampamento Dispersi
-            #'SE4',  # Capslue
-            #'lab',  # Laboratorio
-            #'R0',  # Aiutare uomo in difficoltà
-            #'SE5',  # Linux
+            'R2',  # Corridoio Buio
+            'SE6',  # Esposizione artefatti
+            'camp',  # Accampamento Dispersi
+            'SE4',  # Capslue
+            'lab',  # Laboratorio
+            'R0',  # Aiutare uomo in difficoltà
+            'SE5',  # Linux
             'SER4',  # Aiutare iCub
-            #'SE2',  # Baratro
-            #'SER0',  # Cerberus
-            #'R4',  # Riposare all'aperto
-            #'R3',  # Blob
-            #'end'  # Ending
+            'SE2',  # Baratro
+            'SER0',  # Cerberus
+            'R4',  # Riposare all'aperto
+            'R3',  # Blob
+            'end'  # Ending
         ]
         self.order_2 = []
         self.dummy_order = [
-            #'cross', 'trial', 'ending',
-            #'welcome',
-            #'testFlow',
-            #'sbResources',
-            #'sbCross',
-            #'sbRoll',
-            #'sbTrial',
-            #'sbFight',
-            #'sbItems',
-            #'sbComplex',
+            'cross', 'trial', 'ending',
+            'welcome',
+            'testFlow',
+            'sbResources',
+            'sbCross',
+            'sbRoll',
+            'sbTrial',
+            'sbFight',
+            'sbItems',
+            'sbComplex',
             'TestEL',
             'TestGNI'
         ]

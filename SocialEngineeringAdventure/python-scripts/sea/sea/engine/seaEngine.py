@@ -125,7 +125,7 @@ class SEAengine:
             return False
 
         self.current_room = self.dungeon.popitem()[1]
-        if self.previous_cross is None and self.current_room.is_crossroad():
+        if self.current_room.is_crossroad():
             self.previous_cross = self.current_room
 
         self.current_passage = self.current_room.get_start_passage()

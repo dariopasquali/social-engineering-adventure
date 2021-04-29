@@ -341,7 +341,7 @@ class GUIView:
 
     def __have_item_callback(self):
         passage = self.sea_engine.current_passage
-        self.__show_alternatives(passage)
+        do_swap = self.__show_alternatives(passage)
 
         (check_result, link_id) = self.sea_engine.check_have_item()
 
@@ -349,9 +349,15 @@ class GUIView:
         self.story_view.show_choice()
 
         if check_result:
-            self.story_view.set_btn_left_enabled(False)
+            if do_swap:
+                self.story_view.set_btn_right_enabled(False)
+            else:
+                self.story_view.set_btn_left_enabled(False)
         else:
-            self.story_view.set_btn_right_enabled(False)
+            if do_swap:
+                self.story_view.set_btn_left_enabled(False)
+            else:
+                self.story_view.set_btn_right_enabled(False)
 
     def __trial_callback(self):
 
@@ -602,6 +608,12 @@ class GUIView:
                 self.centre_link = links[2]
                 self.story_view.set_btn_centre_txt(self.centre_link.text)
                 self.story_view.set_centre_callback(self.__centre_choice_callback)
+
+            return random_position < 10     # swap position
+
+        return False
+
+
 
     # Render a normal text passage
     def __render_text_passage(self, passage=None):
